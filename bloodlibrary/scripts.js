@@ -47,6 +47,10 @@ function handleSelectCard(value){
 }
 
 function addCard(card_name, card_id) {
+	if (proxyList.find( item => item.id == card_id)) {
+		return;
+	}
+	
 	var card_image = '<img class="auspex" src="https://vtesdecks.com/img/icons/icondisauspex.gif"></img>';
 	var name = card_name;
 	var amount = '<input id="amount-'+card_id+'" class="form-control mr-sm-2" type="number" max="50" min="1" value="1" onchange="updateAmount(this.value, '+card_id+')"></input>'
