@@ -50,12 +50,19 @@ function addCard(card_name, card_id) {
 	var card_image = '<img class="auspex" src="https://vtesdecks.com/img/icons/icondisauspex.gif"></img>';
 	var name = card_name;
 	var amount = '<input id="amount-'+card_id+'" class="form-control mr-sm-2" type="number" max="50" min="1" value="1" onchange="updateAmount(this.value, '+card_id+')"></input>'
-	var delete_button = 'X';
+	var delete_button = '<button type="button" class="btn btn-danger" onclick="removeCard('+card_id+')">X</button>';
 	
-	$('#card-list > tbody:last-child').append('<tr><td>'+ card_image+ '</td><td>'+ name+ '</td><td>'+ amount + '</td><td>'+ delete_button + '</td></tr>');
+	$('#card-list > tbody:last-child').append('<tr id="row-'+card_id+'"><td>'+ card_image+ '</td><td>'+ name+ '</td><td>'+ amount + '</td><td>'+ delete_button + '</td></tr>');
 	proxyList.push({'id': card_id, 'amount': 1});
 }
 
 function updateAmount(new_value, card_id) {
 	proxyList.find( item => item.id == card_id).amount = parseInt(new_value); 
+}
+
+function removeCard(card_id) {
+	var value = proxyList.find( item => item.id == card_id);
+	var index = proxyList.indexOf(value);
+	proxyList.splice(index, 1);
+	$("#row-"+card_id).remove();
 }
