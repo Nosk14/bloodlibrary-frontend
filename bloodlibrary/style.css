@@ -48,7 +48,7 @@ a {
 	width: 55%;
 }
 
-.auspex {
+.auspex-icon {
 		width: 40px;
 }
 
@@ -80,4 +80,14 @@ footer {
 
 .card-input {
 		margin-bottom: 50px;
+}
+
+.card-img {
+    display: none;
+	position: absolute;
+	width: 300px;
+}
+
+.auspex:hover .card-img {
+    display: inline-block;
 }
