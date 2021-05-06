@@ -25,11 +25,11 @@
 		<div class="main-content">
 			<div class="column-content ccs">
 			
+					
+						<select class="form-control basicAutoSelect card-input" autocomplete="off" name=cardselector" placeholder="Type card name..."></select>
 
-						<select class="form-control basicAutoSelect card-input" autocomplete="off" name=cardselector"></select>
-
-						<button type="button" class="btn btn-primary btn-lg btn-block">Generate PDF</button>
-						<button type="button" class="btn btn-primary btn-lg btn-block">Clear list</button>
+						<button id="generate" type="button" onclick="generatePDF()" class="btn btn-primary btn-lg btn-block">Generate PDF</button>
+						<button type="button" onclick="clearCardList()" class="btn btn-primary btn-lg btn-block">Clear list</button>
 			</div>
 			<div class= "column-content ccl">
 						<table class="table card-list" id="card-list">
@@ -41,21 +41,11 @@
 								  <th scope="col">Remove</th>
 								</tr>
 							</thead>
-							<tbody>
-								<tr>
-								  <th>1</th>
-								  <td>Mark</td>
-								  <td><input class="form-control mr-sm-2" type="number" max="50" min="1" value="1"></input></td>
-								  <td>X</input></td>
-								</tr>
-							</tbody>
+							<tbody></tbody>
 						</table>
 					</td>
 			</div>
 		</div>
-
-
-
 		
 		<script>
 			$('.basicAutoSelect').autoComplete(
@@ -78,6 +68,7 @@
 				addCard(item.text, item.value);
 				$('.basicAutoSelect').autoComplete('clear');
 			});
+			
 		</script>
 		
 		        <footer>
