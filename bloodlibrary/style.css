@@ -79,7 +79,7 @@ footer {
 }
 
 .card-input {
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 }
 
 .card-img {
@@ -91,3 +91,4 @@ footer {
 .auspex:hover .card-img {
     display: inline-block;
 }
+

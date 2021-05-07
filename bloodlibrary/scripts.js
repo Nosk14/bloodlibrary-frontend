@@ -70,3 +70,55 @@ function removeCard(card_id) {
 	proxyList.splice(index, 1);
 	$("#row-"+card_id).remove();
 }
+
+function loadCardsFromFile(e){
+	if(e.files.length < 1) {
+		return;
+	}
+	var file = e.files[0];
+	if(file.type != "text/plain") {
+		return;
+	}
+	
+	var reader = new FileReader();
+	reader.onload = function(progressEvent) {
+		var lines = this.result.split('\n');
+		var cardPromises = [];
+		
+		for(const line of lines){
+			var trimmedLine = line.trim();
+			if (trimmedLine && trimmedLine.match(/^\d/)) {
+				cardPromises.push(handleLine(trimmedLine));
+			}
+		}
+		
+		Promise.all(cardPromises)
+		.then( results => { 
+			for(const r of results) {
+				if(r) {
+					addCard(r.name, r.id);
+					$("#amount-"+r.id).val(r.amount);
+					updateAmount(r.amount, r.id);
+				}
+
+			}
+		});
+	};
+	reader.readAsText(file);
+}
+
+async function handleLine(line) {
+		var parts = line.split("\t");
+		var numberOfCopies = parseInt(parts[0].trim());
+		var expectedCardName = parts[1].trim();
+		
+		var cardData = await $.get('https://api.bloodlibrary.info/api/search', {name: expectedCardName}, {crossDomain: true} );
+		
+		if(cardData){
+			return {id: cardData[0].id, name: cardData[0].name, amount: numberOfCopies};
+		}else{
+			console.log("No data found for: " + expectedCardName);
+			return undefined;
+		}
+}
+

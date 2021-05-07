@@ -27,7 +27,12 @@
 			
 					
 						<select class="form-control basicAutoSelect card-input" autocomplete="off" name=cardselector" placeholder="Type card name..."></select>
-
+						
+						<div class="form-inline card-input">
+							<label for="lackey" class="col-form-label-sm">Import Lackey deck</label>
+							<input type="file" accept=".txt" onchange="loadCardsFromFile(this)" class="form-control-file" id=lackey"></input>
+						</div>
+						
 						<button id="generate" type="button" onclick="generatePDF()" class="btn btn-primary btn-lg btn-block">Generate PDF</button>
 						<button type="button" onclick="clearCardList()" class="btn btn-primary btn-lg btn-block">Clear list</button>
 			</div>
