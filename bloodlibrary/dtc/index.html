@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
+
+    <style>
+        body {background-color: black; margin: 2%;}
+        h1   {color: white;}
+        a   {color: black;}
+        a:hover   {text-decoration: none; font-weight: bold; color:red }
+        a:link { text-decoration: none; }
+        a:visited { text-decoration: none; }
+        a:active { text-decoration: none; }
+        p    {color: red;}
+        img { width: 350px; height: auto  }
+        .vtes-card-name {text-align: center}
+        .vtes-card { display:inline-block }
+        .flex-container { flex-wrap: wrap; justify-content: flex-start }
+        .card-list {}
+        td {padding-right: 25px; }
+
+        .column-content {
+	display: inline-block;
+	margin: auto;
+	vertical-align: top;
+	padding: 20px;
+}
+
+.ccs {
+	width: 35%;
+}
+
+.ccm {
+	width: 45%;
+}
+
+.ccl {
+	width: 55%;
+}
+
+footer {
+		font-size: 18;
+}
+
+.dp-image {
+		text-align: center;
+		vertical-align: top;
+}
+
+.dp-text {
+	vertical-align: bottom;
+}
+
+
+
+    </style>
+
+
+    <title>VTES Unleashed Decks</title>
+</head>
+<body>
+<h1>VTES: Print on Demand</h1>
+
+<p>This webbsite is just a shortcut for reaching Vampire: The Eternal Struggle cards on <a style="color: red"
+                                                                                           href="https://www.drivethrucards.com/"
+                                                                                           target="_blank">DriveThruCards</a>.
+    We do not sell anything so we are not responsible of any purchase you make.</p>
+
+<div>
+    <div class="card">
+        <div class="card-body">
+            <div id="filters">
+                <table>
+                    <thead>
+                    <tr>
+                        <th colspan="2">Type</th>
+                        <th></th>
+                        <th colspan="2">Clan</th>
+                        <th></th>
+                        <th>Sort by</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="vampire" value="Vampire"
+                                       onchange="updateTypes(this)" checked/><label for="vampire"
+                                                                                    class="form-check-label">Vampire</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="master" value="Master"
+                                       onchange="updateTypes(this)" checked/><label for="master"
+                                                                                    class="form-check-label">Master</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="action" value="Action"
+                                       onchange="updateTypes(this)" checked/><label for="action"
+                                                                                    class="form-check-label">Action</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="ally" value="Ally"
+                                       onchange="updateTypes(this)" checked/><label for="ally"
+                                                                                    class="form-check-label">Ally</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="retainer" value="Retainer"
+                                       onchange="updateTypes(this)" checked/><label for="retainer"
+                                                                                    class="form-check-label">Retainer</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="equipment" value="Equipment"
+                                       onchange="updateTypes(this)" checked/><label for="equipment"
+                                                                                    class="form-check-label">Equipment</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="political_action"
+                                       value="Political Action" onchange="updateTypes(this)" checked/><label
+                                    for="political_action"
+                                    class="form-check-label">Political
+                                Action</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="action_modifier"
+                                       value="Action Modifier" onchange="updateTypes(this)" checked/><label
+                                    for="action_modifier"
+                                    class="form-check-label">Action Modifier</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="reaction" value="Reaction"
+                                       onchange="updateTypes(this)" checked/><label for="reaction"
+                                                                                    class="form-check-label">Reaction</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="combat" value="Combat"
+                                       onchange="updateTypes(this)" checked/><label for="combat"
+                                                                                    class="form-check-label">Combat</label>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="no-clan" value=""
+                                       onchange="updateClans(this)" checked/><label for="no-clan"
+                                                                                    class="form-check-label">No
+                                Clan</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="assamite" value="Assamite"
+                                       onchange="updateClans(this)" checked/><label for="assamite"
+                                                                                    class="form-check-label">Assamite</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="Giovanni" value="Giovanni"
+                                       onchange="updateClans(this)" checked/><label for="Giovanni"
+                                                                                    class="form-check-label">Giovanni</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="follower" value="Follower of Set"
+                                       onchange="updateClans(this)" checked/><label for="follower"
+                                                                                    class="form-check-label">Follower of
+                                Set</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="Lasombra" value="Lasombra"
+                                       onchange="updateClans(this)" checked/><label for="Lasombra"
+                                                                                    class="form-check-label">Lasombra</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="Tzimisce" value="Tzimisce"
+                                       onchange="updateClans(this)" checked/><label for="Tzimisce"
+                                                                                    class="form-check-label">Tzimisce</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="ToreadorAntitribu"
+                                       value="Toreador antitribu"
+                                       onchange="updateClans(this)" checked/><label for="ToreadorAntitribu"
+                                                                                    class="form-check-label">Toreador
+                                antitribu</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="skulls" value="Harbinger of Skulls"
+                                       onchange="updateClans(this)" checked/><label for="skulls"
+                                                                                    class="form-check-label">Harbinger
+                                of Skulls</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="Tremere" value="Tremere"
+                                       onchange="updateClans(this)" checked/><label for="Tremere"
+                                                                                    class="form-check-label">Tremere</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="Samedi" value="Samedi"
+                                       onchange="updateClans(this)" checked/><label for="Samedi"
+                                                                                    class="form-check-label">Samedi</label>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td style="vertical-align: top;">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="sort-name" checked disabled>
+                                <label class="form-check-label" for="sort-name"> Card name </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="sort-twda" disabled>
+                                <label class="form-check-label" for="sort-twda"> TWDA usage </label>
+                            </div>
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td style="text-align: right">
+                            <button type="button" class="btn btn-primary btn-sm btn-block" disabled>Select All</button>
+                        </td>
+                        <td style="text-align: left">
+                            <button type="button" class="btn btn-danger btn-sm btn-block" disabled>Unselect All</button>
+                        </td>
+                        <td></td>
+                        <td style="text-align: right">
+                            <button type="button" class="btn btn-primary btn-sm btn-block" disabled>Select All</button>
+                        </td>
+                        <td style="text-align: left">
+                            <button type="button" class="btn btn-danger btn-sm btn-block" disabled>Unselect All</button>
+                        </td>
+                        <td></td>
+                        <td></td>
+
+
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div id="card-list" class="flex-container"></div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="column-content dp-image ccs">
+        <img src="http://www.vekn.net/images/stories/ww/dark-pact.png" alt="" width="100" height="auto">
+    </div>
+
+    <p class="column-content ccl dp-text">
+        Portions of the materials are the copyrights and trademarks of White Wolf Publishing AB, and are used with
+        permission. All rights reserved. For more information please visit
+        <a href="http://www.white-wolf.com/" style="color: red">white-wolf.com</a>.
+    </p>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="data.js"></script>
+
+<script>
+    function containsAny(values, refList) {
+        for (v of values) {
+            if (refList.includes(v)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    function addCards(cardList) {
+        for (c of cards) {
+            $('#card-list').append(
+                `<div id="${c.id}" class="vtes-card"><a href="${c.link}" target="_blank"><table><tbody><tr><td><img class="img-1" src="https://statics.bloodlibrary.info/img/sets/pod/${c.id}.jpg"/></td></tr><tr><td class="vtes-card-name">${c.name}</td></tr></tbody></table></a></div>`
+            );
+        }
+    }
+    addCards(cards);
+
+    function applyFilters(){
+        for(c of cards) {
+            if (containsAny(c.type, cardTypes) && containsAny(c.clan, cardClans)) {
+                $(`#${c.id}`).show();
+            }else{
+                $(`#${c.id}`).hide();
+            }
+        }
+    }
+
+    function updateTypes(input) {
+        if (input.checked) {
+            cardTypes.push(input.value);
+        }else{
+            let index = cardTypes.indexOf(input.value);
+            if (index > -1 ) {
+                cardTypes.splice(index, 1);
+            }
+        }
+        applyFilters();
+    }
+
+    function updateClans(input) {
+        if (input.checked) {
+            cardClans.push(input.value);
+        }else{
+            let index = cardClans.indexOf(input.value);
+            if (index > -1 ) {
+                cardClans.splice(index, 1);
+            }
+        }
+        applyFilters();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
