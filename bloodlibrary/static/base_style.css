@@ -1,0 +1,97 @@
+
+body {
+	background-color: black;
+	color: white;
+	padding-left: 7%;
+	padding-right: 7%;
+	min-height: 95%;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	margin-bottom: 35px;
+}
+
+footer {
+	margin-top: auto;
+}
+
+footer div {
+	display: inline-block;
+	margin: auto;
+	vertical-align: top;
+	padding: 20px;
+	width: 45%;
+}
+
+a {
+    color: #b8120f;
+}
+
+.header {
+	text-align: center;
+	margin-top: 25px;
+}
+
+.title {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 21px;
+	font-size: 1.3125rem;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.15;
+	letter-spacing: 9px;
+	text-transform: uppercase;
+}
+
+.dp-image {
+	text-align: center;
+	vertical-align: top;
+}
+
+.dp-text {
+	vertical-align: bottom;
+}
+
+.navbar-bloodlibrary {
+	border-top: 1px white solid;
+	border-bottom: 1px white solid;
+}
+
+.bg-dark {
+	background-color: black !important;
+}
+
+li.nav-item {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+ul.navbar-nav {
+	margin: auto;
+}
+
+.nav-link {
+	color: white;
+}
+
+.nav-link:hover {
+	color: #b8120f;
+	font-weight: bold;
+}
+
+.navbar {
+    padding: 0px;
+}
+
+
+.red-text {
+    color: #b8120f;
+}
+
+.black-text {
+    color: black;
+}

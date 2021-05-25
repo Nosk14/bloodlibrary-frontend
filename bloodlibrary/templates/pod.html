@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block navPage %}pod{% endblock %}
+{% block head %}
+        <script src="{{ url_for('static', filename='pod/data.js') }}"></script>
+        <script src="{{ url_for('static', filename='pod/pod_scripts.js') }}"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='pod/pod_style.css') }}"/>
+
+{% endblock %}
+
+{% block content %}
+<p>This webbsite is just a shortcut for reaching Vampire: The Eternal Struggle cards on <a style="color: red"
+                                                                                           href="https://www.drivethrucards.com/"
+                                                                                           target="_blank">DriveThruCards</a>.
+    We do not sell anything so we are not responsible of any purchase you make.</p>
+
+<div>
+    <div class="card">
+        <div class="card-body">
+            <div id="filters">
+                <div id="cardtype-filter" class="flex-container"></div>
+                <div id="discipline-filter" class="flex-container"></div>
+                <div id="clan-filter" class="flex-container"></div>
+                <div id="sort-buttons">
+                    <button type="button" class="btn btn-outline-dark" onclick="sortCardsByName()">Sort by name</button>
+                    <button type="button" class="btn btn-outline-dark" onclick="sortCardsByReleaseDate()">Sort by publish date on DTC</button>
+                </div>
+            </div>
+
+            <div id="card-list" class="flex-container"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    addFilters();
+    addCards(cards);
+</script>
+{% endblock %}

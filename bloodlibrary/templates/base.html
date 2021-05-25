@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Blood Library</title>
+    <link rel="icon" href="favicon.ico"/>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='base_style.css') }}"/>
+    <script src="{{ url_for('static', filename='base_scripts.js') }}"></script>
+
+
+    {% block head %}{% endblock %}
+
+</head>
+<body>
+<header>
+    <div class="header">
+        <img src="{{ url_for('static', filename='img/carrion_banner.png') }}"/>
+        <div class="title">Blood Library</div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-bloodlibrary">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li id="proxies" class="nav-item">
+            <a class="nav-link" href="/">Print proxies</a>
+          </li>
+          <li  id="pod" class="nav-item">
+            <a class="nav-link disabled" href="/pod">Print on demand</a>
+          </li>
+          <li id="kickstarter" class="nav-item">
+            <a class="nav-link" href="/kickstarter">Kickstarter cardlist</a>
+          </li>
+          <li id="all_cards" class="nav-item">
+            <a class="nav-link disabled" href="#">All cards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://vtesdecks.com/" target="_blank">VTES Decks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.vekn.net/" target="_blank">VEKN</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</header>
+{% block content %}{% endblock %}
+<footer>
+    <div class="dp-image">
+        <img src="http://www.vekn.net/images/stories/ww/dark-pact.png" alt="" width="150" height="117">
+    </div>
+
+    <div class="dp-text">
+        Portions of the materials are the copyrights and trademarks of White Wolf Publishing AB, and are used with
+        permission. All rights reserved. For more information please visit
+        <a href="http://www.white-wolf.com/">white-wolf.com</a>.
+    </div>
+</footer>
+
+<script>
+    setNavTabActive("{% block navPage %}{% endblock %}");
+</script>
+
+</body>
+</html>

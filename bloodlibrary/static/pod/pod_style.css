@@ -1,0 +1,55 @@
+p {
+	color: red;
+}
+
+.pod-image {
+	width: 250px;
+	height: auto
+}
+
+.vtes-card-name {
+	text-align: center
+}
+
+.vtes-card {
+	display: inline-block;
+	margin-bottom: 1.5em;
+}
+
+.flex-container {
+	flex-wrap: wrap;
+	justify-content: flex-start
+}
+
+.column-content {
+	display: inline-block;
+	margin: auto;
+	vertical-align: top;
+	padding: 20px;
+}
+
+.card {
+    color: #b8120f !important;
+}
+
+.inline-check {
+    display: inline-block;
+    margin-right: 1.25rem;
+}
+
+#filters {
+    margin-bottom: 2rem;
+}
+
+.filter-icon {
+    width: auto;
+    height: 50px;
+}
+
+.icon-disabled {
+    filter: opacity(40%);
+}
+
+#sort-buttons {
+    margin-top: 1.5em;
+}

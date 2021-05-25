@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block navPage %}proxies{% endblock %}
+{% block head %}
+    <script src="https://cdn.jsdelivr.net/gh/xcash/bootstrap-autocomplete@v2.3.7/dist/latest/bootstrap-autocomplete.min.js"></script>
+    <script src="{{ url_for('static', filename='proxy/proxy_scripts.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='proxy/proxy_style.css') }}"/>
+{% endblock %}
+
+{% block content %}
+<div class="main-content">
+    <div class="column-content ccs">
+
+
+        <select class="form-control basicAutoSelect card-input" autocomplete="off" name=cardselector"
+                placeholder="Type card name..."></select>
+
+        <div class="form-inline card-input">
+            <label for="lackey" class="col-form-label-sm">Import Lackey deck</label>
+            <input type="file" accept=".txt" onchange="loadCardsFromFile(this)" class="form-control-file"
+                   id=lackey"></input>
+        </div>
+
+        <button id="generate" type="button" onclick="generatePDF()" class="btn btn-primary btn-lg btn-block">Generate
+            PDF
+        </button>
+        <button type="button" onclick="clearCardList()" class="btn btn-primary btn-lg btn-block">Clear list</button>
+    </div>
+    <div class="column-content ccl">
+        <table class="table card-list" id="card-list">
+            <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Remove</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        </td>
+    </div>
+</div>
+
+<script>
+			$('.basicAutoSelect').autoComplete(
+			{
+				minLength: 2,
+				resolver: 'custom',
+				events: {
+					search: function (query, callback) {
+						$.get("https://api.bloodlibrary.info/api/search/?name="+query)
+						.done(function (results) {
+							callback(
+								results.slice(0,10).map( function (card, i, arr) { return {'value': card.id, 'text': card.name}})
+							);
+						});
+					}
+				}
+			});
+			$('.basicAutoSelect').autoComplete('show');
+			$('.basicAutoSelect').on('autocomplete.select', function(event, item) {
+				addCard(item.text, item.value);
+				$('.basicAutoSelect').autoComplete('clear');
+			});
+
+
+</script>
+{% endblock %}

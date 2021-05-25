@@ -1,0 +1,44 @@
+.card-header {
+	background-color: white;
+	padding: 5px
+}
+
+.grid-container {
+	display: grid;
+	grid-column-gap: 5px;
+	grid-row-gap: 10px;
+	grid-template-columns: auto auto auto auto auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.vtes-card {
+	width: 250px;
+	height: auto;
+}
+
+.vtes-card-name {
+	text-align: center
+}
+
+.vtes-card {
+	display: inline-block
+}
+
+.flex-container {
+	flex-wrap: wrap;
+	justify-content: flex-start
+}
+
+.set-icon {
+	width: 16px;
+	height: auto;
+}
+
+.btn-link {
+    color: #b8120f !important;
+}
+
+button img {
+    margin-right: 15px;
+}

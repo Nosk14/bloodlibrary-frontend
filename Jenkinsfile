@@ -1,5 +1,5 @@
 node {
-    def image_name = "vtes-proxies"
+    def image_name = "bloodlibrary-frontend"
     def image = null
 
     stage('Checkout') {
