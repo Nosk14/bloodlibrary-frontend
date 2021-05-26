@@ -1,6 +1,6 @@
 var icons = {
     'Vampire': "https://static.wikia.nocookie.net/whitewolf/images/6/60/LogoVTES.png",
-    'Master': "https://www.vekn.net/images/stories/icons/disciplines/icondisobfuscate.gif",
+    'Master': "/static/img/iconmaster.gif",
     'Action': "https://www.vekn.net/images/stories/icons/cardtype/icontypeaction.gif",
     'Political Action': "https://www.vekn.net/images/stories/icons/cardtype/icontypepolitical.gif",
     'Equipment': "https://www.vekn.net/images/stories/icons/cardtype/icontypeequipment.gif",
@@ -36,7 +36,7 @@ function addFilters() {
     }
 
     $('#discipline-filter').append(
-        getIconTag("https://www.vekn.net/images/stories/icons/disciplines/icondisobfuscate.gif", "No Discipline", "No Discipline", 'cardDisciplines', '')
+        getIconTag("/static/img/iconnodisc.gif", "No Discipline", "No Discipline", 'cardDisciplines', '')
     );
     for (discipline of cardDisciplines.slice(1)) {
         let iconSrc = `https://vtesdecks.com/img/icons/icondis${discipline.toLowerCase()}.gif`
@@ -46,7 +46,7 @@ function addFilters() {
     }
 
     $('#clan-filter').append(
-        getIconTag("https://www.vekn.net/images/stories/icons/disciplines/icondisobfuscate.gif", "No clan", "No clan", 'cardClans', '')
+        getIconTag("/static/img/iconnoclan.gif", "No clan", "No clan", 'cardClans', '')
     );
     for (clan of cardClans.slice(1)) {
         if (clan in icons) {
