@@ -114,3 +114,19 @@ function sortCardsByReleaseDate(){
     })
     .appendTo('#card-list');
 }
+
+function deselectAll(id){
+    $(id).find('img').each(function () {
+        if (!this.classList.contains("icon-disabled")){
+            this.click();
+        }
+    });
+}
+
+function selectAll(id){
+    $(id).find('img').each(function () {
+        if (this.classList.contains("icon-disabled")){
+            this.click();
+        }
+    });
+}

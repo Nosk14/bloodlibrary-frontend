@@ -9,18 +9,37 @@
 {% endblock %}
 
 {% block content %}
-<p>This webbsite is just a shortcut for reaching Vampire: The Eternal Struggle cards on <a style="color: red"
+<p class="white-text">Click on any card to open the product page on DTC.</p>
+
+<p class="white-text"><em><small>This website is just a shortcut for reaching Vampire: The Eternal Struggle cards on <a style="color: red"
                                                                                            href="https://www.drivethrucards.com/"
                                                                                            target="_blank">DriveThruCards</a>.
-    We do not sell anything so we are not responsible of any purchase you make.</p>
+    We do not sell anything so we are not responsible of any purchase you make.</small></em></p>
+
 
 <div>
     <div class="card">
         <div class="card-body">
             <div id="filters">
-                <div id="cardtype-filter" class="flex-container"></div>
-                <div id="discipline-filter" class="flex-container"></div>
-                <div id="clan-filter" class="flex-container"></div>
+                <b>Filters:</b>
+                <div id="cardtype-filter" class="flex-container filter-div">
+                    <div class="filter-buttons">
+                        <button type="button" class="btn btn-outline-dark btn-sm" onclick="selectAll('#cardtype-filter')">All</button>
+                        <button type="button" class="btn btn-outline-danger btn-sm" onclick="deselectAll('#cardtype-filter')">None</button>
+                    </div>
+                </div>
+                <div id="discipline-filter" class="flex-container filter-div">
+                     <div class="filter-buttons">
+                        <button type="button" class="btn btn-outline-dark btn-sm" onclick="selectAll('#discipline-filter')">All</button>
+                        <button type="button" class="btn btn-outline-danger btn-sm" onclick="deselectAll('#discipline-filter')">None</button>
+                    </div>
+                </div>
+                <div id="clan-filter" class="flex-container filter-div">
+                    <div class="filter-buttons">
+                        <button type="button" class="btn btn-outline-dark btn-sm" onclick="selectAll('#clan-filter')">All</button>
+                        <button type="button" class="btn btn-outline-danger btn-sm" onclick="deselectAll('#clan-filter')">None</button>
+                    </div>
+                </div>
                 <div id="sort-buttons">
                     <button type="button" class="btn btn-outline-dark" onclick="sortCardsByName()">Sort by name</button>
                     <button type="button" class="btn btn-outline-dark" onclick="sortCardsByReleaseDate()">Sort by publish date on DTC</button>

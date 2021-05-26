@@ -51,5 +51,18 @@ p {
 }
 
 #sort-buttons {
-    margin-top: 1.5em;
+    padding: 0.5em;
+    margin-left: 1.5em;
+
+}
+
+.filter-div {
+    margin-left: 1.5em;
+    padding: 0.5em;
+    border-bottom: 1px black solid;
+}
+
+.filter-buttons {
+    display: inline;
+    margin-right: 0.75em;
 }
