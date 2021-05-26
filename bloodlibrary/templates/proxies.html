@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block navPage %}proxies{% endblock %}
+{% block title %} - Proxy Generator{% endblock %}
 {% block head %}
     <script src="https://cdn.jsdelivr.net/gh/xcash/bootstrap-autocomplete@v2.3.7/dist/latest/bootstrap-autocomplete.min.js"></script>
     <script src="{{ url_for('static', filename='proxy/proxy_scripts.js') }}"></script>
