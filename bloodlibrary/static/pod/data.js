@@ -1,39 +1,39 @@
 var cardTypes = ["Vampire", "Master", "Action", "Ally", "Retainer", "Equipment", "Political Action", "Action Modifier", "Reaction", "Combat", "Event"];
 var cardClans = [	"",
-	"Harbinger of Skulls",
-	"Giovanni",
 	"Follower of Set",
-	"Samedi",
-	"Tremere",
-	"Assamite",
-	"Lasombra",
 	"Toreador antitribu",
+	"Lasombra",
+	"Samedi",
+	"Giovanni",
 	"Tzimisce",
+	"Harbinger of Skulls",
+	"Assamite",
+	"Tremere",
 ];
 var cardDisciplines = [	"",
-	"Daimoinon",
-	"Obfuscate",
-	"Thanatosis",
-	"Presence",
-	"Temporis",
 	"Animalism",
-	"Vicissitude",
-	"Quietus",
-	"Obeah",
-	"Serpentis",
-	"Auspex",
-	"Chimerstry",
-	"Fortitude",
-	"Potence",
-	"Necromancy",
-	"Thaumaturgy",
-	"Obtenebration",
-	"Dementation",
 	"Dominate",
-	"Celerity",
+	"Thaumaturgy",
+	"Fortitude",
+	"Presence",
+	"Chimerstry",
+	"Potence",
+	"Auspex",
+	"Necromancy",
 	"Protean",
+	"Obtenebration",
+	"Thanatosis",
+	"Celerity",
 	"Abombwe",
+	"Vicissitude",
+	"Serpentis",
+	"Daimoinon",
+	"Temporis",
+	"Obfuscate",
+	"Dementation",
+	"Quietus",
 	"Mytherceria",
+	"Obeah",
 ];
 var cards = [
 
@@ -46,7 +46,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Acheron Vortex",
                   "id":"100016",
@@ -56,7 +56,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Acquired Ventrue Assets",
                   "id":"100019",
@@ -66,7 +66,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Ahriman's Demesne",
                   "id":"100027",
@@ -76,7 +76,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Akhenaten, The Sun Pharaoh",
                   "id":"100033",
@@ -86,7 +86,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Alamut",
                   "id":"100037",
@@ -96,7 +96,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Amam the Devourer",
                   "id":"100042",
@@ -106,7 +106,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Ambrosius, The Ferryman",
                   "id":"100044",
@@ -116,7 +116,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Ancestor's Talisman, The",
                   "id":"100063",
@@ -126,7 +126,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-03-31",
                 },
-
+            
                 {
                   "name":"Arms of the Abyss",
                   "id":"100091",
@@ -136,7 +136,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Asanbonsam Ghoul",
                   "id":"100103",
@@ -146,7 +146,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2021-01-22",
                 },
-
+            
                 {
                   "name":"Atonement",
                   "id":"100109",
@@ -156,7 +156,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Baal's Bloody Talons",
                   "id":"100121",
@@ -166,7 +166,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Baleful Doll",
                   "id":"100127",
@@ -176,7 +176,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Baltimore Purge",
                   "id":"100128",
@@ -186,7 +186,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Bima",
                   "id":"100160",
@@ -196,7 +196,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Black Metamorphosis",
                   "id":"100169",
@@ -206,7 +206,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Black Sunrise",
                   "id":"100171",
@@ -216,7 +216,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Black Throne, The",
                   "id":"100172",
@@ -226,7 +226,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-01-04",
                 },
-
+            
                 {
                   "name":"Blanket of Night",
                   "id":"100177",
@@ -236,7 +236,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Blessed Resilience",
                   "id":"100181",
@@ -246,7 +246,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Blood Agony",
                   "id":"100192",
@@ -256,7 +256,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2019-12-24",
                 },
-
+            
                 {
                   "name":"Blood Awakening",
                   "id":"100193",
@@ -266,7 +266,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2020-01-04",
                 },
-
+            
                 {
                   "name":"Blood Clots",
                   "id":"100197",
@@ -276,7 +276,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Blood Sweat",
                   "id":"100211",
@@ -286,7 +286,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Blood Tempering",
                   "id":"100213",
@@ -296,7 +296,7 @@ var cards = [
                   "disciplines":['Fortitude', 'Quietus'],
                   "release_date":"2020-01-04",
                 },
-
+            
                 {
                   "name":"Book of Going Forth by Night, The",
                   "id":"100239",
@@ -306,7 +306,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2021-02-25",
                 },
-
+            
                 {
                   "name":"Breath of Thanatos",
                   "id":"100249",
@@ -316,7 +316,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Brigitte Gebauer",
                   "id":"100254",
@@ -326,7 +326,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Call of the Hungry Dead",
                   "id":"100279",
@@ -336,7 +336,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Camarilla Vitae Slave",
                   "id":"100286",
@@ -346,7 +346,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Canopic Jar",
                   "id":"100291",
@@ -356,7 +356,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Cave of Apples",
                   "id":"100311",
@@ -366,7 +366,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Chair of Hades",
                   "id":"100318",
@@ -376,7 +376,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Charigger, The Axe",
                   "id":"100331",
@@ -386,7 +386,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Chill of Oblivion",
                   "id":"100341",
@@ -396,7 +396,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Clandestine Contract",
                   "id":"100355",
@@ -406,7 +406,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Coagulate Blood",
                   "id":"100368",
@@ -416,7 +416,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2020-03-31",
                 },
-
+            
                 {
                   "name":"Cobra Fangs",
                   "id":"100370",
@@ -426,7 +426,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Cold Aura",
                   "id":"100376",
@@ -436,7 +436,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Compel the Spirit",
                   "id":"100388",
@@ -446,7 +446,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Concordance",
                   "id":"100395",
@@ -456,7 +456,7 @@ var cards = [
                   "disciplines":['Daimoinon', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Condemn the Sins of the Father",
                   "id":"100396",
@@ -466,7 +466,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2020-01-04",
                 },
-
+            
                 {
                   "name":"Condemnation: Betrayed",
                   "id":"100397",
@@ -476,7 +476,7 @@ var cards = [
                   "disciplines":['Daimoinon', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Consignment to Duat",
                   "id":"100415",
@@ -486,7 +486,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Contract",
                   "id":"100420",
@@ -496,7 +496,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Corruption",
                   "id":"100430",
@@ -506,7 +506,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"CrimethInc.",
                   "id":"100446",
@@ -516,7 +516,7 @@ var cards = [
                   "disciplines":['Protean', 'Quietus', 'Thaumaturgy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Crocodile Temple, The",
                   "id":"100449",
@@ -526,7 +526,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Crusade: Berlin",
                   "id":"100455",
@@ -536,7 +536,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Daemonic Possession",
                   "id":"100486",
@@ -546,7 +546,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Dagon's Call",
                   "id":"100488",
@@ -556,7 +556,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Darkling Trickery",
                   "id":"100496",
@@ -566,7 +566,7 @@ var cards = [
                   "disciplines":['Mytherceria', 'Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Darkness Within",
                   "id":"100497",
@@ -576,7 +576,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Darksight",
                   "id":"100498",
@@ -586,7 +586,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Dead Hand",
                   "id":"100503",
@@ -596,7 +596,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Deed the Heart's Desire",
                   "id":"100513",
@@ -606,7 +606,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2020-01-29",
                 },
-
+            
                 {
                   "name":"Descent into Darkness",
                   "id":"100528",
@@ -616,7 +616,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Detect Authority",
                   "id":"100532",
@@ -626,7 +626,7 @@ var cards = [
                   "disciplines":['Animalism', 'Serpentis', 'Thaumaturgy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Deviki Prasanta",
                   "id":"100536",
@@ -636,7 +636,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Direct Intervention",
                   "id":"100545",
@@ -646,7 +646,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2021-04-11",
                 },
-
+            
                 {
                   "name":"Dirty Contract",
                   "id":"100546",
@@ -656,7 +656,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Dis Pater",
                   "id":"100548",
@@ -666,7 +666,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Disease",
                   "id":"100553",
@@ -676,7 +676,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Dismemberment of Osiris",
                   "id":"100556",
@@ -686,7 +686,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Divine Image",
                   "id":"100565",
@@ -696,7 +696,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Divine Sign",
                   "id":"100566",
@@ -706,7 +706,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Draught of the Soul",
                   "id":"100584",
@@ -716,7 +716,7 @@ var cards = [
                   "disciplines":['Auspex', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Drink the Blood of Ahriman",
                   "id":"100589",
@@ -726,7 +726,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Ecstasy",
                   "id":"100610",
@@ -736,7 +736,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Edge Vitiation",
                   "id":"100614",
@@ -746,7 +746,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Elysian Fields",
                   "id":"100629",
@@ -756,7 +756,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Enticement",
                   "id":"100650",
@@ -766,7 +766,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Entombment",
                   "id":"100651",
@@ -776,7 +776,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Erosion",
                   "id":"100658",
@@ -786,7 +786,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2020-03-31",
                 },
-
+            
                 {
                   "name":"Eruption of Vitae",
                   "id":"100659",
@@ -796,7 +796,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Eternal Mask, The",
                   "id":"100665",
@@ -806,7 +806,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Eternals of Sirius, The",
                   "id":"100667",
@@ -816,7 +816,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2021-05-13",
                 },
-
+            
                 {
                   "name":"Ex Nihilo",
                   "id":"100669",
@@ -826,7 +826,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Extortion",
                   "id":"100675",
@@ -836,7 +836,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2021-02-01",
                 },
-
+            
                 {
                   "name":"Exuding Blood",
                   "id":"100677",
@@ -846,7 +846,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Eyes of the Night",
                   "id":"100685",
@@ -856,7 +856,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Fae Contortion",
                   "id":"100689",
@@ -866,9 +866,9 @@ var cards = [
                   "disciplines":['Mytherceria', 'Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
-                  "name":"Felix \"Fix\" Hessian",
+                  "name":"Felix &quot;Fix&quot; Hessian",
                   "id":"100719",
                   "link":"https://www.drivethrucards.com/product/339367",
                   "type":['Ally'],
@@ -876,7 +876,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Ferraille",
                   "id":"100722",
@@ -886,7 +886,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Form of Corruption",
                   "id":"100770",
@@ -896,7 +896,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Form of the Serpent",
                   "id":"100773",
@@ -906,7 +906,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Foul Blood",
                   "id":"100778",
@@ -916,7 +916,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Friend of Mine",
                   "id":"100792",
@@ -926,7 +926,7 @@ var cards = [
                   "disciplines":['Fortitude', 'Necromancy', 'Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Frozen Object",
                   "id":"100795",
@@ -936,7 +936,7 @@ var cards = [
                   "disciplines":['Temporis', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Gear Up",
                   "id":"100813",
@@ -946,9 +946,9 @@ var cards = [
                   "disciplines":['Necromancy', 'Presence', 'Vicissitude'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
-                  "name":"Ghouls of Plaza Morer?a, The",
+                  "name":"Ghouls of Plaza Morer&iacute;a, The",
                   "id":"100822",
                   "link":"https://www.drivethrucards.com/product/297284",
                   "type":['Ally'],
@@ -956,7 +956,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Giovanni Acceptance",
                   "id":"100829",
@@ -966,7 +966,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Giuseppe, Gravedigger",
                   "id":"100833",
@@ -976,7 +976,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Glass Walker Pact",
                   "id":"100837",
@@ -986,7 +986,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Grand Temple of Set",
                   "id":"100848",
@@ -996,7 +996,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Grasp of the Python",
                   "id":"100850",
@@ -1006,7 +1006,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Grasp the Ghostly",
                   "id":"100851",
@@ -1016,7 +1016,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Haqim's Law: Judgment",
                   "id":"100884",
@@ -1026,7 +1026,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Haqim's Law: Leadership",
                   "id":"100885",
@@ -1036,7 +1036,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Hatch the Viper",
                   "id":"100891",
@@ -1046,7 +1046,7 @@ var cards = [
                   "disciplines":['Protean', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Haunt",
                   "id":"100893",
@@ -1056,7 +1056,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Heart of Darkness",
                   "id":"100902",
@@ -1066,7 +1066,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Heartblood of the Clan",
                   "id":"100906",
@@ -1076,7 +1076,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Heaven's Gate",
                   "id":"100907",
@@ -1086,7 +1086,7 @@ var cards = [
                   "disciplines":['Obeah', 'Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Hell-for-Leather",
                   "id":"100910",
@@ -1096,7 +1096,7 @@ var cards = [
                   "disciplines":['Animalism', 'Celerity', 'Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Hierophant",
                   "id":"100923",
@@ -1106,7 +1106,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Ignore the Searing Flames",
                   "id":"100949",
@@ -1116,7 +1116,7 @@ var cards = [
                   "disciplines":['Daimoinon', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Inevitability of the Void",
                   "id":"100974",
@@ -1126,7 +1126,7 @@ var cards = [
                   "disciplines":['Auspex', 'Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Invitation Accepted",
                   "id":"101004",
@@ -1136,7 +1136,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Jar the Soul",
                   "id":"101021",
@@ -1146,7 +1146,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Jones, The",
                   "id":"101023",
@@ -1156,7 +1156,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Kali's Fang",
                   "id":"101032",
@@ -1166,7 +1166,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Keystone Kine",
                   "id":"101041",
@@ -1176,7 +1176,7 @@ var cards = [
                   "disciplines":['Celerity', 'Necromancy', 'Obfuscate'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Khabar: Community, The",
                   "id":"101042",
@@ -1186,7 +1186,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Khabar: Glory",
                   "id":"101043",
@@ -1196,7 +1196,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-01-05",
                 },
-
+            
                 {
                   "name":"Khabar: Honor, The",
                   "id":"101044",
@@ -1206,7 +1206,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Khabar: Loyalty",
                   "id":"101045",
@@ -1216,7 +1216,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Khazar's Diary (Endless Night)",
                   "id":"101046",
@@ -1226,7 +1226,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2021-02-01",
                 },
-
+            
                 {
                   "name":"Khobar Towers, Al-Khubar",
                   "id":"101048",
@@ -1236,7 +1236,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Kiss of Lachesis",
                   "id":"101061",
@@ -1246,7 +1246,7 @@ var cards = [
                   "disciplines":['Temporis', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Leonardo, Mortician",
                   "id":"101094",
@@ -1256,7 +1256,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Lifeless Tongues",
                   "id":"101105",
@@ -1266,7 +1266,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Loss",
                   "id":"101124",
@@ -1276,7 +1276,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Lure of the Serpent",
                   "id":"101134",
@@ -1286,7 +1286,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Market Square",
                   "id":"101171",
@@ -1296,7 +1296,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Martinelli's Ring",
                   "id":"101174",
@@ -1306,7 +1306,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Masquer",
                   "id":"101182",
@@ -1316,7 +1316,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Mausoleum, Venice, The",
                   "id":"101187",
@@ -1326,7 +1326,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Mental Maze",
                   "id":"101201",
@@ -1336,7 +1336,7 @@ var cards = [
                   "disciplines":['Obfuscate'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Mercy for Seth",
                   "id":"101203",
@@ -1346,7 +1346,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Mesu Bedshet",
                   "id":"101206",
@@ -1356,9 +1356,9 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
-                  "name":"Mokol? Blood",
+                  "name":"Mokol&eacute; Blood",
                   "id":"101232",
                   "link":"https://www.drivethrucards.com/product/339404",
                   "type":['Equipment'],
@@ -1366,7 +1366,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Morgue Hunting Ground",
                   "id":"101243",
@@ -1376,7 +1376,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Mozambique Allure",
                   "id":"101248",
@@ -1386,7 +1386,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Mummy's Tongue",
                   "id":"101252",
@@ -1396,7 +1396,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Necromancy",
                   "id":"101267",
@@ -1406,7 +1406,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Nephren-Ka",
                   "id":"101273",
@@ -1416,7 +1416,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Nest of Eagles",
                   "id":"101274",
@@ -1426,7 +1426,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Nightshades",
                   "id":"101286",
@@ -1436,7 +1436,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Nocturn",
                   "id":"101293",
@@ -1446,7 +1446,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Obtenebration",
                   "id":"101312",
@@ -1456,7 +1456,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Omael Kuman",
                   "id":"101320",
@@ -1466,7 +1466,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Orb of Ulain",
                   "id":"101328",
@@ -1476,7 +1476,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Oubliette",
                   "id":"101334",
@@ -1486,7 +1486,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Pandora's Whisper",
                   "id":"101349",
@@ -1496,7 +1496,7 @@ var cards = [
                   "disciplines":['Mytherceria', 'Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Path of Blood, The",
                   "id":"101358",
@@ -1506,7 +1506,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-01-04",
                 },
-
+            
                 {
                   "name":"Path of Bone, The",
                   "id":"101359",
@@ -1516,7 +1516,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Path of Night, The",
                   "id":"101365",
@@ -1526,7 +1526,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Path of Typhon, The",
                   "id":"101373",
@@ -1536,7 +1536,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Phased Motion Detector",
                   "id":"101398",
@@ -1546,7 +1546,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Phobia",
                   "id":"101399",
@@ -1556,7 +1556,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Pocket Out of Time",
                   "id":"101405",
@@ -1566,7 +1566,7 @@ var cards = [
                   "disciplines":['Temporis', 'Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Poison the Well of Life",
                   "id":"101407",
@@ -1576,7 +1576,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2020-03-31",
                 },
-
+            
                 {
                   "name":"Political Hunting Ground",
                   "id":"101415",
@@ -1586,7 +1586,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Political Seizure",
                   "id":"101416",
@@ -1596,7 +1596,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Political Struggle",
                   "id":"101418",
@@ -1606,7 +1606,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Possession",
                   "id":"101423",
@@ -1616,7 +1616,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Power of One",
                   "id":"101429",
@@ -1626,7 +1626,7 @@ var cards = [
                   "disciplines":['Obtenebration', 'Potence', 'Presence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Power Structure",
                   "id":"101430",
@@ -1636,7 +1636,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Powerbase: Cape Verde",
                   "id":"101433",
@@ -1646,7 +1646,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Powerbase: Rome",
                   "id":"101441",
@@ -1656,7 +1656,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Praxis Seizure: Istanbul",
                   "id":"101463",
@@ -1666,7 +1666,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Priestess of Sekhmet",
                   "id":"101484",
@@ -1676,7 +1676,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Principia Discordia",
                   "id":"101486",
@@ -1686,7 +1686,7 @@ var cards = [
                   "disciplines":['Auspex', 'Quietus', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Promise of 1528",
                   "id":"101494",
@@ -1696,7 +1696,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Provision of the Silsila",
                   "id":"101503",
@@ -1706,7 +1706,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Proxy Kissed",
                   "id":"101504",
@@ -1716,7 +1716,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Puppeteer",
                   "id":"101519",
@@ -1726,7 +1726,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Purification",
                   "id":"101521",
@@ -1736,7 +1736,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Qetu the Evil Doer",
                   "id":"101527",
@@ -1746,7 +1746,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Quietus",
                   "id":"101534",
@@ -1756,7 +1756,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Realm of the Black Sun, The",
                   "id":"101562",
@@ -1766,7 +1766,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Reformation",
                   "id":"101582",
@@ -1776,7 +1776,7 @@ var cards = [
                   "disciplines":['Chimerstry', 'Dominate', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Reliquary: Shango Remains",
                   "id":"101598",
@@ -1786,7 +1786,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-02-21",
                 },
-
+            
                 {
                   "name":"Resilient Mind",
                   "id":"101609",
@@ -1796,7 +1796,7 @@ var cards = [
                   "disciplines":['Fortitude'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Resume the Coil",
                   "id":"101616",
@@ -1806,7 +1806,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Retain the Quick Blood",
                   "id":"101618",
@@ -1816,7 +1816,7 @@ var cards = [
                   "disciplines":['Celerity', 'Quietus'],
                   "release_date":"2020-01-04",
                 },
-
+            
                 {
                   "name":"Revelation of Desire",
                   "id":"101622",
@@ -1826,7 +1826,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Revelation of Despair",
                   "id":"101623",
@@ -1836,7 +1836,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Revelation of Ecstasy",
                   "id":"101624",
@@ -1846,7 +1846,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Revelation of Wrath",
                   "id":"101626",
@@ -1856,7 +1856,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Revocation of Tyre",
                   "id":"101630",
@@ -1866,9 +1866,9 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
-                  "name":"San Nicol?s de los Servitas",
+                  "name":"San Nicol&aacute;s de los Servitas",
                   "id":"101677",
                   "link":"https://www.drivethrucards.com/product/339448",
                   "type":['Equipment'],
@@ -1876,7 +1876,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Sargon Fragment, The",
                   "id":"101681",
@@ -1886,7 +1886,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Scarlet Lore",
                   "id":"101688",
@@ -1896,7 +1896,7 @@ var cards = [
                   "disciplines":['Mytherceria', 'Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Scorpion's Touch",
                   "id":"101694",
@@ -1906,7 +1906,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2020-01-04",
                 },
-
+            
                 {
                   "name":"Selective Silence",
                   "id":"101714",
@@ -1916,7 +1916,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2020-03-31",
                 },
-
+            
                 {
                   "name":"Serpentis",
                   "id":"101728",
@@ -1926,7 +1926,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Set's Call",
                   "id":"101730",
@@ -1936,7 +1936,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Set's Curse",
                   "id":"101731",
@@ -1946,7 +1946,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Shade",
                   "id":"101734",
@@ -1956,7 +1956,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Shadow Body",
                   "id":"101735",
@@ -1966,7 +1966,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Shadow Parasite",
                   "id":"101742",
@@ -1976,7 +1976,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Shadow Play",
                   "id":"101743",
@@ -1986,7 +1986,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Shadow Step",
                   "id":"101744",
@@ -1996,7 +1996,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Shadow Strike",
                   "id":"101745",
@@ -2006,7 +2006,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Shadow Twin",
                   "id":"101746",
@@ -2016,7 +2016,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Shadowed Eyes",
                   "id":"101747",
@@ -2026,7 +2026,7 @@ var cards = [
                   "disciplines":['Auspex', 'Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Shambling Hordes",
                   "id":"101751",
@@ -2036,7 +2036,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Shape Mastery",
                   "id":"101754",
@@ -2046,7 +2046,7 @@ var cards = [
                   "disciplines":['Protean'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Shell Break",
                   "id":"101763",
@@ -2056,7 +2056,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Shroud Mastery",
                   "id":"101773",
@@ -2066,7 +2066,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Shroud of Absence",
                   "id":"101774",
@@ -2076,7 +2076,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Shroud of Night",
                   "id":"101775",
@@ -2086,7 +2086,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Shroudsight",
                   "id":"101776",
@@ -2096,7 +2096,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Siphon",
                   "id":"101784",
@@ -2106,7 +2106,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Skin of the Adder",
                   "id":"101793",
@@ -2116,7 +2116,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Smoke and Mirrors",
                   "id":"101813",
@@ -2126,7 +2126,7 @@ var cards = [
                   "disciplines":['Chimerstry', 'Obfuscate', 'Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Songs of the Distant Vitae",
                   "id":"101828",
@@ -2136,7 +2136,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Soul Feasting",
                   "id":"101831",
@@ -2146,7 +2146,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Soul Stealing",
                   "id":"101836",
@@ -2156,7 +2156,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Spectral Divination",
                   "id":"101843",
@@ -2166,7 +2166,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Spell of Life",
                   "id":"101845",
@@ -2176,7 +2176,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Spiritual Intervention",
                   "id":"101852",
@@ -2186,7 +2186,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2021-01-22",
                 },
-
+            
                 {
                   "name":"Spiritual Protector",
                   "id":"101853",
@@ -2196,7 +2196,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Steely Tenacity",
                   "id":"101869",
@@ -2206,7 +2206,7 @@ var cards = [
                   "disciplines":['Animalism', 'Dominate', 'Quietus'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Stone Travel",
                   "id":"101875",
@@ -2216,7 +2216,7 @@ var cards = [
                   "disciplines":['Mytherceria', 'Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Strike at the True Flesh",
                   "id":"101885",
@@ -2226,7 +2226,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2020-01-04",
                 },
-
+            
                 {
                   "name":"Succulent Vitae",
                   "id":"101894",
@@ -2236,7 +2236,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2020-01-04",
                 },
-
+            
                 {
                   "name":"Sudario Refraction",
                   "id":"101895",
@@ -2246,7 +2246,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Summon Soul",
                   "id":"101898",
@@ -2256,7 +2256,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Summon the Abyss",
                   "id":"101900",
@@ -2266,7 +2266,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2021-01-22",
                 },
-
+            
                 {
                   "name":"Summon the Serpent",
                   "id":"101901",
@@ -2276,7 +2276,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Swiss Cut",
                   "id":"101917",
@@ -2286,7 +2286,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Tainted Vitae",
                   "id":"101926",
@@ -2296,7 +2296,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Tajdid",
                   "id":"101927",
@@ -2306,7 +2306,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Taste of Death",
                   "id":"101944",
@@ -2316,7 +2316,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Temptation",
                   "id":"101954",
@@ -2326,7 +2326,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Tenebrous Form",
                   "id":"101957",
@@ -2336,7 +2336,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Thin Blood",
                   "id":"101970",
@@ -2346,7 +2346,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Thrones Crumble",
                   "id":"101981",
@@ -2356,7 +2356,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Tongue of the Serpent",
                   "id":"101988",
@@ -2366,7 +2366,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Torment the Soul",
                   "id":"101992",
@@ -2376,7 +2376,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Tower of London",
                   "id":"102001",
@@ -2386,7 +2386,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Transfusion",
                   "id":"102011",
@@ -2396,7 +2396,7 @@ var cards = [
                   "disciplines":['Thanatosis', 'Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Treaty of Laibach",
                   "id":"102018",
@@ -2406,7 +2406,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Trochomancy",
                   "id":"102026",
@@ -2416,7 +2416,7 @@ var cards = [
                   "disciplines":['Auspex', 'Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Truth of a Thousand Lies",
                   "id":"102044",
@@ -2426,7 +2426,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Truth of Blood",
                   "id":"102045",
@@ -2436,7 +2436,7 @@ var cards = [
                   "disciplines":['Auspex', 'Quietus'],
                   "release_date":"2020-01-29",
                 },
-
+            
                 {
                   "name":"Tutu the Doubly Evil One",
                   "id":"102048",
@@ -2446,7 +2446,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Tye Cooper",
                   "id":"102053",
@@ -2456,7 +2456,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Typhonic Beast",
                   "id":"102054",
@@ -2466,7 +2466,7 @@ var cards = [
                   "disciplines":['Potence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Underworld Hunting Ground",
                   "id":"102066",
@@ -2476,7 +2476,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Vascular Explosion",
                   "id":"102091",
@@ -2486,7 +2486,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Venenation",
                   "id":"102104",
@@ -2496,7 +2496,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Venetian Conference",
                   "id":"102105",
@@ -2506,7 +2506,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Walks-With-Might",
                   "id":"102141",
@@ -2516,7 +2516,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Waters of Duat",
                   "id":"102159",
@@ -2526,7 +2526,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Wave of Lethargy",
                   "id":"102161",
@@ -2536,7 +2536,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Web of Knives Recruit",
                   "id":"102165",
@@ -2546,7 +2546,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Weeping Stone",
                   "id":"102167",
@@ -2556,7 +2556,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Weigh the Heart",
                   "id":"102168",
@@ -2566,7 +2566,7 @@ var cards = [
                   "disciplines":['Auspex', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Whispers from the Dead",
                   "id":"102175",
@@ -2576,7 +2576,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Yoruba Shrine",
                   "id":"102201",
@@ -2586,7 +2586,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-01-04",
                 },
-
+            
                 {
                   "name":"Zaire River Ferry",
                   "id":"102203",
@@ -2596,7 +2596,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Zombie",
                   "id":"102210",
@@ -2606,7 +2606,7 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Aabbt Kindred",
                   "id":"200001",
@@ -2616,7 +2616,7 @@ var cards = [
                   "disciplines":['Fortitude', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Aaron Duggan, Cameron's Toady",
                   "id":"200003",
@@ -2626,7 +2626,7 @@ var cards = [
                   "disciplines":['Obtenebration'],
                   "release_date":"2021-02-01",
                 },
-
+            
                 {
                   "name":"Abd al-Rashid",
                   "id":"200004",
@@ -2636,7 +2636,7 @@ var cards = [
                   "disciplines":['Celerity', 'Obfuscate', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Abdelsobek",
                   "id":"200005",
@@ -2646,7 +2646,7 @@ var cards = [
                   "disciplines":['Fortitude', 'Necromancy', 'Obfuscate', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Accorri Giovanni",
                   "id":"200010",
@@ -2656,7 +2656,7 @@ var cards = [
                   "disciplines":['Animalism', 'Dominate', 'Necromancy', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Ahmose Chambers",
                   "id":"200024",
@@ -2666,7 +2666,7 @@ var cards = [
                   "disciplines":['Obfuscate', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Aisha",
                   "id":"200029",
@@ -2676,7 +2676,7 @@ var cards = [
                   "disciplines":['Animalism', 'Auspex', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Al-Ashrad, Amr of Alamut",
                   "id":"200035",
@@ -2686,7 +2686,7 @@ var cards = [
                   "disciplines":['Auspex', 'Celerity', 'Obfuscate', 'Quietus', 'Thaumaturgy'],
                   "release_date":"2020-01-04",
                 },
-
+            
                 {
                   "name":"Ali Kar",
                   "id":"200053",
@@ -2696,7 +2696,7 @@ var cards = [
                   "disciplines":['Obfuscate', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Almodo Giovanni",
                   "id":"200059",
@@ -2706,7 +2706,7 @@ var cards = [
                   "disciplines":['Dominate', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Alu",
                   "id":"200062",
@@ -2716,7 +2716,7 @@ var cards = [
                   "disciplines":['Obfuscate'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Alvaro, The Scion of Angelica",
                   "id":"200063",
@@ -2726,7 +2726,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obtenebration', 'Potence', 'Presence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Amaravati",
                   "id":"200065",
@@ -2736,7 +2736,7 @@ var cards = [
                   "disciplines":['Animalism', 'Chimerstry', 'Dominate', 'Obfuscate', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Ambrogino Giovanni",
                   "id":"200068",
@@ -2746,7 +2746,7 @@ var cards = [
                   "disciplines":['Auspex', 'Dominate', 'Necromancy', 'Potence', 'Thaumaturgy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Ambrogino Giovanni",
                   "id":"200069",
@@ -2756,9 +2756,9 @@ var cards = [
                   "disciplines":['Auspex', 'Dominate', 'Necromancy', 'Potence', 'Thaumaturgy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
-                  "name":"Ambrosio Luis Mon?ada, Plenipotentiary",
+                  "name":"Ambrosio Luis Mon&ccedil;ada, Plenipotentiary",
                   "id":"200070",
                   "link":"https://www.drivethrucards.com/product/339161",
                   "type":['Vampire'],
@@ -2766,7 +2766,7 @@ var cards = [
                   "disciplines":['Auspex', 'Dominate', 'Fortitude', 'Obtenebration', 'Potence', 'Presence'],
                   "release_date":"2021-02-25",
                 },
-
+            
                 {
                   "name":"Amenophobis",
                   "id":"200073",
@@ -2776,7 +2776,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obfuscate', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Amisa",
                   "id":"200074",
@@ -2786,7 +2786,7 @@ var cards = [
                   "disciplines":['Obfuscate', 'Presence', 'Protean', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Andrea Giovanni",
                   "id":"200082",
@@ -2796,7 +2796,7 @@ var cards = [
                   "disciplines":['Dominate', 'Necromancy', 'Potence', 'Vicissitude'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Andrew Emory",
                   "id":"200085",
@@ -2806,7 +2806,7 @@ var cards = [
                   "disciplines":['Auspex', 'Dominate', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Angelica, The Canonicus",
                   "id":"200092",
@@ -2816,7 +2816,7 @@ var cards = [
                   "disciplines":['Celerity', 'Dominate', 'Obfuscate', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Ankh-sen-Sutekh",
                   "id":"200099",
@@ -2826,7 +2826,7 @@ var cards = [
                   "disciplines":['Obfuscate', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Antara",
                   "id":"200108",
@@ -2836,9 +2836,9 @@ var cards = [
                   "disciplines":['Auspex', 'Celerity', 'Fortitude', 'Obfuscate', 'Presence', 'Quietus'],
                   "release_date":"2020-01-02",
                 },
-
+            
                 {
-                  "name":"Ant?n de Concepci?n",
+                  "name":"Ant&oacute;n de Concepci&oacute;n",
                   "id":"200114",
                   "link":"https://www.drivethrucards.com/product/339168",
                   "type":['Vampire'],
@@ -2846,7 +2846,7 @@ var cards = [
                   "disciplines":['Animalism', 'Auspex', 'Dominate', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Antonio Delgado",
                   "id":"200117",
@@ -2856,7 +2856,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obtenebration', 'Potence', 'Thaumaturgy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Anwar",
                   "id":"200121",
@@ -2866,7 +2866,7 @@ var cards = [
                   "disciplines":['Celerity', 'Obfuscate', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Appius Claudius Corvus",
                   "id":"200124",
@@ -2876,7 +2876,7 @@ var cards = [
                   "disciplines":['Celerity', 'Dominate', 'Necromancy', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Arnulf Jormungandrsson",
                   "id":"200140",
@@ -2886,7 +2886,7 @@ var cards = [
                   "disciplines":['Auspex', 'Celerity', 'Obfuscate', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Augustus Giovanni",
                   "id":"200149",
@@ -2896,7 +2896,7 @@ var cards = [
                   "disciplines":['Auspex', 'Celerity', 'Dominate', 'Necromancy', 'Potence', 'Presence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Aurora Van Brande, Paladin",
                   "id":"200150",
@@ -2906,7 +2906,7 @@ var cards = [
                   "disciplines":['Dominate', 'Fortitude', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Aziz, Dammar of Istanbul",
                   "id":"200155",
@@ -2916,7 +2916,7 @@ var cards = [
                   "disciplines":['Celerity', 'Obfuscate', 'Presence', 'Quietus', 'Serpentis'],
                   "release_date":"2020-01-02",
                 },
-
+            
                 {
                   "name":"Badr al-Budur",
                   "id":"200161",
@@ -2926,7 +2926,7 @@ var cards = [
                   "disciplines":['Celerity', 'Dominate', 'Obfuscate', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Bajazet al-Nasir",
                   "id":"200162",
@@ -2936,7 +2936,7 @@ var cards = [
                   "disciplines":['Celerity', 'Fortitude', 'Obfuscate', 'Presence', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Bakr",
                   "id":"200163",
@@ -2946,7 +2946,7 @@ var cards = [
                   "disciplines":['Celerity', 'Dementation', 'Obfuscate', 'Protean', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Baldesar Rossellini",
                   "id":"200164",
@@ -2956,7 +2956,7 @@ var cards = [
                   "disciplines":['Auspex', 'Dominate', 'Fortitude', 'Necromancy', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Banjoko",
                   "id":"200165",
@@ -2966,7 +2966,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Basir",
                   "id":"200175",
@@ -2976,7 +2976,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2020-01-02",
                 },
-
+            
                 {
                   "name":"Belle Equitone",
                   "id":"200188",
@@ -2986,7 +2986,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Benedict Giovanni, Agent",
                   "id":"200189",
@@ -2996,7 +2996,7 @@ var cards = [
                   "disciplines":['Celerity', 'Dominate', 'Fortitude', 'Necromancy', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Bertrand d'Anjou",
                   "id":"200192",
@@ -3006,7 +3006,7 @@ var cards = [
                   "disciplines":['Auspex', 'Celerity', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Black Lotus",
                   "id":"200202",
@@ -3016,7 +3016,7 @@ var cards = [
                   "disciplines":['Auspex', 'Dominate', 'Obfuscate', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Black Wallace",
                   "id":"200203",
@@ -3026,7 +3026,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obtenebration', 'Potence', 'Thaumaturgy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Bupe Kuila",
                   "id":"200228",
@@ -3036,7 +3036,7 @@ var cards = [
                   "disciplines":['Obfuscate', 'Potence', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Cagliostro, The Grand Copht",
                   "id":"200231",
@@ -3046,7 +3046,7 @@ var cards = [
                   "disciplines":['Necromancy', 'Obfuscate', 'Potence', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Cameron",
                   "id":"200239",
@@ -3056,7 +3056,7 @@ var cards = [
                   "disciplines":['Dominate', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Carlotta Giovanni",
                   "id":"200245",
@@ -3066,7 +3066,7 @@ var cards = [
                   "disciplines":['Dominate', 'Necromancy', 'Obfuscate', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Carmine Giovanni",
                   "id":"200247",
@@ -3076,9 +3076,9 @@ var cards = [
                   "disciplines":['Animalism', 'Dominate', 'Necromancy', 'Potence', 'Presence', 'Protean'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
-                  "name":"Carolina V?lez",
+                  "name":"Carolina V&aacute;lez",
                   "id":"200249",
                   "link":"https://www.drivethrucards.com/product/339185",
                   "type":['Vampire'],
@@ -3086,7 +3086,7 @@ var cards = [
                   "disciplines":['Auspex', 'Dominate', 'Obtenebration', 'Potence', 'Presence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Celine Chevalier",
                   "id":"200260",
@@ -3096,7 +3096,7 @@ var cards = [
                   "disciplines":['Obfuscate', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Chas Giovanni Tello",
                   "id":"200268",
@@ -3106,7 +3106,7 @@ var cards = [
                   "disciplines":['Dominate', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Clea Auguste d'Holford",
                   "id":"200282",
@@ -3116,7 +3116,7 @@ var cards = [
                   "disciplines":['Obfuscate', 'Potence', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Conrad Adoula",
                   "id":"200288",
@@ -3126,7 +3126,7 @@ var cards = [
                   "disciplines":['Animalism', 'Celerity', 'Dominate', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Count Ormonde",
                   "id":"200295",
@@ -3136,7 +3136,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obfuscate', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Cristobal Ghiberti",
                   "id":"200300",
@@ -3146,7 +3146,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Cristofero Giovanni",
                   "id":"200301",
@@ -3156,7 +3156,7 @@ var cards = [
                   "disciplines":['Necromancy', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Danny Larkshill",
                   "id":"200318",
@@ -3166,7 +3166,7 @@ var cards = [
                   "disciplines":['Obfuscate', 'Obtenebration', 'Potence', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Dedefra",
                   "id":"200328",
@@ -3176,7 +3176,7 @@ var cards = [
                   "disciplines":['Necromancy', 'Obfuscate', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Diego Giovanni",
                   "id":"200344",
@@ -3186,7 +3186,7 @@ var cards = [
                   "disciplines":['Animalism', 'Chimerstry', 'Dominate', 'Necromancy', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Djuhah, The Bronze Bow",
                   "id":"200348",
@@ -3196,7 +3196,7 @@ var cards = [
                   "disciplines":['Auspex', 'Celerity', 'Obfuscate', 'Presence', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Dmitri Borodin",
                   "id":"200350",
@@ -3206,7 +3206,7 @@ var cards = [
                   "disciplines":['Auspex', 'Celerity', 'Necromancy', 'Obfuscate', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Don Michael Antonio Giovanni",
                   "id":"200363",
@@ -3216,7 +3216,7 @@ var cards = [
                   "disciplines":['Dominate', 'Necromancy', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Donatello Giovanni",
                   "id":"200366",
@@ -3226,7 +3226,7 @@ var cards = [
                   "disciplines":['Auspex', 'Dominate', 'Potence', 'Presence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Dr. Julius Sutphen",
                   "id":"200378",
@@ -3236,7 +3236,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Dr. Julius Sutphen",
                   "id":"200379",
@@ -3246,7 +3246,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Enzo Giovanni, Pentex Board of Directors",
                   "id":"200425",
@@ -3256,7 +3256,7 @@ var cards = [
                   "disciplines":['Animalism', 'Dominate', 'Necromancy', 'Potence', 'Thaumaturgy'],
                   "release_date":"2021-02-01",
                 },
-
+            
                 {
                   "name":"Eric Milliner",
                   "id":"200430",
@@ -3266,7 +3266,7 @@ var cards = [
                   "disciplines":['Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Ermenegildo, The Rake",
                   "id":"200435",
@@ -3276,7 +3276,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Evan Rogers",
                   "id":"200445",
@@ -3286,7 +3286,7 @@ var cards = [
                   "disciplines":['Celerity', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Ezekiel, Lord of Montreal",
                   "id":"200449",
@@ -3296,7 +3296,7 @@ var cards = [
                   "disciplines":['Obfuscate', 'Potence', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Fatima al-Faqadi",
                   "id":"200459",
@@ -3306,7 +3306,7 @@ var cards = [
                   "disciplines":['Auspex', 'Celerity', 'Fortitude', 'Obfuscate', 'Quietus'],
                   "release_date":"2019-12-24",
                 },
-
+            
                 {
                   "name":"Fida'i",
                   "id":"200466",
@@ -3316,7 +3316,7 @@ var cards = [
                   "disciplines":['Celerity', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Francesca Giovanni",
                   "id":"200474",
@@ -3326,7 +3326,7 @@ var cards = [
                   "disciplines":['Dominate', 'Necromancy', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Francis Milliner",
                   "id":"200475",
@@ -3336,7 +3336,7 @@ var cards = [
                   "disciplines":['Necromancy', 'Potence', 'Presence', 'Vicissitude'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Francisco Domingo de Polonia",
                   "id":"200476",
@@ -3346,7 +3346,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obtenebration', 'Potence', 'Presence', 'Protean'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Gaspare Giovanni",
                   "id":"200495",
@@ -3356,7 +3356,7 @@ var cards = [
                   "disciplines":['Celerity', 'Necromancy', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Giangaleazzo, The Traitor",
                   "id":"200514",
@@ -3366,7 +3366,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obtenebration', 'Potence', 'Presence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Gianmaria Giovanni",
                   "id":"200515",
@@ -3376,7 +3376,7 @@ var cards = [
                   "disciplines":['Dominate', 'Necromancy', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Gillespi Giovanni",
                   "id":"200518",
@@ -3386,7 +3386,7 @@ var cards = [
                   "disciplines":['Auspex', 'Dominate', 'Necromancy', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Giovanni del Georgio",
                   "id":"200521",
@@ -3396,7 +3396,7 @@ var cards = [
                   "disciplines":['Dominate', 'Necromancy', 'Potence', 'Protean'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Gloria Giovanni",
                   "id":"200525",
@@ -3406,7 +3406,7 @@ var cards = [
                   "disciplines":['Dominate', 'Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Gratiano",
                   "id":"200534",
@@ -3416,7 +3416,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obfuscate', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Gualtiero Ghiberti",
                   "id":"200542",
@@ -3426,7 +3426,7 @@ var cards = [
                   "disciplines":['Celerity', 'Dominate', 'Necromancy', 'Potence', 'Thaumaturgy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Guido Lucciano",
                   "id":"200544",
@@ -3436,7 +3436,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obfuscate', 'Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Guillaume Giovanni",
                   "id":"200545",
@@ -3446,7 +3446,7 @@ var cards = [
                   "disciplines":['Celerity', 'Dominate', 'Necromancy', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Hadrian Garrick",
                   "id":"200558",
@@ -3456,7 +3456,7 @@ var cards = [
                   "disciplines":['Obfuscate', 'Presence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Hafsa, The Watcher",
                   "id":"200559",
@@ -3466,7 +3466,7 @@ var cards = [
                   "disciplines":['Auspex', 'Celerity', 'Obfuscate', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Halim Bey",
                   "id":"200561",
@@ -3476,7 +3476,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obfuscate', 'Serpentis', 'Thaumaturgy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Harika Guljan",
                   "id":"200569",
@@ -3486,7 +3486,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Henri Lavenant",
                   "id":"200589",
@@ -3496,7 +3496,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obtenebration', 'Potence', 'Quietus'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Hesha Ruhadze",
                   "id":"200594",
@@ -3506,7 +3506,7 @@ var cards = [
                   "disciplines":['Animalism', 'Obfuscate', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Hester Reed",
                   "id":"200595",
@@ -3516,7 +3516,7 @@ var cards = [
                   "disciplines":['Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Husamettin",
                   "id":"200614",
@@ -3526,7 +3526,7 @@ var cards = [
                   "disciplines":['Celerity', 'Obfuscate', 'Potence', 'Presence', 'Quietus'],
                   "release_date":"2020-01-04",
                 },
-
+            
                 {
                   "name":"Ignacio, The Black Priest",
                   "id":"200622",
@@ -3536,7 +3536,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Ignazio Giovanni",
                   "id":"200624",
@@ -3546,7 +3546,7 @@ var cards = [
                   "disciplines":['Dominate', 'Fortitude', 'Necromancy', 'Obfuscate', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Intisar",
                   "id":"200637",
@@ -3556,7 +3556,7 @@ var cards = [
                   "disciplines":['Celerity', 'Obfuscate', 'Potence', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Isabel Giovanni",
                   "id":"200643",
@@ -3566,7 +3566,7 @@ var cards = [
                   "disciplines":['Dominate', 'Necromancy', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Izhim abd Azrael",
                   "id":"200650",
@@ -3576,7 +3576,7 @@ var cards = [
                   "disciplines":['Celerity', 'Obfuscate', 'Potence', 'Quietus', 'Thaumaturgy'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Jalal Sayad",
                   "id":"200666",
@@ -3586,7 +3586,7 @@ var cards = [
                   "disciplines":['Celerity', 'Potence', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Jamal",
                   "id":"200668",
@@ -3596,7 +3596,7 @@ var cards = [
                   "disciplines":['Celerity', 'Obfuscate', 'Potence', 'Presence', 'Protean', 'Quietus'],
                   "release_date":"2020-04-26",
                 },
-
+            
                 {
                   "name":"Janni",
                   "id":"200676",
@@ -3606,9 +3606,9 @@ var cards = [
                   "disciplines":['Celerity', 'Fortitude', 'Obfuscate', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
-                  "name":"Joe \"Boot\" Hill",
+                  "name":"Joe &quot;Boot&quot; Hill",
                   "id":"200710",
                   "link":"https://www.drivethrucards.com/product/297376",
                   "type":['Vampire'],
@@ -3616,7 +3616,7 @@ var cards = [
                   "disciplines":['Celerity', 'Fortitude', 'Obfuscate', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Kabede Maru",
                   "id":"200741",
@@ -3626,7 +3626,7 @@ var cards = [
                   "disciplines":['Abombwe', 'Auspex', 'Celerity', 'Obfuscate', 'Potence', 'Quietus'],
                   "release_date":"2020-03-31",
                 },
-
+            
                 {
                   "name":"Kahina the Sorceress",
                   "id":"200742",
@@ -3636,7 +3636,7 @@ var cards = [
                   "disciplines":['Auspex', 'Dominate', 'Necromancy', 'Obfuscate', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Kalinda",
                   "id":"200745",
@@ -3646,7 +3646,7 @@ var cards = [
                   "disciplines":['Celerity', 'Obfuscate', 'Thaumaturgy'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Kamau Jafari",
                   "id":"200748",
@@ -3656,7 +3656,7 @@ var cards = [
                   "disciplines":['Obfuscate', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Kanya Akhtar",
                   "id":"200752",
@@ -3666,7 +3666,7 @@ var cards = [
                   "disciplines":['Celerity'],
                   "release_date":"2020-03-31",
                 },
-
+            
                 {
                   "name":"Karif al Numair",
                   "id":"200754",
@@ -3676,7 +3676,7 @@ var cards = [
                   "disciplines":['Auspex', 'Celerity', 'Fortitude', 'Obfuscate', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Kashan",
                   "id":"200759",
@@ -3686,7 +3686,7 @@ var cards = [
                   "disciplines":['Celerity', 'Obfuscate', 'Obtenebration', 'Presence', 'Quietus'],
                   "release_date":"2020-03-31",
                 },
-
+            
                 {
                   "name":"Kay Polerno",
                   "id":"200765",
@@ -3696,7 +3696,7 @@ var cards = [
                   "disciplines":['Dominate', 'Necromancy', 'Protean'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Kemintiri",
                   "id":"200769",
@@ -3706,7 +3706,7 @@ var cards = [
                   "disciplines":['Auspex', 'Dominate', 'Obfuscate', 'Presence', 'Serpentis', 'Thaumaturgy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Kemintiri",
                   "id":"200770",
@@ -3716,7 +3716,7 @@ var cards = [
                   "disciplines":['Auspex', 'Dominate', 'Obfuscate', 'Presence', 'Serpentis', 'Thaumaturgy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Kephamos, High Priest of Marrakech",
                   "id":"200773",
@@ -3726,7 +3726,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obfuscate', 'Presence', 'Serpentis'],
                   "release_date":"2021-02-01",
                 },
-
+            
                 {
                   "name":"Khalil Anvari",
                   "id":"200777",
@@ -3736,7 +3736,7 @@ var cards = [
                   "disciplines":['Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Khay'tall, Snake of Eden",
                   "id":"200780",
@@ -3746,7 +3746,7 @@ var cards = [
                   "disciplines":['Auspex', 'Dominate', 'Obfuscate', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Lady Constancia",
                   "id":"200804",
@@ -3756,7 +3756,7 @@ var cards = [
                   "disciplines":['Auspex', 'Dominate', 'Fortitude', 'Necromancy', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Lalitha",
                   "id":"200809",
@@ -3766,7 +3766,7 @@ var cards = [
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Layla bint-Nadr",
                   "id":"200818",
@@ -3776,7 +3776,7 @@ var cards = [
                   "disciplines":['Celerity', 'Obfuscate', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Leila Monroe",
                   "id":"200829",
@@ -3786,7 +3786,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obtenebration', 'Presence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Lia Milliner",
                   "id":"200834",
@@ -3796,7 +3796,7 @@ var cards = [
                   "disciplines":['Dominate', 'Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Lisette Vizquel",
                   "id":"200842",
@@ -3806,7 +3806,7 @@ var cards = [
                   "disciplines":['Dominate', 'Potence', 'Protean'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Lord Vauxhall",
                   "id":"200857",
@@ -3816,7 +3816,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obtenebration', 'Potence', 'Thaumaturgy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Lorenzo Detuono",
                   "id":"200858",
@@ -3826,7 +3826,7 @@ var cards = [
                   "disciplines":['Auspex', 'Dementation', 'Dominate', 'Necromancy', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Luca Italicus",
                   "id":"200867",
@@ -3836,7 +3836,7 @@ var cards = [
                   "disciplines":['Dominate', 'Fortitude', 'Necromancy', 'Obtenebration', 'Potence', 'Thaumaturgy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Lucita",
                   "id":"200874",
@@ -3846,7 +3846,7 @@ var cards = [
                   "disciplines":['Celerity', 'Dominate', 'Fortitude', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Lucita",
                   "id":"200875",
@@ -3856,7 +3856,7 @@ var cards = [
                   "disciplines":['Celerity', 'Dominate', 'Fortitude', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Lucy Markowitz",
                   "id":"200878",
@@ -3866,7 +3866,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obtenebration'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Luna Giovanni",
                   "id":"200885",
@@ -3876,7 +3876,7 @@ var cards = [
                   "disciplines":['Celerity', 'Dominate', 'Necromancy', 'Obfuscate', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Marciana Giovanni, Investigator",
                   "id":"200913",
@@ -3886,7 +3886,7 @@ var cards = [
                   "disciplines":['Dominate'],
                   "release_date":"2021-02-01",
                 },
-
+            
                 {
                   "name":"Marcus Vitel",
                   "id":"200916",
@@ -3896,7 +3896,7 @@ var cards = [
                   "disciplines":['Dominate', 'Fortitude', 'Obfuscate', 'Obtenebration', 'Potence', 'Presence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Margaret Milliner",
                   "id":"200917",
@@ -3906,7 +3906,7 @@ var cards = [
                   "disciplines":['Dominate', 'Fortitude', 'Necromancy', 'Potence', 'Presence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Marianna",
                   "id":"200925",
@@ -3916,7 +3916,7 @@ var cards = [
                   "disciplines":['Auspex', 'Dominate', 'Necromancy', 'Potence', 'Thaumaturgy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Mario Giovanni",
                   "id":"200932",
@@ -3926,7 +3926,7 @@ var cards = [
                   "disciplines":['Necromancy', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Marla Kenyon",
                   "id":"200938",
@@ -3936,7 +3936,7 @@ var cards = [
                   "disciplines":['Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Melek",
                   "id":"200969",
@@ -3946,7 +3946,7 @@ var cards = [
                   "disciplines":['Celerity', 'Obfuscate', 'Presence', 'Quietus'],
                   "release_date":"2020-01-04",
                 },
-
+            
                 {
                   "name":"Melinda Galbraith",
                   "id":"200970",
@@ -3956,7 +3956,7 @@ var cards = [
                   "disciplines":['Auspex', 'Celerity', 'Dominate', 'Obtenebration', 'Potence', 'Presence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Melinda Galbraith",
                   "id":"200971",
@@ -3966,7 +3966,7 @@ var cards = [
                   "disciplines":['Auspex', 'Celerity', 'Dominate', 'Obtenebration', 'Potence', 'Presence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Michael diCarlo",
                   "id":"200981",
@@ -3976,7 +3976,7 @@ var cards = [
                   "disciplines":['Celerity', 'Obfuscate', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Montano",
                   "id":"201006",
@@ -3986,7 +3986,7 @@ var cards = [
                   "disciplines":['Animalism', 'Dominate', 'Fortitude', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Monty Coven",
                   "id":"201008",
@@ -3996,7 +3996,7 @@ var cards = [
                   "disciplines":['Celerity', 'Dominate', 'Fortitude', 'Obfuscate', 'Presence', 'Quietus'],
                   "release_date":"2020-01-02",
                 },
-
+            
                 {
                   "name":"Nahir",
                   "id":"201030",
@@ -4006,7 +4006,7 @@ var cards = [
                   "disciplines":['Animalism', 'Dominate', 'Obtenebration', 'Potence', 'Thaumaturgy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Nakhthorheb",
                   "id":"201033",
@@ -4016,7 +4016,7 @@ var cards = [
                   "disciplines":['Obfuscate', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Nefertiti",
                   "id":"201042",
@@ -4026,7 +4026,7 @@ var cards = [
                   "disciplines":['Celerity', 'Dominate', 'Obfuscate', 'Potence', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Neferu",
                   "id":"201043",
@@ -4036,7 +4036,7 @@ var cards = [
                   "disciplines":['Dominate', 'Necromancy', 'Obfuscate', 'Presence', 'Serpentis', 'Thaumaturgy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Nehsi",
                   "id":"201045",
@@ -4046,7 +4046,7 @@ var cards = [
                   "disciplines":['Auspex', 'Fortitude', 'Obfuscate', 'Presence', 'Protean', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Nepata",
                   "id":"201047",
@@ -4056,7 +4056,7 @@ var cards = [
                   "disciplines":['Obfuscate', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Nizzam al-Latif",
                   "id":"201062",
@@ -4066,7 +4066,7 @@ var cards = [
                   "disciplines":['Animalism', 'Celerity', 'Dementation', 'Obfuscate', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Nunzio Giovanni",
                   "id":"201068",
@@ -4076,7 +4076,7 @@ var cards = [
                   "disciplines":['Necromancy', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Ogwon",
                   "id":"201072",
@@ -4086,7 +4086,7 @@ var cards = [
                   "disciplines":['Fortitude', 'Obfuscate', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Olugbenga",
                   "id":"201078",
@@ -4096,7 +4096,7 @@ var cards = [
                   "disciplines":['Animalism', 'Celerity', 'Obfuscate', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Onaedo",
                   "id":"201082",
@@ -4106,7 +4106,7 @@ var cards = [
                   "disciplines":['Auspex', 'Dominate', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Otieno",
                   "id":"201086",
@@ -4116,7 +4116,7 @@ var cards = [
                   "disciplines":['Animalism', 'Dominate', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Paolo Sardenzo",
                   "id":"201092",
@@ -4126,7 +4126,7 @@ var cards = [
                   "disciplines":['Dominate', 'Necromancy', 'Potence', 'Protean', 'Thaumaturgy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Parmenides",
                   "id":"201095",
@@ -4136,7 +4136,7 @@ var cards = [
                   "disciplines":['Celerity', 'Quietus'],
                   "release_date":"2020-01-02",
                 },
-
+            
                 {
                   "name":"Parnassus",
                   "id":"201096",
@@ -4146,7 +4146,7 @@ var cards = [
                   "disciplines":['Auspex', 'Celerity', 'Quietus', 'Thaumaturgy'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Patrizia Giovanni, Collector of Secrets",
                   "id":"201098",
@@ -4156,7 +4156,7 @@ var cards = [
                   "disciplines":['Necromancy', 'Quietus', 'Thaumaturgy'],
                   "release_date":"2021-02-01",
                 },
-
+            
                 {
                   "name":"Paul DiCarlo, The Alpha",
                   "id":"201101",
@@ -4166,7 +4166,7 @@ var cards = [
                   "disciplines":['Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Paulo de Castille",
                   "id":"201104",
@@ -4176,7 +4176,7 @@ var cards = [
                   "disciplines":['Animalism', 'Dominate', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Pentweret",
                   "id":"201109",
@@ -4186,7 +4186,7 @@ var cards = [
                   "disciplines":['Auspex', 'Fortitude', 'Obeah', 'Obfuscate', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Pochtli",
                   "id":"201127",
@@ -4196,7 +4196,7 @@ var cards = [
                   "disciplines":['Celerity', 'Dominate', 'Necromancy', 'Obfuscate', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Porphyrion",
                   "id":"201129",
@@ -4206,7 +4206,7 @@ var cards = [
                   "disciplines":['Chimerstry', 'Fortitude', 'Obfuscate', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Primo Giovanni",
                   "id":"201134",
@@ -4216,7 +4216,7 @@ var cards = [
                   "disciplines":['Dominate', 'Necromancy', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Qadir ul-Ghani",
                   "id":"201137",
@@ -4226,7 +4226,7 @@ var cards = [
                   "disciplines":['Celerity', 'Necromancy', 'Obfuscate', 'Quietus', 'Thaumaturgy'],
                   "release_date":"2020-01-29",
                 },
-
+            
                 {
                   "name":"Qufur am-Heru",
                   "id":"201143",
@@ -4236,7 +4236,7 @@ var cards = [
                   "disciplines":['Celerity', 'Obfuscate', 'Presence', 'Serpentis', 'Thaumaturgy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Rafaele Giovanni",
                   "id":"201152",
@@ -4246,7 +4246,7 @@ var cards = [
                   "disciplines":['Celerity', 'Necromancy', 'Obfuscate'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Ramiro",
                   "id":"201157",
@@ -4256,7 +4256,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obtenebration', 'Vicissitude'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Raphaela Giovanni",
                   "id":"201165",
@@ -4266,7 +4266,7 @@ var cards = [
                   "disciplines":['Dominate', 'Necromancy', 'Potence', 'Presence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Regina Giovanni, The Right Hand of Augustus",
                   "id":"201175",
@@ -4276,7 +4276,7 @@ var cards = [
                   "disciplines":['Auspex', 'Dominate', 'Fortitude', 'Necromancy', 'Potence'],
                   "release_date":"2021-02-01",
                 },
-
+            
                 {
                   "name":"Renenet",
                   "id":"201179",
@@ -4286,7 +4286,7 @@ var cards = [
                   "disciplines":['Obfuscate', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Reverend Djoser Jones",
                   "id":"201183",
@@ -4296,7 +4296,7 @@ var cards = [
                   "disciplines":['Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Reza Fatir, The Dark Angel",
                   "id":"201185",
@@ -4306,7 +4306,7 @@ var cards = [
                   "disciplines":['Celerity', 'Obfuscate', 'Protean', 'Quietus'],
                   "release_date":"2020-03-31",
                 },
-
+            
                 {
                   "name":"Rudolfo Giovanni",
                   "id":"201209",
@@ -4316,7 +4316,7 @@ var cards = [
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Sahira Siraj",
                   "id":"201221",
@@ -4326,7 +4326,7 @@ var cards = [
                   "disciplines":['Obfuscate', 'Serpentis', 'Thaumaturgy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Sajid al Misbah",
                   "id":"201223",
@@ -4336,7 +4336,7 @@ var cards = [
                   "disciplines":['Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Samat Ramal-Ra, Archon",
                   "id":"201229",
@@ -4346,7 +4346,7 @@ var cards = [
                   "disciplines":['Obfuscate', 'Presence', 'Serpentis', 'Thaumaturgy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Saqqaf, Keeper of the Grand Temple of Set",
                   "id":"201236",
@@ -4356,7 +4356,7 @@ var cards = [
                   "disciplines":['Celerity', 'Fortitude', 'Obfuscate', 'Presence', 'Serpentis'],
                   "release_date":"2021-02-01",
                 },
-
+            
                 {
                   "name":"Sarrasine",
                   "id":"201242",
@@ -4366,7 +4366,7 @@ var cards = [
                   "disciplines":['Auspex', 'Necromancy', 'Obfuscate', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Sarrasine",
                   "id":"201243",
@@ -4376,7 +4376,7 @@ var cards = [
                   "disciplines":['Auspex', 'Necromancy', 'Obfuscate', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Saul Meira",
                   "id":"201247",
@@ -4386,7 +4386,7 @@ var cards = [
                   "disciplines":['Chimerstry', 'Dominate', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Seren Sukardi",
                   "id":"201265",
@@ -4396,7 +4396,7 @@ var cards = [
                   "disciplines":['Obfuscate', 'Presence', 'Serpentis', 'Thaumaturgy'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Seterpenre",
                   "id":"201269",
@@ -4406,7 +4406,7 @@ var cards = [
                   "disciplines":['Auspex', 'Necromancy', 'Obfuscate', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Shemti",
                   "id":"201282",
@@ -4416,7 +4416,7 @@ var cards = [
                   "disciplines":['Obfuscate', 'Potence', 'Presence', 'Serpentis', 'Vicissitude'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Silvia Giovanni",
                   "id":"201288",
@@ -4426,7 +4426,7 @@ var cards = [
                   "disciplines":['Animalism', 'Dominate', 'Fortitude', 'Necromancy', 'Potence', 'Vicissitude'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Sir Marriot D'Urban",
                   "id":"201290",
@@ -4436,7 +4436,7 @@ var cards = [
                   "disciplines":['Auspex', 'Obfuscate', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Sisocharis",
                   "id":"201293",
@@ -4446,7 +4446,7 @@ var cards = [
                   "disciplines":['Celerity', 'Obfuscate', 'Presence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Stefano Giovanni",
                   "id":"201314",
@@ -4456,7 +4456,7 @@ var cards = [
                   "disciplines":['Dominate', 'Necromancy', 'Potence', 'Presence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Stephen Milliner",
                   "id":"201316",
@@ -4466,7 +4466,7 @@ var cards = [
                   "disciplines":['Necromancy', 'Presence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Sukainah",
                   "id":"201323",
@@ -4476,7 +4476,7 @@ var cards = [
                   "disciplines":['Auspex', 'Quietus'],
                   "release_date":"2020-03-31",
                 },
-
+            
                 {
                   "name":"Sundervere, The Devil Brahmin",
                   "id":"201324",
@@ -4486,7 +4486,7 @@ var cards = [
                   "disciplines":['Auspex', 'Obfuscate', 'Presence', 'Serpentis', 'Thaumaturgy'],
                   "release_date":"2021-02-25",
                 },
-
+            
                 {
                   "name":"Sutekh, The Dark God",
                   "id":"201327",
@@ -4496,7 +4496,7 @@ var cards = [
                   "disciplines":['Celerity', 'Necromancy', 'Obfuscate', 'Potence', 'Presence', 'Serpentis'],
                   "release_date":"2021-01-22",
                 },
-
+            
                 {
                   "name":"Tabitha Fisk",
                   "id":"201335",
@@ -4506,7 +4506,7 @@ var cards = [
                   "disciplines":['Obtenebration', 'Potence', 'Protean'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Talley, The Hound",
                   "id":"201337",
@@ -4516,7 +4516,7 @@ var cards = [
                   "disciplines":['Auspex', 'Dominate', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Tansu Bekir",
                   "id":"201340",
@@ -4526,7 +4526,7 @@ var cards = [
                   "disciplines":['Celerity', 'Obfuscate'],
                   "release_date":"2020-03-31",
                 },
-
+            
                 {
                   "name":"Tariq, The Silent",
                   "id":"201344",
@@ -4536,7 +4536,7 @@ var cards = [
                   "disciplines":['Auspex', 'Celerity', 'Fortitude', 'Obfuscate', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Tariq, The Silent",
                   "id":"201345",
@@ -4546,7 +4546,7 @@ var cards = [
                   "disciplines":['Auspex', 'Celerity', 'Fortitude', 'Obfuscate', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Tegyrius, Vizier",
                   "id":"201352",
@@ -4556,7 +4556,7 @@ var cards = [
                   "disciplines":['Auspex', 'Celerity', 'Fortitude', 'Presence', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Tegyrius, Vizier",
                   "id":"201353",
@@ -4566,7 +4566,7 @@ var cards = [
                   "disciplines":['Auspex', 'Celerity', 'Fortitude', 'Presence', 'Quietus'],
                   "release_date":"2020-03-31",
                 },
-
+            
                 {
                   "name":"Thetmes, Caliph of Alamut",
                   "id":"201365",
@@ -4576,7 +4576,7 @@ var cards = [
                   "disciplines":['Celerity', 'Dominate', 'Obfuscate', 'Potence', 'Quietus'],
                   "release_date":"2019-12-24",
                 },
-
+            
                 {
                   "name":"Thomasso Ghiberti",
                   "id":"201369",
@@ -4586,7 +4586,7 @@ var cards = [
                   "disciplines":['Necromancy', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Thucimia",
                   "id":"201370",
@@ -4596,7 +4596,7 @@ var cards = [
                   "disciplines":['Celerity', 'Dementation', 'Fortitude', 'Obfuscate', 'Protean', 'Quietus'],
                   "release_date":"2020-03-31",
                 },
-
+            
                 {
                   "name":"Tobias Smith",
                   "id":"201375",
@@ -4606,7 +4606,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obtenebration', 'Potence', 'Presence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Ur-Shulgi, The Shepherd",
                   "id":"201413",
@@ -4616,7 +4616,7 @@ var cards = [
                   "disciplines":['Auspex', 'Celerity', 'Dominate', 'Obfuscate', 'Quietus', 'Thaumaturgy'],
                   "release_date":"2020-02-21",
                 },
-
+            
                 {
                   "name":"Vardar Vardarian",
                   "id":"201426",
@@ -4626,7 +4626,7 @@ var cards = [
                   "disciplines":['Celerity', 'Obfuscate', 'Presence', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Virginie, Prodigy",
                   "id":"201452",
@@ -4636,7 +4636,7 @@ var cards = [
                   "disciplines":['Dominate', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Vittorio Giovanni",
                   "id":"201455",
@@ -4646,7 +4646,7 @@ var cards = [
                   "disciplines":['Dominate', 'Fortitude', 'Necromancy', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Yazid Tamari",
                   "id":"201485",
@@ -4656,7 +4656,7 @@ var cards = [
                   "disciplines":['Animalism', 'Celerity', 'Dominate', 'Obfuscate', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Yazid Tamari",
                   "id":"201486",
@@ -4666,7 +4666,7 @@ var cards = [
                   "disciplines":['Animalism', 'Celerity', 'Dominate', 'Obfuscate', 'Quietus'],
                   "release_date":"2019-11-24",
                 },
-
+            
                 {
                   "name":"Yusuf, Scribe of Alamut",
                   "id":"201495",
@@ -4676,7 +4676,7 @@ var cards = [
                   "disciplines":['Auspex', 'Celerity', 'Obfuscate', 'Quietus'],
                   "release_date":"2020-01-04",
                 },
-
+            
                 {
                   "name":"Zahir, Hand of the Silsila",
                   "id":"201500",
@@ -4686,7 +4686,7 @@ var cards = [
                   "disciplines":['Celerity', 'Obfuscate', 'Quietus', 'Thaumaturgy'],
                   "release_date":"2020-01-02",
                 },
-
+            
                 {
                   "name":"Zhenga",
                   "id":"201506",
@@ -4696,7 +4696,7 @@ var cards = [
                   "disciplines":['Obfuscate', 'Presence', 'Serpentis'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Charles Delmare",
                   "id":"201513",
@@ -4706,7 +4706,7 @@ var cards = [
                   "disciplines":['Celerity', 'Dominate', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Lord Leopold Valdemar",
                   "id":"201517",
@@ -4716,7 +4716,7 @@ var cards = [
                   "disciplines":['Celerity', 'Dominate', 'Obfuscate', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Percival",
                   "id":"201518",
@@ -4726,7 +4726,7 @@ var cards = [
                   "disciplines":['Auspex', 'Dominate', 'Fortitude', 'Obtenebration', 'Potence'],
                   "release_date":"2020-11-22",
                 },
-
+            
                 {
                   "name":"Nefertiti",
                   "id":"201520",

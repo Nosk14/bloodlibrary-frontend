@@ -1,5 +1,6 @@
 import logging
 import re
+import html
 from html.parser import HTMLParser
 from multiprocessing import Pool
 
@@ -15,6 +16,8 @@ BLOODLIBRARY_CRYPT = "https://api.bloodlibrary.info/api/crypt/{0}"
 BLOODLIBRARY_LIBRARY = "https://api.bloodlibrary.info/api/library/{0}"
 
 CONCURRENCY_LEVEL = 24
+
+HTML_TABLE = {k: '&{};'.format(v) for k, v in html.entities.codepoint2name.items()}
 
 
 class DriveThruCards:
@@ -152,7 +155,7 @@ class DataFile:
     def __get_cards(self):
         ret = "var cards = [\n"
         for card in self.cards:
-            card_name = card['name'].replace('"', '\\"')
+            card_name = card['name'].translate(HTML_TABLE) #.replace('"', '\\"')
             ret += f"""
                 {{
                   "name":"{card_name}",
