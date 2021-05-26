@@ -6,6 +6,16 @@
     <title>Blood Library</title>
     <link rel="icon" href="favicon.ico"/>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GYT9YSDYCW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GYT9YSDYCW');
+    </script>
+
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -25,7 +35,7 @@
 <body>
 <header>
     <div class="header">
-        <img src="{{ url_for('static', filename='img/carrion_banner.png') }}"/>
+        {% if not is_mobile %}<img src="{{ url_for('static', filename='img/carrion_banner.png') }}"/>{% endif %}
         <div class="title">Blood Library</div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-bloodlibrary">

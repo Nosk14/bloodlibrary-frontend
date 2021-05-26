@@ -24,7 +24,7 @@ def favicon():
 
 @app.route("/", methods=['GET'])
 def proxies():
-    return render_template('proxies.html')
+    return render_template('proxies.html', is_mobile=request.MOBILE)
 
 
 @app.route("/kickstarter", methods=['GET'])
@@ -34,7 +34,7 @@ def kickstarter():
 
 @app.route("/pod", methods=['GET'])
 def print_on_demand():
-    return render_template('pod.html')
+    return render_template('pod.html', is_mobile=request.MOBILE)
 
 
 if __name__ == '__main__':
