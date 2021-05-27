@@ -23,18 +23,21 @@
             <div id="filters">
                 <b>Filters:</b>
                 <div id="cardtype-filter" class="flex-container filter-div">
+                    <div class="alert alert-danger" style="display:none" role="alert">You should select at least one of these filters to see any card.</div>
                     <div class="filter-buttons">
                         <button type="button" class="btn btn-outline-dark btn-sm" onclick="selectAll('#cardtype-filter')">All</button>
                         <button type="button" class="btn btn-outline-danger btn-sm" onclick="deselectAll('#cardtype-filter')">None</button>
                     </div>
                 </div>
                 <div id="discipline-filter" class="flex-container filter-div">
+                    <div class="alert alert-danger" style="display:none" role="alert">You should select at least one of these filters to see any card.</div>
                      <div class="filter-buttons">
                         <button type="button" class="btn btn-outline-dark btn-sm" onclick="selectAll('#discipline-filter')">All</button>
                         <button type="button" class="btn btn-outline-danger btn-sm" onclick="deselectAll('#discipline-filter')">None</button>
                     </div>
                 </div>
                 <div id="clan-filter" class="flex-container filter-div">
+                    <div class="alert alert-danger" style="display:none" role="alert">You should select at least one of these filters to see any card.</div>
                     <div class="filter-buttons">
                         <button type="button" class="btn btn-outline-dark btn-sm" onclick="selectAll('#clan-filter')">All</button>
                         <button type="button" class="btn btn-outline-danger btn-sm" onclick="deselectAll('#clan-filter')">None</button>
@@ -46,7 +49,9 @@
                 </div>
             </div>
 
-            <div id="card-list" class="flex-container"></div>
+            <div id="card-list" class="flex-container">
+                <div class="alert alert-dark no-cards" style="display:none" role="alert">No cards found for that criteria.</div>
+            </div>
         </div>
     </div>
 </div>

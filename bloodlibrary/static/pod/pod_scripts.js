@@ -70,11 +70,15 @@ function toggleCriteria(self, criteriaList, element){
     if (self.classList.contains("icon-disabled")){
         if (!criteriaList.includes(element)){
             criteriaList.push(element);
+            $('#'+self.parentElement.id+' .alert').hide();
         }
     } else {
         let index = criteriaList.indexOf(element);
         if (index > -1 ) {
             criteriaList.splice(index, 1);
+            if(criteriaList.length == 0) {
+                $('#'+self.parentElement.id+' .alert').show();
+            }
         }
     }
     self.classList.toggle("icon-disabled");
@@ -90,6 +94,7 @@ function addCards(cardList) {
 }
 
 function applyFilters(){
+    let hidden_cards = 0;
     for(c of cards) {
         if (containsAny(c.type, cardTypes)
             && containsAny(c.clan, cardClans)
@@ -97,7 +102,13 @@ function applyFilters(){
             $(`#${c.id}`).show();
         }else{
             $(`#${c.id}`).hide();
+            hidden_cards++;
         }
+    }
+    if (hidden_cards == cards.length){
+        $('#card-list .alert').show();
+    }else{
+        $('#card-list .alert').hide();
     }
 }
 
@@ -121,6 +132,7 @@ function deselectAll(id){
             this.click();
         }
     });
+    $(id+' .alert').show();
 }
 
 function selectAll(id){
@@ -129,4 +141,5 @@ function selectAll(id){
             this.click();
         }
     });
+    $(id+' .alert').hide();
 }
