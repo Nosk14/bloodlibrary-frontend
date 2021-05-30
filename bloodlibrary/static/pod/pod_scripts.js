@@ -88,7 +88,7 @@ function toggleCriteria(self, criteriaList, element){
 function addCards(cardList) {
     for (c of cards) {
         $('#card-list').append(
-            `<div id="${c.id}" class="vtes-card" data-release='${c.release_date}' data-name="${c.name}"><a href="${c.link}?affiliate_id=2900918" target="_blank"><table><tbody><tr><td><img class="pod-image" src="https://statics.bloodlibrary.info/img/sets/pod/${c.id}.jpg"/></td></tr><tr><td class="vtes-card-name red-text">${c.name}</td></tr></tbody></table></a></div>`
+            `<div id="${c.id}" class="vtes-card" data-release='${c.release_date}' data-name="${c.name}" data-cardtype='${c.type[0]}'><a href="${c.link}?affiliate_id=2900918" target="_blank"><table><tbody><tr><td><img class="pod-image" src="https://statics.bloodlibrary.info/img/sets/pod/${c.id}.jpg"/></td></tr><tr><td class="vtes-card-name red-text">${c.name}</td></tr></tbody></table></a></div>`
         );
     }
 }
@@ -122,6 +122,13 @@ function sortCardsByName(){
 function sortCardsByReleaseDate(){
     $('#card-list').find(".vtes-card").sort(function(a,b) {
         return b.dataset.release.localeCompare(a.dataset.release);
+    })
+    .appendTo('#card-list');
+}
+
+function sortCardsByCardType(){
+    $('#card-list').find(".vtes-card").sort(function(a,b) {
+        return b.dataset.cardtype.localeCompare(a.dataset.cardtype);
     })
     .appendTo('#card-list');
 }
