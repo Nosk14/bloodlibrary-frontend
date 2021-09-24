@@ -9,7 +9,7 @@ import requests
 DISCIPLINES = ["abombwe", "animalism", "auspex", "celerity", "chimerstry", "daimoinon", "dementation", "dominate",
                "fortitude", "melpominee", "mytherceria", "necromancy", "obeah", "obfuscate", "obtenebration", "potence",
                "presence", "protean", "quietus", "sanguinus", "serpentis", "spiritus", "temporis", "thanatosis",
-               "thaumaturgy", "valeren", "vicissitude", "visceratika"]
+               "thaumaturgy", "valeren", "vicissitude", "visceratika", "chimerstry"]
 
 BLOODLIBRARY_ENDPOINT = "https://api.bloodlibrary.info/api/search/?name={0}"
 BLOODLIBRARY_CRYPT = "https://api.bloodlibrary.info/api/crypt/{0}"
@@ -33,7 +33,7 @@ class DriveThruCards:
 
     def __get_cards_from_web(self):
         raw_cards = []
-        for page in range(1, 11):
+        for page in range(1, 13):
             html = self.__get_html(DriveThruCards.WEB_URL.format(page))
             parser = DriveThruParser()
             parser.feed(html)
