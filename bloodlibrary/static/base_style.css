@@ -99,3 +99,7 @@ ul.navbar-nav {
 .white-text {
     color: white;
 }
+
+.favorite-icon {
+    display: inline;
+}
