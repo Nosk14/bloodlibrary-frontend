@@ -52,7 +52,7 @@
 						$.get("https://api.bloodlibrary.info/api/search/?name="+query)
 						.done(function (results) {
 							callback(
-								results.slice(0,10).map( function (card, i, arr) { return {'value': card.id, 'text': card.name}})
+								results.slice(0,10).map( function (card, i, arr) { return {'value': card.id, 'text': card.alias}})
 							);
 						});
 					}
