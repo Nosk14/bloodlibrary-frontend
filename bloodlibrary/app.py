@@ -2,6 +2,7 @@ import logging
 from flask import Flask, render_template, request, send_from_directory
 from flask_mobility import Mobility
 from features.kickstarter import data as ks_data
+from features.cards import all_sets_data
 import os
 
 app = Flask(__name__)
@@ -35,6 +36,11 @@ def kickstarter():
 @app.route("/pod", methods=['GET'])
 def print_on_demand():
     return render_template('pod.html', is_mobile=request.MOBILE)
+
+
+@app.route("/cards", methods=['GET'])
+def all_cards():
+    return render_template('cards.html', zets=all_sets_data, is_mobile=request.MOBILE)
 
 
 if __name__ == '__main__':

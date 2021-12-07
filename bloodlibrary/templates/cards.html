@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block navPage %}kickstarter{% endblock %}
+{% block title %} - Kickstarter Decks{% endblock %}
+{% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='kickstarter/kickstarter_style.css') }}"/>
+{% endblock %}
+
+{% block content %}
+<div id="accordion">
+    {% for zet in zets %}
+
+    <div class="card">
+        <div class="card-header" id="heading{{zet['id']}}">
+            <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse{{zet['id']}}"
+                        aria-expanded="true" aria-controls="collapse{{zet['id']}}">
+                   {% if zet['icon'] %}<img class="set-icon" src="{{zet['icon']}}"/>{% endif %}{{zet['name']}}
+                </button>
+            </h5>
+        </div>
+
+        <div id="collapse{{zet['id']}}" class="collapse" aria-labelledby="heading{{zet['id']}}"
+             data-parent="#accordion">
+            <div class="card-body">
+
+<div class="flex-container">
+    {% for card in zet['cards'] %}
+    <div class="vtes-card">
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        {% if card['image'] %}
+                            <img class="img-{{zet['id']}} vtes-card" src="" data-src="{{card['image']}}"/>
+                        {% else %}
+                           <img class="img-{{zet['id']}} vtes-card" src="" data-src="https://statics.bloodlibrary.info/img/cardbacklibrary.jpg"/>
+                        {% endif %}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="vtes-card-name red-text">{{card['name']}}</td>
+                </tr>
+                </tbody>
+            </table>
+    </div>
+    {% endfor %}
+</div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script>
+    {% for zet in zets %}
+
+$('#collapse{{zet['id']}}').on('show.bs.collapse', function () {
+  $('.img-{{zet['id']}}').each( function()  {
+    this.setAttribute('src', this.getAttribute('data-src'));
+  });
+})
+    {% endfor %}
+
+
+</script>
+{% endblock %}
