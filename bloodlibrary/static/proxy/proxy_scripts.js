@@ -46,32 +46,23 @@ function handleSelectCard(value){
 	console.log(value);
 }
 
-function addCard(card_name, card_id, image_url) {
-	if (proxyList.find( item => item.id == card_id)) {
-		return;
-	}
-	
-	var card_image = '<div class="auspex"><img class="auspex-icon" src="https://vtesdecks.com/img/icons/icondisauspex.gif"></img><img class="card-img" src="'+image_url+'" alt=""/></div>';
-	var name = card_name;
-	var amount = '<input id="amount-'+card_id+'" class="form-control mr-sm-2" type="number" max="50" min="1" value="1" onchange="updateAmount(this.value, '+card_id+')"></input>'
-	var delete_button = '<button type="button" class="btn btn-danger" onclick="removeCard('+card_id+')">X</button>';
-	
-	$('#card-list > tbody:last-child').append('<tr id="row-'+card_id+'"><td>'+ card_image+ '</td><td>'+ name+ '</td><td>'+ amount + '</td><td>'+ delete_button + '</td></tr>');
-	proxyList.push({'id': card_id, 'amount': 1});
-}
-
-function addCard2(card_name, card_id, sets) {
+function addCard(card_name, card_id, sets) {
 	if (proxyList.find( item => item.id == card_id)) {
 		return;
 	}
 
-	var card_image = '<div class="auspex"><img class="auspex-icon" src="https://vtesdecks.com/img/icons/icondisauspex.gif"></img><img class="card-img" src="https://statics.bloodlibrary.info/img/proxy/'+card_id+'.jpg" alt=""/></div>';
+	var card_image = '<div class="auspex"><img class="auspex-icon" src="https://vtesdecks.com/img/icons/icondisauspex.gif"></img><img id="image-'+card_id+'" class="card-img" src="'+sets[0].image+'" alt=""/></div>';
 	var name = card_name;
-	var amount = '<input id="amount-'+card_id+'" class="form-control mr-sm-2" type="number" max="50" min="1" value="1" onchange="updateAmount(this.value, '+card_id+')"></input>'
+	var amount = '<input id="amount-'+card_id+'" class="form-control mr-sm-2" type="number" max="50" min="1" value="1" onchange="updateAmount(this.value, '+card_id+')"></input>';
 	var delete_button = '<button type="button" class="btn btn-danger" onclick="removeCard('+card_id+')">X</button>';
+	var set_selector = '<select class="form-control" id="sets-'+card_id+'" onChange="updateCardImage(this.options[this.selectedIndex].dataset.image,'+card_id+',this.options[this.selectedIndex].value)">';
+	sets.forEach(s => {
+	    set_selector += '<option value="'+s.set_id+'" data-image="'+s.image+'">'+s.set_name+'</option>'
+	});
+	set_selector += '</select>'
 
-	$('#card-list > tbody:last-child').append('<tr id="row-'+card_id+'"><td>'+ card_image+ '</td><td>'+ name+ '</td><td>'+ amount + '</td><td>'+ delete_button + '</td></tr>');
-	proxyList.push({'id': card_id, 'amount': 1});
+	$('#card-list > tbody:last-child').append('<tr id="row-'+card_id+'"><td>'+ card_image+ '</td><td>'+ name+ '</td><td>'+ amount + '</td><td>'+ set_selector + '</td><td>'+ delete_button + '</td></tr>');
+	proxyList.push({'id': card_id, 'amount': 1, 'set': sets[0].set_id});
 }
 
 function updateAmount(new_value, card_id) {
@@ -110,7 +101,7 @@ function loadCardsFromFile(e){
 		.then( results => { 
 			for(const r of results) {
 				if(r) {
-					addCard(r.name, r.id);
+					addCard(r.name, r.id, r.sets);
 					$("#amount-"+r.id).val(r.amount);
 					updateAmount(r.amount, r.id);
 				}
@@ -129,10 +120,17 @@ async function handleLine(line) {
 		var cardData = await $.get('https://api.bloodlibrary.info/api/search', {name: expectedCardName}, {crossDomain: true} );
 		
 		if(cardData){
-			return {id: cardData[0].id, name: cardData[0].name, amount: numberOfCopies};
+		    filtered_sets = cardData[0].publish_sets.filter(zet  => zet.image).sort(function (a,b) {return a.set_id - b.set_id}).reverse();
+			return {id: cardData[0].id, name: cardData[0].name, amount: numberOfCopies, sets: filtered_sets};
 		}else{
 			console.log("No data found for: " + expectedCardName);
 			return undefined;
 		}
+}
+
+function updateCardImage(new_image, card_id, set_id){
+    $('#image-'+card_id)[0].src = new_image
+    i = proxyList.findIndex((obj => obj.id == card_id));
+    proxyList[i].set = set_id;
 }
 
