@@ -1,44 +1,46 @@
 var cardTypes = ["Vampire", "Master", "Action", "Ally", "Retainer", "Equipment", "Political Action", "Action Modifier", "Reaction", "Combat", "Event"];
 var cardClans = [	"",
-	"Follower of Set",
-	"Gangrel",
 	"Toreador antitribu",
-	"Giovanni",
-	"Harbinger of Skulls",
+	"Follower of Set",
 	"Tremere",
-	"Ravnos",
-	"Kiasyd",
-	"Lasombra",
+	"Giovanni",
 	"Tzimisce",
+	"Lasombra",
 	"Samedi",
+	"Harbinger of Skulls",
+	"Gangrel",
 	"Assamite",
+	"Ravnos",
+	"Salubri",
+	"Kiasyd",
+	"Pander",
 ];
 var cardDisciplines = [	"",
-	"Visceratika",
-	"Necromancy",
 	"Celerity",
-	"Obfuscate",
-	"Thanatosis",
+	"Protean",
+	"Presence",
+	"Chimerstry",
+	"Quietus",
+	"Melpominee",
+	"Valeren",
 	"Thaumaturgy",
-	"Obtenebration",
+	"Vicissitude",
 	"Serpentis",
-	"Animalism",
+	"Obeah",
+	"Temporis",
+	"Obtenebration",
+	"Auspex",
+	"Dominate",
+	"Necromancy",
+	"Daimoinon",
+	"Dementation",
 	"Mytherceria",
 	"Potence",
-	"Daimoinon",
-	"Quietus",
-	"Temporis",
-	"Protean",
-	"Chimerstry",
+	"Obfuscate",
+	"Thanatosis",
+	"Animalism",
 	"Fortitude",
-	"Melpominee",
-	"Dominate",
-	"Abombwe",
-	"Auspex",
-	"Obeah",
-	"Vicissitude",
-	"Presence",
-	"Dementation",
+	"Visceratika",
 ];
 var cards = [
 
@@ -83,6 +85,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Ailing Spirit, The",
+                  "id":"100030",
+                  "link":"https://www.drivethrucards.com/product/392146",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Obeah', 'Dominate'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Akhenaten, The Sun Pharaoh",
                   "id":"100033",
                   "link":"https://www.drivethrucards.com/product/339311",
@@ -100,6 +112,16 @@ var cards = [
                   "clan":['Assamite'],
                   "disciplines":[''],
                   "release_date":"2019-11-24",
+                },
+
+                {
+                  "name":"Alia, God's Messenger",
+                  "id":"100039",
+                  "link":"https://www.drivethrucards.com/product/392166",
+                  "type":['Ally'],
+                  "clan":[''],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -140,6 +162,16 @@ var cards = [
                   "clan":['Assamite'],
                   "disciplines":[''],
                   "release_date":"2020-03-31",
+                },
+
+                {
+                  "name":"Anesthetic Touch",
+                  "id":"100066",
+                  "link":"https://www.drivethrucards.com/product/392147",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Obeah', 'Auspex'],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -220,6 +252,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Bauble",
+                  "id":"100142",
+                  "link":"https://www.drivethrucards.com/product/392204",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -333,6 +375,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Blood of Acid",
+                  "id":"100203",
+                  "link":"https://www.drivethrucards.com/product/392205",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Blood Sweat",
                   "id":"100211",
                   "link":"https://www.drivethrucards.com/product/297303",
@@ -353,6 +405,36 @@ var cards = [
                 },
 
                 {
+                  "name":"Bloodform",
+                  "id":"100219",
+                  "link":"https://www.drivethrucards.com/product/392206",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Body Arsenal",
+                  "id":"100228",
+                  "link":"https://www.drivethrucards.com/product/392207",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Bonecraft",
+                  "id":"100238",
+                  "link":"https://www.drivethrucards.com/product/392208",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Book of Going Forth by Night, The",
                   "id":"100239",
                   "link":"https://www.drivethrucards.com/product/339322",
@@ -370,6 +452,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Breath of the Dragon",
+                  "id":"100250",
+                  "link":"https://www.drivethrucards.com/product/392209",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -443,6 +535,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Changeling",
+                  "id":"100324",
+                  "link":"https://www.drivethrucards.com/product/392210",
+                  "type":['Action Modifier'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Charigger, The Axe",
                   "id":"100331",
                   "link":"https://www.drivethrucards.com/product/339330",
@@ -473,6 +575,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Chiropteran Marauder",
+                  "id":"100344",
+                  "link":"https://www.drivethrucards.com/product/392211",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Clandestine Contract",
                   "id":"100355",
                   "link":"https://www.drivethrucards.com/product/297296",
@@ -480,6 +592,16 @@ var cards = [
                   "clan":['Assamite'],
                   "disciplines":[''],
                   "release_date":"2019-11-24",
+                },
+
+                {
+                  "name":"Cleansing Ritual",
+                  "id":"100357",
+                  "link":"https://www.drivethrucards.com/product/392148",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Obeah', 'Dominate'],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -583,6 +705,36 @@ var cards = [
                 },
 
                 {
+                  "name":"Convergence",
+                  "id":"100421",
+                  "link":"https://www.drivethrucards.com/product/392128",
+                  "type":['Master'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Corpse Balloon",
+                  "id":"100427",
+                  "link":"https://www.drivethrucards.com/product/392212",
+                  "type":['Retainer'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Corrupt Construction",
+                  "id":"100429",
+                  "link":"https://www.drivethrucards.com/product/392213",
+                  "type":['Ally'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Corruption",
                   "id":"100430",
                   "link":"https://www.drivethrucards.com/product/339339",
@@ -620,6 +772,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Crusade: Istanbul",
+                  "id":"100463",
+                  "link":"https://www.drivethrucards.com/product/392234",
+                  "type":['Political Action'],
+                  "clan":[''],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -1063,6 +1225,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Femur of Toomler",
+                  "id":"100720",
+                  "link":"https://www.drivethrucards.com/product/392137",
+                  "type":['Equipment'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Ferraille",
                   "id":"100722",
                   "link":"https://www.drivethrucards.com/product/339368",
@@ -1073,6 +1245,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Fiendish Tongue",
+                  "id":"100726",
+                  "link":"https://www.drivethrucards.com/product/392235",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Fleecing the Gaje",
                   "id":"100746",
                   "link":"https://www.drivethrucards.com/product/368271",
@@ -1080,6 +1262,16 @@ var cards = [
                   "clan":['Ravnos'],
                   "disciplines":[''],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Fleshcraft",
+                  "id":"100750",
+                  "link":"https://www.drivethrucards.com/product/392214",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -1163,6 +1355,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Ghouled Street Thug",
+                  "id":"100821",
+                  "link":"https://www.drivethrucards.com/product/392129",
+                  "type":['Ally'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Ghouls of Plaza Morer&iacute;a, The",
                   "id":"100822",
                   "link":"https://www.drivethrucards.com/product/297284",
@@ -1170,6 +1372,16 @@ var cards = [
                   "clan":['Assamite'],
                   "disciplines":[''],
                   "release_date":"2019-11-24",
+                },
+
+                {
+                  "name":"Gift of Sleep",
+                  "id":"100828",
+                  "link":"https://www.drivethrucards.com/product/392149",
+                  "type":['Action Modifier', 'Reaction'],
+                  "clan":[''],
+                  "disciplines":['Obeah', 'Obfuscate'],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -1190,6 +1402,16 @@ var cards = [
                   "clan":['Giovanni'],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Glare of Lies",
+                  "id":"100835",
+                  "link":"https://www.drivethrucards.com/product/392150",
+                  "type":['Reaction'],
+                  "clan":[''],
+                  "disciplines":['Auspex', 'Obeah'],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -1233,6 +1455,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Guardian Ghoul",
+                  "id":"100867",
+                  "link":"https://www.drivethrucards.com/product/392138",
+                  "type":['Ally'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Haqim's Law: Judgment",
                   "id":"100884",
                   "link":"https://www.drivethrucards.com/product/297290",
@@ -1270,6 +1502,26 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Haven Affinity",
+                  "id":"100895",
+                  "link":"https://www.drivethrucards.com/product/392139",
+                  "type":['Master'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Healing Touch",
+                  "id":"100901",
+                  "link":"https://www.drivethrucards.com/product/392151",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Obeah', 'Celerity'],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -1323,6 +1575,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Horrid Form",
+                  "id":"100934",
+                  "link":"https://www.drivethrucards.com/product/392216",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Horrid Reality",
                   "id":"100935",
                   "link":"https://www.drivethrucards.com/product/368232",
@@ -1363,6 +1625,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Immense Size",
+                  "id":"100958",
+                  "link":"https://www.drivethrucards.com/product/392217",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Imposing Phantasm",
                   "id":"100962",
                   "link":"https://www.drivethrucards.com/product/368235",
@@ -1380,6 +1652,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Auspex', 'Necromancy'],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Inner Essence",
+                  "id":"100986",
+                  "link":"https://www.drivethrucards.com/product/392218",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -1420,6 +1702,26 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Joseph Pander",
+                  "id":"101024",
+                  "link":"https://www.drivethrucards.com/product/392130",
+                  "type":['Master'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Journal of Hrorsh",
+                  "id":"101026",
+                  "link":"https://www.drivethrucards.com/product/392133",
+                  "type":['Equipment'],
+                  "clan":['Salubri'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -1523,6 +1825,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Kraken's Kiss",
+                  "id":"101066",
+                  "link":"https://www.drivethrucards.com/product/392219",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Kumpania",
                   "id":"101068",
                   "link":"https://www.drivethrucards.com/product/368274",
@@ -1530,6 +1842,26 @@ var cards = [
                   "clan":['Ravnos'],
                   "disciplines":[''],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Lam Into",
+                  "id":"101071",
+                  "link":"https://www.drivethrucards.com/product/392220",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Fortitude', 'Potence', 'Vicissitude'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Legacy of Pander",
+                  "id":"101087",
+                  "link":"https://www.drivethrucards.com/product/392131",
+                  "type":['Political Action'],
+                  "clan":[''],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -1543,6 +1875,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Library Hunting Ground",
+                  "id":"101102",
+                  "link":"https://www.drivethrucards.com/product/392140",
+                  "type":['Master'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Lifeless Tongues",
                   "id":"101105",
                   "link":"https://www.drivethrucards.com/product/339396",
@@ -1550,6 +1892,56 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Liquefy the Mortal Coil",
+                  "id":"101111",
+                  "link":"https://www.drivethrucards.com/product/392221",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Living Manse",
+                  "id":"101114",
+                  "link":"https://www.drivethrucards.com/product/392141",
+                  "type":['Equipment'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Lobotomy",
+                  "id":"101116",
+                  "link":"https://www.drivethrucards.com/product/392222",
+                  "type":['Action Modifier'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Loose Cannon",
+                  "id":"101122",
+                  "link":"https://www.drivethrucards.com/product/392223",
+                  "type":['Action Modifier'],
+                  "clan":[''],
+                  "disciplines":['Dementation', 'Thaumaturgy', 'Vicissitude'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Lord of Serenity",
+                  "id":"101123",
+                  "link":"https://www.drivethrucards.com/product/392153",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Obeah', 'Fortitude'],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -1570,6 +1962,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Malleable Visage",
+                  "id":"101159",
+                  "link":"https://www.drivethrucards.com/product/392224",
+                  "type":['Action Modifier'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -1640,6 +2042,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Chimerstry'],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Meld with the Land",
+                  "id":"101196",
+                  "link":"https://www.drivethrucards.com/product/392225",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -1763,6 +2175,26 @@ var cards = [
                 },
 
                 {
+                  "name":"Neutral Guard",
+                  "id":"101276",
+                  "link":"https://www.drivethrucards.com/product/392154",
+                  "type":['Action Modifier'],
+                  "clan":[''],
+                  "disciplines":['Obeah', 'Fortitude'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Ni Dieu ni Ma&icirc;tre",
+                  "id":"101282",
+                  "link":"https://www.drivethrucards.com/product/392226",
+                  "type":['Action Modifier'],
+                  "clan":[''],
+                  "disciplines":['Animalism', 'Fortitude', 'Vicissitude'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Nightmare Curse",
                   "id":"101284",
                   "link":"https://www.drivethrucards.com/product/368240",
@@ -1843,6 +2275,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Panacea",
+                  "id":"101348",
+                  "link":"https://www.drivethrucards.com/product/392155",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Obeah', 'Auspex'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Pandora's Whisper",
                   "id":"101349",
                   "link":"https://www.drivethrucards.com/product/339415",
@@ -1883,6 +2325,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Path of Metamorphosis, The",
+                  "id":"101364",
+                  "link":"https://www.drivethrucards.com/product/392142",
+                  "type":['Master'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Path of Night, The",
                   "id":"101365",
                   "link":"https://www.drivethrucards.com/product/339417",
@@ -1903,6 +2355,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Path of Tears, The",
+                  "id":"101369",
+                  "link":"https://www.drivethrucards.com/product/392134",
+                  "type":['Master'],
+                  "clan":['Salubri'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Path of Typhon, The",
                   "id":"101373",
                   "link":"https://www.drivethrucards.com/product/339418",
@@ -1920,6 +2382,26 @@ var cards = [
                   "clan":['Ravnos'],
                   "disciplines":[''],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Peacemaker",
+                  "id":"101381",
+                  "link":"https://www.drivethrucards.com/product/392156",
+                  "type":['Reaction'],
+                  "clan":[''],
+                  "disciplines":['Obeah', 'Presence'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Penitent Resilience",
+                  "id":"101382",
+                  "link":"https://www.drivethrucards.com/product/392157",
+                  "type":['Action Modifier', 'Combat'],
+                  "clan":[''],
+                  "disciplines":['Fortitude', 'Obeah'],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -1960,6 +2442,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Plasmic Form",
+                  "id":"101402",
+                  "link":"https://www.drivethrucards.com/product/392227",
+                  "type":['Action Modifier', 'Combat'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -2020,6 +2512,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Powder of Rigidity",
+                  "id":"101427",
+                  "link":"https://www.drivethrucards.com/product/392236",
+                  "type":['Equipment'],
+                  "clan":[''],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -2233,13 +2735,13 @@ var cards = [
                 },
 
                 {
-                  "name":"Reformation",
-                  "id":"101582",
-                  "link":"https://www.drivethrucards.com/product/368247",
-                  "type":['Action'],
+                  "name":"Reform Body",
+                  "id":"101581",
+                  "link":"https://www.drivethrucards.com/product/392228",
+                  "type":['Combat', 'Reaction'],
                   "clan":[''],
-                  "disciplines":['Chimerstry', 'Dominate', 'Serpentis'],
-                  "release_date":"2021-08-20",
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -2263,6 +2765,26 @@ var cards = [
                 },
 
                 {
+                  "name":"Renewed Vigor",
+                  "id":"101603",
+                  "link":"https://www.drivethrucards.com/product/392158",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Obeah', 'Fortitude'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Repulsion",
+                  "id":"101606",
+                  "link":"https://www.drivethrucards.com/product/392159",
+                  "type":['Action Modifier'],
+                  "clan":[''],
+                  "disciplines":['Obeah', 'Presence'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Resilient Mind",
                   "id":"101609",
                   "link":"https://www.drivethrucards.com/product/339441",
@@ -2280,6 +2802,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Resurrection",
+                  "id":"101617",
+                  "link":"https://www.drivethrucards.com/product/392160",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Obeah', 'Valeren'],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -2333,6 +2865,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Revenant",
+                  "id":"101628",
+                  "link":"https://www.drivethrucards.com/product/392143",
+                  "type":['Retainer'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Revocation of Tyre",
                   "id":"101630",
                   "link":"https://www.drivethrucards.com/product/339447",
@@ -2340,6 +2882,26 @@ var cards = [
                   "clan":[''],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Root of Vitality",
+                  "id":"101652",
+                  "link":"https://www.drivethrucards.com/product/392229",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Safe Passage",
+                  "id":"101673",
+                  "link":"https://www.drivethrucards.com/product/392161",
+                  "type":['Action Modifier'],
+                  "clan":[''],
+                  "disciplines":['Obeah', 'Fortitude'],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -2643,6 +3205,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Sight Beyond Sight",
+                  "id":"101780",
+                  "link":"https://www.drivethrucards.com/product/392135",
+                  "type":['Master'],
+                  "clan":['Salubri'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Siphon",
                   "id":"101784",
                   "link":"https://www.drivethrucards.com/product/339469",
@@ -2663,22 +3235,22 @@ var cards = [
                 },
 
                 {
+                  "name":"Skin Trap",
+                  "id":"101795",
+                  "link":"https://www.drivethrucards.com/product/392230",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Sleight of Hand",
                   "id":"101806",
                   "link":"https://www.drivethrucards.com/product/368253",
                   "type":['Action'],
                   "clan":[''],
                   "disciplines":['Chimerstry'],
-                  "release_date":"2021-08-20",
-                },
-
-                {
-                  "name":"Smoke and Mirrors",
-                  "id":"101813",
-                  "link":"https://www.drivethrucards.com/product/368254",
-                  "type":['Action Modifier'],
-                  "clan":[''],
-                  "disciplines":['Chimerstry', 'Obfuscate', 'Obtenebration'],
                   "release_date":"2021-08-20",
                 },
 
@@ -2700,6 +3272,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Quietus'],
                   "release_date":"2019-11-24",
+                },
+
+                {
+                  "name":"Soul Decoration",
+                  "id":"101830",
+                  "link":"https://www.drivethrucards.com/product/392231",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Obfuscate', 'Vicissitude'],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -2743,6 +3325,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Spirit Marionette",
+                  "id":"101848",
+                  "link":"https://www.drivethrucards.com/product/392162",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Obeah', 'Dominate'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Spiritual Intervention",
                   "id":"101852",
                   "link":"https://www.drivethrucards.com/product/339476",
@@ -2760,6 +3352,16 @@ var cards = [
                   "clan":['Giovanni'],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Starvation of Marena",
+                  "id":"101861",
+                  "link":"https://www.drivethrucards.com/product/392232",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Vicissitude'],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -3003,6 +3605,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Treat the Sick Mind",
+                  "id":"102016",
+                  "link":"https://www.drivethrucards.com/product/392163",
+                  "type":['Action', 'Reaction'],
+                  "clan":[''],
+                  "disciplines":['Obeah', 'Dementation'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Treatment, The",
                   "id":"102017",
                   "link":"https://www.drivethrucards.com/product/368285",
@@ -3093,6 +3705,26 @@ var cards = [
                 },
 
                 {
+                  "name":"Unacceptable Appearance",
+                  "id":"102055",
+                  "link":"https://www.drivethrucards.com/product/392132",
+                  "type":['Master'],
+                  "clan":[''],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Unburdening the Bestial Soul",
+                  "id":"102056",
+                  "link":"https://www.drivethrucards.com/product/392164",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Obeah', 'Animalism'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Underworld Hunting Ground",
                   "id":"102066",
                   "link":"https://www.drivethrucards.com/product/297294",
@@ -3153,6 +3785,36 @@ var cards = [
                 },
 
                 {
+                  "name":"Vicissitude",
+                  "id":"102116",
+                  "link":"https://www.drivethrucards.com/product/392237",
+                  "type":['Master'],
+                  "clan":[''],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Vicissitude Poisoning",
+                  "id":"102117",
+                  "link":"https://www.drivethrucards.com/product/392238",
+                  "type":['Master'],
+                  "clan":[''],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Vitae Block",
+                  "id":"102127",
+                  "link":"https://www.drivethrucards.com/product/392165",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Obeah', 'Animalism'],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Walks-With-Might",
                   "id":"102141",
                   "link":"https://www.drivethrucards.com/product/339501",
@@ -3160,6 +3822,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"War Ghoul",
+                  "id":"102144",
+                  "link":"https://www.drivethrucards.com/product/392144",
+                  "type":['Ally'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-25",
                 },
 
                 {
@@ -3223,6 +3895,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Weirding Stone",
+                  "id":"102170",
+                  "link":"https://www.drivethrucards.com/product/392145",
+                  "type":['Equipment'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
                   "name":"Whispers from the Dead",
                   "id":"102175",
                   "link":"https://www.drivethrucards.com/product/339505",
@@ -3240,6 +3922,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Chimerstry'],
                   "release_date":"2021-09-23",
+                },
+
+                {
+                  "name":"World's a Canvas, The",
+                  "id":"102193",
+                  "link":"https://www.drivethrucards.com/product/392233",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Dominate', 'Obfuscate', 'Vicissitude'],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -3288,7 +3980,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339151",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Fortitude', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3298,7 +3990,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339152",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Obtenebration'],
+                  "disciplines":[''],
                   "release_date":"2021-02-01",
                 },
 
@@ -3308,7 +4000,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297373",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Obfuscate', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -3318,7 +4010,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339153",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Fortitude', 'Necromancy', 'Obfuscate', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3328,8 +4020,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339154",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Animalism', 'Dominate', 'Necromancy', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Adhiambo",
+                  "id":"200013",
+                  "link":"https://www.drivethrucards.com/product/392239",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -3338,7 +4040,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339155",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Obfuscate', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3348,7 +4050,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339156",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Animalism', 'Auspex', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3358,7 +4060,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297323",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Auspex', 'Celerity', 'Obfuscate', 'Quietus', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-01-04",
                 },
 
@@ -3368,8 +4070,28 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368293",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Celerity', 'Chimerstry', 'Fortitude', 'Obfuscate', 'Protean', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Alfred Benezri",
+                  "id":"200051",
+                  "link":"https://www.drivethrucards.com/product/392169",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Alfred Benezri",
+                  "id":"200052",
+                  "link":"https://www.drivethrucards.com/product/392168",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -3378,7 +4100,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297330",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Obfuscate', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -3388,7 +4110,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339157",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Dominate', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3398,7 +4120,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297338",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Obfuscate'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -3408,7 +4130,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339158",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Obtenebration', 'Potence', 'Presence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3418,7 +4140,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297345",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Dominate', 'Obfuscate', 'Quietus', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -3428,7 +4150,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339159",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Auspex', 'Dominate', 'Necromancy', 'Potence', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3438,7 +4160,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339160",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Auspex', 'Dominate', 'Necromancy', 'Potence', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3448,7 +4170,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339161",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Auspex', 'Dominate', 'Fortitude', 'Obtenebration', 'Potence', 'Presence'],
+                  "disciplines":[''],
                   "release_date":"2021-02-25",
                 },
 
@@ -3458,7 +4180,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339162",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Dominate', 'Obfuscate', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3468,8 +4190,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339163",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Obfuscate', 'Presence', 'Protean', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Ana Rita Monta&ntilde;a",
+                  "id":"200075",
+                  "link":"https://www.drivethrucards.com/product/392241",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -3478,7 +4210,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339164",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Dominate', 'Necromancy', 'Potence', 'Vicissitude'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3488,7 +4220,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368294",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Celerity', 'Chimerstry', 'Fortitude', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -3498,8 +4230,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339165",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Auspex', 'Dominate', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Angela Decker",
+                  "id":"200090",
+                  "link":"https://www.drivethrucards.com/product/392170",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -3508,7 +4250,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339166",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Celerity', 'Dominate', 'Obfuscate', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3518,7 +4260,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368295",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Auspex', 'Chimerstry', 'Fortitude', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -3528,7 +4270,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368296",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Protean', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -3538,7 +4280,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339167",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Obfuscate', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3548,7 +4290,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368297",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Chimerstry', 'Fortitude', 'Obfuscate', 'Presence', 'Protean', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -3558,8 +4300,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297352",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Auspex', 'Celerity', 'Fortitude', 'Obfuscate', 'Presence', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2020-01-02",
+                },
+
+                {
+                  "name":"Anton",
+                  "id":"200113",
+                  "link":"https://www.drivethrucards.com/product/392242",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -3568,7 +4320,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339168",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Animalism', 'Auspex', 'Dominate', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3578,7 +4330,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339169",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Obtenebration', 'Potence', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3588,7 +4340,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297359",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Obfuscate', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -3598,7 +4350,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339170",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Celerity', 'Dominate', 'Necromancy', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3608,7 +4360,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339171",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Auspex', 'Celerity', 'Obfuscate', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3618,7 +4370,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339172",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Auspex', 'Celerity', 'Dominate', 'Necromancy', 'Potence', 'Presence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3628,7 +4380,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339173",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Fortitude', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3638,7 +4390,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297366",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Obfuscate', 'Presence', 'Quietus', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-01-02",
                 },
 
@@ -3648,7 +4400,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297331",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Dominate', 'Obfuscate', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -3658,7 +4410,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297346",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Fortitude', 'Obfuscate', 'Presence', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -3668,7 +4420,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297360",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Dementation', 'Obfuscate', 'Protean', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -3678,7 +4430,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339174",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Auspex', 'Dominate', 'Fortitude', 'Necromancy', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3688,8 +4440,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339175",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Basil",
+                  "id":"200173",
+                  "link":"https://www.drivethrucards.com/product/392171",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -3698,7 +4460,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297374",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Quietus'],
+                  "disciplines":[''],
                   "release_date":"2020-01-02",
                 },
 
@@ -3708,7 +4470,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339176",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3718,7 +4480,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339177",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Celerity', 'Dominate', 'Fortitude', 'Necromancy', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3728,7 +4490,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297339",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Auspex', 'Celerity', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -3738,7 +4500,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339178",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Auspex', 'Dominate', 'Obfuscate', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3748,8 +4510,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339179",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Obtenebration', 'Potence', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Blanche Hill",
+                  "id":"200206",
+                  "link":"https://www.drivethrucards.com/product/392190",
+                  "type":['Vampire'],
+                  "clan":['Salubri'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -3758,7 +4530,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368298",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Fortitude', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -3768,7 +4540,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339180",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Obfuscate', 'Potence', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3778,8 +4550,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339181",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Necromancy', 'Obfuscate', 'Potence', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Caliban",
+                  "id":"200236",
+                  "link":"https://www.drivethrucards.com/product/392243",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -3788,7 +4570,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368299",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Fortitude', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -3798,7 +4580,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339182",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3808,7 +4590,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339183",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Dominate', 'Necromancy', 'Obfuscate', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3818,7 +4600,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339184",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Animalism', 'Dominate', 'Necromancy', 'Potence', 'Presence', 'Protean'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3828,8 +4610,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339185",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Auspex', 'Dominate', 'Obtenebration', 'Potence', 'Presence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Caroline Bishops",
+                  "id":"200250",
+                  "link":"https://www.drivethrucards.com/product/392172",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -3838,7 +4630,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339186",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Obfuscate', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3848,7 +4640,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339188",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Dominate', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3858,8 +4650,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368300",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Fortitude', 'Necromancy', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Christine Boscacci",
+                  "id":"200273",
+                  "link":"https://www.drivethrucards.com/product/392173",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -3868,7 +4670,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339189",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Obfuscate', 'Potence', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3878,8 +4680,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339190",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Animalism', 'Celerity', 'Dominate', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Corine Marc&oacute;n",
+                  "id":"200290",
+                  "link":"https://www.drivethrucards.com/product/392244",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -3888,8 +4700,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339191",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Dominate', 'Obfuscate', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Count Vladimir Rustovitch",
+                  "id":"200296",
+                  "link":"https://www.drivethrucards.com/product/392245",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -3898,7 +4720,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339192",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Necromancy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3908,8 +4730,28 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339193",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Necromancy', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Cyscek",
+                  "id":"200307",
+                  "link":"https://www.drivethrucards.com/product/392246",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Daliah",
+                  "id":"200308",
+                  "link":"https://www.drivethrucards.com/product/392247",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -3918,7 +4760,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339194",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Obfuscate', 'Obtenebration', 'Potence', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3928,8 +4770,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368301",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Fortitude', 'Protean', 'Thaumaturgy', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Darvag, The Butcher of Rus",
+                  "id":"200325",
+                  "link":"https://www.drivethrucards.com/product/392248",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -3938,8 +4790,28 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339195",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Necromancy', 'Obfuscate', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Demdemeh",
+                  "id":"200333",
+                  "link":"https://www.drivethrucards.com/product/392249",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Devin Bisley",
+                  "id":"200339",
+                  "link":"https://www.drivethrucards.com/product/392250",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -3948,7 +4820,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368302",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Presence', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -3958,7 +4830,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339196",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Dominate', 'Necromancy', 'Potence', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3968,7 +4840,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297353",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Auspex', 'Celerity', 'Obfuscate', 'Presence', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -3978,7 +4850,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297367",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Auspex', 'Celerity', 'Necromancy', 'Obfuscate', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -3988,7 +4860,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339197",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Dominate', 'Necromancy', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -3998,7 +4870,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339198",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Auspex', 'Dominate', 'Potence', 'Presence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4008,7 +4880,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339199",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4018,8 +4890,58 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339200",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Dr. Morrow, The Skindoctor",
+                  "id":"200381",
+                  "link":"https://www.drivethrucards.com/product/392251",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Dracon, The",
+                  "id":"200385",
+                  "link":"https://www.drivethrucards.com/product/392252",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Dragos",
+                  "id":"200386",
+                  "link":"https://www.drivethrucards.com/product/392253",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Droescher One-Eye",
+                  "id":"200388",
+                  "link":"https://www.drivethrucards.com/product/392254",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Duality",
+                  "id":"200391",
+                  "link":"https://www.drivethrucards.com/product/392255",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4028,8 +4950,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368303",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Auspex', 'Chimerstry', 'Dominate', 'Fortitude', 'Obfuscate', 'Thaumaturgy', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Elizabeth Westcott",
+                  "id":"200415",
+                  "link":"https://www.drivethrucards.com/product/392256",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4038,7 +4970,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339201",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Animalism', 'Dominate', 'Necromancy', 'Potence', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2021-02-01",
                 },
 
@@ -4048,7 +4980,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339202",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4058,7 +4990,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339203",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4068,8 +5000,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368304",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Celerity', 'Chimerstry', 'Fortitude', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Eurayle Gelasia Mylonas",
+                  "id":"200443",
+                  "link":"https://www.drivethrucards.com/product/392191",
+                  "type":['Vampire'],
+                  "clan":['Salubri'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4078,7 +5020,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297324",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -4088,7 +5030,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339204",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Obfuscate', 'Potence', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4098,7 +5040,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368305",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Dominate', 'Fortitude', 'Presence', 'Thaumaturgy', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-09-23",
                 },
 
@@ -4108,8 +5050,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297332",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Auspex', 'Celerity', 'Fortitude', 'Obfuscate', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-12-24",
+                },
+
+                {
+                  "name":"Feo Ramos",
+                  "id":"200462",
+                  "link":"https://www.drivethrucards.com/product/392174",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4118,7 +5070,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297375",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -4128,7 +5080,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339205",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Dominate', 'Necromancy', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4138,7 +5090,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339206",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Necromancy', 'Potence', 'Presence', 'Vicissitude'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4148,7 +5100,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339207",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Obtenebration', 'Potence', 'Presence', 'Protean'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4158,7 +5110,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368306",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Dominate', 'Fortitude', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -4168,7 +5120,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368307",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Chimerstry', 'Dementation', 'Fortitude', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -4178,7 +5130,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339208",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Celerity', 'Necromancy', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4188,7 +5140,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368308",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Potence', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -4198,7 +5150,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368309",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Auspex', 'Chimerstry', 'Fortitude', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -4208,7 +5160,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339209",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Obtenebration', 'Potence', 'Presence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4218,7 +5170,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339210",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Dominate', 'Necromancy', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4228,8 +5180,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339211",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Auspex', 'Dominate', 'Necromancy', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Gillian Krader",
+                  "id":"200519",
+                  "link":"https://www.drivethrucards.com/product/392175",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4238,7 +5200,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339212",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Dominate', 'Necromancy', 'Potence', 'Protean'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4248,7 +5210,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339213",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Dominate', 'Necromancy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4258,7 +5220,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339214",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Obfuscate', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4268,8 +5230,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339215",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Celerity', 'Dominate', 'Necromancy', 'Potence', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Guedado",
+                  "id":"200543",
+                  "link":"https://www.drivethrucards.com/product/392257",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4278,7 +5250,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339216",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Obfuscate', 'Obtenebration'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4288,7 +5260,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339217",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Celerity', 'Dominate', 'Necromancy', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4298,7 +5270,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368310",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Auspex', 'Chimerstry', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -4308,7 +5280,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339218",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Obfuscate', 'Presence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4318,7 +5290,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297354",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Auspex', 'Celerity', 'Obfuscate', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -4328,7 +5300,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339219",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Dominate', 'Obfuscate', 'Serpentis', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4338,7 +5310,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297325",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -4348,7 +5320,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368311",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Auspex', 'Chimerstry', 'Dementation', 'Fortitude', 'Potence', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -4358,7 +5330,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339220",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Obtenebration', 'Potence', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4368,7 +5340,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339221",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Animalism', 'Obfuscate', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4378,8 +5350,28 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339222",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Horatio",
+                  "id":"200603",
+                  "link":"https://www.drivethrucards.com/product/392258",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Huang, Blood Cultist",
+                  "id":"200609",
+                  "link":"https://www.drivethrucards.com/product/392176",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4388,7 +5380,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297340",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Obfuscate', 'Potence', 'Presence', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2020-01-04",
                 },
 
@@ -4398,7 +5390,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339223",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4408,8 +5400,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339224",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Dominate', 'Fortitude', 'Necromancy', 'Obfuscate', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Ilias cel Frumos",
+                  "id":"200627",
+                  "link":"https://www.drivethrucards.com/product/392259",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4418,7 +5420,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339225",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Celerity', 'Obfuscate', 'Potence', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4428,7 +5430,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339226",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Dominate', 'Necromancy', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4438,7 +5440,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368312",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Fortitude', 'Obfuscate', 'Potence', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -4448,8 +5450,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297368",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Obfuscate', 'Potence', 'Quietus', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
+                },
+
+                {
+                  "name":"Jaggedy Andy",
+                  "id":"200665",
+                  "link":"https://www.drivethrucards.com/product/392177",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4458,7 +5470,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297347",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Potence', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -4468,8 +5480,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297361",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Obfuscate', 'Potence', 'Presence', 'Protean', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2020-04-26",
+                },
+
+                {
+                  "name":"Jane Sims",
+                  "id":"200671",
+                  "link":"https://www.drivethrucards.com/product/392260",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4478,7 +5500,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297333",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Fortitude', 'Obfuscate', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -4488,8 +5510,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368313",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Fortitude', 'Thaumaturgy', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Jimmy Dunn",
+                  "id":"200705",
+                  "link":"https://www.drivethrucards.com/product/392178",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4498,7 +5530,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368314",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Fortitude', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -4508,7 +5540,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297376",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Fortitude', 'Obfuscate', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -4518,8 +5550,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368315",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Auspex', 'Chimerstry', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"John Paleologus",
+                  "id":"200716",
+                  "link":"https://www.drivethrucards.com/product/392261",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4528,7 +5570,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297341",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Abombwe', 'Auspex', 'Celerity', 'Obfuscate', 'Potence', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2020-03-31",
                 },
 
@@ -4538,8 +5580,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339227",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Auspex', 'Dominate', 'Necromancy', 'Obfuscate', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Kai Simmons",
+                  "id":"200743",
+                  "link":"https://www.drivethrucards.com/product/392179",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4548,7 +5600,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297369",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Obfuscate', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -4558,7 +5610,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297348",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Obfuscate', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -4568,7 +5620,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297362",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity'],
+                  "disciplines":[''],
                   "release_date":"2020-03-31",
                 },
 
@@ -4578,7 +5630,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297326",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Auspex', 'Celerity', 'Fortitude', 'Obfuscate', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -4588,7 +5640,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297355",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Obfuscate', 'Obtenebration', 'Presence', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2020-03-31",
                 },
 
@@ -4598,8 +5650,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339228",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Dominate', 'Necromancy', 'Protean'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Kazimir Savostin",
+                  "id":"200766",
+                  "link":"https://www.drivethrucards.com/product/392262",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4608,7 +5670,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339229",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Auspex', 'Dominate', 'Obfuscate', 'Presence', 'Serpentis', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4618,7 +5680,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339230",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Auspex', 'Dominate', 'Obfuscate', 'Presence', 'Serpentis', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4628,7 +5690,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339231",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Dominate', 'Obfuscate', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2021-02-01",
                 },
 
@@ -4638,7 +5700,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339232",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4648,7 +5710,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368316",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Fortitude', 'Presence', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -4658,7 +5720,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339233",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Auspex', 'Dominate', 'Obfuscate', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4668,7 +5730,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368317",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Dementation', 'Fortitude', 'Potence', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -4678,7 +5740,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368318",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Celerity', 'Chimerstry', 'Dominate', 'Fortitude', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -4688,8 +5750,28 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339234",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Auspex', 'Dominate', 'Fortitude', 'Necromancy', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Lady Zara Slatikov",
+                  "id":"200805",
+                  "link":"https://www.drivethrucards.com/product/392264",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Laika",
+                  "id":"200807",
+                  "link":"https://www.drivethrucards.com/product/392265",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4698,8 +5780,28 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339235",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Lambach",
+                  "id":"200810",
+                  "link":"https://www.drivethrucards.com/product/392267",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Lambach",
+                  "id":"200811",
+                  "link":"https://www.drivethrucards.com/product/392266",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4708,7 +5810,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297377",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Obfuscate', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -4718,7 +5820,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368319",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Fortitude'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -4728,8 +5830,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339236",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Obtenebration', 'Presence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Lena Rowe",
+                  "id":"200830",
+                  "link":"https://www.drivethrucards.com/product/392180",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4738,7 +5850,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339237",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Dominate', 'Necromancy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4748,8 +5860,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339238",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Potence', 'Protean'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Little Tailor of Prague",
+                  "id":"200844",
+                  "link":"https://www.drivethrucards.com/product/392268",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4758,8 +5880,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368320",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Celerity', 'Chimerstry', 'Fortitude', 'Potence', 'Protean', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Lolita Houston",
+                  "id":"200850",
+                  "link":"https://www.drivethrucards.com/product/392269",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4768,7 +5900,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339240",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Obtenebration', 'Potence', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4778,7 +5910,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339241",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Auspex', 'Dementation', 'Dominate', 'Necromancy', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4788,7 +5920,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339242",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Fortitude', 'Necromancy', 'Obtenebration', 'Potence', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4798,7 +5930,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339243",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Celerity', 'Dominate', 'Fortitude', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4808,7 +5940,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339244",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Celerity', 'Dominate', 'Fortitude', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4818,8 +5950,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339245",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Obtenebration'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Ludmijla Rakoczy",
+                  "id":"200879",
+                  "link":"https://www.drivethrucards.com/product/392270",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4828,8 +5970,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339246",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Celerity', 'Dominate', 'Necromancy', 'Obfuscate', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"March Halcyon",
+                  "id":"200911",
+                  "link":"https://www.drivethrucards.com/product/392181",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4838,7 +5990,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368321",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Dominate', 'Fortitude', 'Thaumaturgy', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -4848,7 +6000,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339247",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Dominate'],
+                  "disciplines":[''],
                   "release_date":"2021-02-01",
                 },
 
@@ -4858,7 +6010,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339248",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Fortitude', 'Obfuscate', 'Obtenebration', 'Potence', 'Presence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4868,8 +6020,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339249",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Dominate', 'Fortitude', 'Necromancy', 'Potence', 'Presence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Margarite",
+                  "id":"200918",
+                  "link":"https://www.drivethrucards.com/product/392182",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4878,7 +6040,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339250",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Auspex', 'Dominate', 'Necromancy', 'Potence', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4888,7 +6050,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339251",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Necromancy', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4898,7 +6060,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368322",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -4908,8 +6070,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339252",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Mary Johnson",
+                  "id":"200947",
+                  "link":"https://www.drivethrucards.com/product/392183",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4918,8 +6090,38 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368323",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Auspex', 'Chimerstry', 'Fortitude', 'Obfuscate', 'Quietus', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Matthew",
+                  "id":"200961",
+                  "link":"https://www.drivethrucards.com/product/392192",
+                  "type":['Vampire'],
+                  "clan":['Salubri'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Matthew Romans",
+                  "id":"200962",
+                  "link":"https://www.drivethrucards.com/product/392184",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Matthias",
+                  "id":"200963",
+                  "link":"https://www.drivethrucards.com/product/392193",
+                  "type":['Vampire'],
+                  "clan":['Salubri'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4928,7 +6130,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297334",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Obfuscate', 'Presence', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2020-01-04",
                 },
 
@@ -4938,7 +6140,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339253",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Auspex', 'Celerity', 'Dominate', 'Obtenebration', 'Potence', 'Presence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4948,8 +6150,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339254",
                   "type":['Vampire'],
                   "clan":['Toreador antitribu'],
-                  "disciplines":['Auspex', 'Celerity', 'Dominate', 'Obtenebration', 'Potence', 'Presence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Meshenka",
+                  "id":"200980",
+                  "link":"https://www.drivethrucards.com/product/392271",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4958,8 +6170,28 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297342",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Obfuscate', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
+                },
+
+                {
+                  "name":"Miriam Benyona",
+                  "id":"200995",
+                  "link":"https://www.drivethrucards.com/product/392194",
+                  "type":['Vampire'],
+                  "clan":['Salubri'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Mitchell, The Headhunter",
+                  "id":"201000",
+                  "link":"https://www.drivethrucards.com/product/392185",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4968,7 +6200,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339255",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Animalism', 'Dominate', 'Fortitude', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -4978,8 +6210,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297370",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Dominate', 'Fortitude', 'Obfuscate', 'Presence', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2020-01-02",
+                },
+
+                {
+                  "name":"Mr. Noir",
+                  "id":"201016",
+                  "link":"https://www.drivethrucards.com/product/392195",
+                  "type":['Vampire'],
+                  "clan":['Salubri'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4988,8 +6230,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339256",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Animalism', 'Dominate', 'Obtenebration', 'Potence', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Nahum Enosh",
+                  "id":"201031",
+                  "link":"https://www.drivethrucards.com/product/392196",
+                  "type":['Vampire'],
+                  "clan":['Salubri'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -4998,7 +6250,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339257",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Obfuscate', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5008,7 +6260,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368324",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Dominate', 'Fortitude', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -5018,7 +6270,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368325",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Fortitude'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -5028,7 +6280,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339258",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Celerity', 'Dominate', 'Obfuscate', 'Potence', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5038,7 +6290,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339260",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Dominate', 'Necromancy', 'Obfuscate', 'Presence', 'Serpentis', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5048,7 +6300,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339261",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Auspex', 'Fortitude', 'Obfuscate', 'Presence', 'Protean', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5058,7 +6310,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339262",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Obfuscate', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5068,7 +6320,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297349",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Animalism', 'Celerity', 'Dementation', 'Obfuscate', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -5078,8 +6330,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339263",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Necromancy', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Obaluaye",
+                  "id":"201070",
+                  "link":"https://www.drivethrucards.com/product/392197",
+                  "type":['Vampire'],
+                  "clan":['Salubri'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -5088,8 +6350,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339264",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Fortitude', 'Obfuscate', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Olga Triminov",
+                  "id":"201075",
+                  "link":"https://www.drivethrucards.com/product/392186",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -5098,7 +6370,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297363",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Animalism', 'Celerity', 'Obfuscate', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -5108,7 +6380,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339265",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Auspex', 'Dominate', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5118,7 +6390,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339266",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Animalism', 'Dominate', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5128,7 +6400,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339267",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Dominate', 'Necromancy', 'Potence', 'Protean', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5138,7 +6410,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368326",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Fortitude', 'Obtenebration', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -5148,7 +6420,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297356",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2020-01-02",
                 },
 
@@ -5158,7 +6430,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297327",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Auspex', 'Celerity', 'Quietus', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -5168,7 +6440,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339268",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Necromancy', 'Quietus', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2021-02-01",
                 },
 
@@ -5178,7 +6450,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339269",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5188,7 +6460,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368327",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Chimerstry', 'Fortitude', 'Presence', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -5198,7 +6470,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339270",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Animalism', 'Dominate', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5208,7 +6480,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339271",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Auspex', 'Fortitude', 'Obeah', 'Obfuscate', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5218,7 +6490,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368328",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Fortitude', 'Serpentis', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -5228,8 +6500,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368329",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Dementation', 'Fortitude', 'Presence', 'Thaumaturgy', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Piotr Andreikov",
+                  "id":"201126",
+                  "link":"https://www.drivethrucards.com/product/392272",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -5238,7 +6520,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339273",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Celerity', 'Dominate', 'Necromancy', 'Obfuscate', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5248,7 +6530,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339274",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Chimerstry', 'Fortitude', 'Obfuscate', 'Presence', 'Serpentis', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5258,7 +6540,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339275",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Dominate', 'Necromancy', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5268,7 +6550,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297378",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Necromancy', 'Obfuscate', 'Quietus', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-01-29",
                 },
 
@@ -5278,8 +6560,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339276",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Celerity', 'Obfuscate', 'Presence', 'Serpentis', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Radu Bistri",
+                  "id":"201150",
+                  "link":"https://www.drivethrucards.com/product/392273",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -5288,7 +6580,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339277",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Celerity', 'Necromancy', 'Obfuscate'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5298,7 +6590,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339278",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Obtenebration', 'Vicissitude'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5308,7 +6600,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339279",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Dominate', 'Necromancy', 'Potence', 'Presence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5318,7 +6610,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339280",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Auspex', 'Dominate', 'Fortitude', 'Necromancy', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2021-02-01",
                 },
 
@@ -5328,7 +6620,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339281",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Obfuscate', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5338,8 +6630,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339282",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Rex, The Necronomist",
+                  "id":"201184",
+                  "link":"https://www.drivethrucards.com/product/392187",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -5348,8 +6650,38 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297335",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Obfuscate', 'Protean', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2020-03-31",
+                },
+
+                {
+                  "name":"Righteous Endeavor",
+                  "id":"201191",
+                  "link":"https://www.drivethrucards.com/product/392274",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Rose, The",
+                  "id":"201205",
+                  "link":"https://www.drivethrucards.com/product/392275",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Royce",
+                  "id":"201208",
+                  "link":"https://www.drivethrucards.com/product/392188",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -5358,7 +6690,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339283",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Necromancy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5368,7 +6700,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339284",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Obfuscate', 'Serpentis', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5378,7 +6710,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297371",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -5388,7 +6720,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368330",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Chimerstry', 'Fortitude', 'Protean', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -5398,7 +6730,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339285",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Obfuscate', 'Presence', 'Serpentis', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5408,7 +6740,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339286",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Celerity', 'Fortitude', 'Obfuscate', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2021-02-01",
                 },
 
@@ -5418,7 +6750,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368331",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Dominate', 'Fortitude', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -5428,7 +6760,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339287",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Auspex', 'Necromancy', 'Obfuscate', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5438,8 +6770,28 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339288",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Auspex', 'Necromancy', 'Obfuscate', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Sascha Vykos, The Angel of Caine",
+                  "id":"201244",
+                  "link":"https://www.drivethrucards.com/product/392278",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Sascha Vykos, The Angel of Caine",
+                  "id":"201245",
+                  "link":"https://www.drivethrucards.com/product/392277",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -5448,7 +6800,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368332",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Chimerstry', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -5458,8 +6810,28 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339289",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Chimerstry', 'Dominate', 'Obtenebration', 'Potence', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Saulot, The Wanderer",
+                  "id":"201248",
+                  "link":"https://www.drivethrucards.com/product/392198",
+                  "type":['Vampire'],
+                  "clan":['Salubri'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-25",
+                },
+
+                {
+                  "name":"Schuyler",
+                  "id":"201252",
+                  "link":"https://www.drivethrucards.com/product/392189",
+                  "type":['Vampire'],
+                  "clan":['Pander'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -5468,7 +6840,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368333",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Fortitude', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -5478,8 +6850,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339290",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Obfuscate', 'Presence', 'Serpentis', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Serenna the White",
+                  "id":"201266",
+                  "link":"https://www.drivethrucards.com/product/392199",
+                  "type":['Vampire'],
+                  "clan":['Salubri'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -5488,8 +6870,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339291",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Auspex', 'Necromancy', 'Obfuscate', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Sha-Ennu",
+                  "id":"201270",
+                  "link":"https://www.drivethrucards.com/product/392279",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -5498,7 +6890,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339292",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Obfuscate', 'Potence', 'Presence', 'Serpentis', 'Vicissitude'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5508,7 +6900,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339293",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Animalism', 'Dominate', 'Fortitude', 'Necromancy', 'Potence', 'Vicissitude'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5518,7 +6910,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339294",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Auspex', 'Obfuscate', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5528,7 +6920,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339295",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Celerity', 'Obfuscate', 'Presence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5538,7 +6930,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368334",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Auspex', 'Celerity', 'Chimerstry', 'Fortitude', 'Obfuscate', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -5548,7 +6940,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368335",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -5558,8 +6950,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339296",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Dominate', 'Necromancy', 'Potence', 'Presence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Stephen Bateson",
+                  "id":"201315",
+                  "link":"https://www.drivethrucards.com/product/392280",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -5568,8 +6970,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339297",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Necromancy', 'Presence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Stravinsky",
+                  "id":"201319",
+                  "link":"https://www.drivethrucards.com/product/392281",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -5578,7 +6990,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297343",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Auspex', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2020-03-31",
                 },
 
@@ -5588,7 +7000,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339298",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Auspex', 'Obfuscate', 'Presence', 'Serpentis', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2021-02-25",
                 },
 
@@ -5598,8 +7010,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339299",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Celerity', 'Necromancy', 'Obfuscate', 'Potence', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2021-01-22",
+                },
+
+                {
+                  "name":"Szechenyi Jol&aacute;n, Mother of Horrors",
+                  "id":"201333",
+                  "link":"https://www.drivethrucards.com/product/392282",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -5608,7 +7030,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339300",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Obtenebration', 'Potence', 'Protean'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5618,7 +7040,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339301",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Auspex', 'Dominate', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5628,7 +7050,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297357",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Obfuscate'],
+                  "disciplines":[''],
                   "release_date":"2020-03-31",
                 },
 
@@ -5638,7 +7060,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297350",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Auspex', 'Celerity', 'Fortitude', 'Obfuscate', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -5648,7 +7070,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297364",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Auspex', 'Celerity', 'Fortitude', 'Obfuscate', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -5658,7 +7080,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368336",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Fortitude', 'Obfuscate', 'Presence', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -5668,7 +7090,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297328",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Auspex', 'Celerity', 'Fortitude', 'Presence', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -5678,7 +7100,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297336",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Auspex', 'Celerity', 'Fortitude', 'Presence', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2020-03-31",
                 },
 
@@ -5688,8 +7110,28 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368337",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Auspex', 'Chimerstry', 'Fortitude', 'Potence', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Terrence",
+                  "id":"201357",
+                  "link":"https://www.drivethrucards.com/product/392283",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Terrifisto",
+                  "id":"201358",
+                  "link":"https://www.drivethrucards.com/product/392284",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -5698,7 +7140,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297379",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Dominate', 'Obfuscate', 'Potence', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-12-24",
                 },
 
@@ -5708,7 +7150,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339302",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Necromancy', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5718,7 +7160,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297344",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Dementation', 'Fortitude', 'Obfuscate', 'Protean', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2020-03-31",
                 },
 
@@ -5728,7 +7170,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339303",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Obtenebration', 'Potence', 'Presence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5738,7 +7180,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368338",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Abombwe', 'Animalism', 'Chimerstry', 'Dementation', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -5748,7 +7190,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297372",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Auspex', 'Celerity', 'Dominate', 'Obfuscate', 'Quietus', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-02-21",
                 },
 
@@ -5758,7 +7200,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368339",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Fortitude', 'Potence', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -5768,7 +7210,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297358",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Obfuscate', 'Presence', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -5778,7 +7220,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368340",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Chimerstry', 'Fortitude', 'Protean', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -5788,7 +7230,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368341",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Auspex', 'Celerity', 'Chimerstry', 'Dominate', 'Fortitude', 'Obfuscate', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
                 },
 
@@ -5798,8 +7240,28 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368342",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Chimerstry', 'Fortitude', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Velya, The Flayer",
+                  "id":"201434",
+                  "link":"https://www.drivethrucards.com/product/392285",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Violet Tremain",
+                  "id":"201449",
+                  "link":"https://www.drivethrucards.com/product/392286",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -5808,7 +7270,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339304",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Dominate', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5818,8 +7280,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339305",
                   "type":['Vampire'],
                   "clan":['Giovanni'],
-                  "disciplines":['Dominate', 'Fortitude', 'Necromancy', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Vlad Tepes",
+                  "id":"201456",
+                  "link":"https://www.drivethrucards.com/product/392287",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -5828,8 +7300,28 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368343",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism', 'Auspex', 'Chimerstry', 'Fortitude', 'Presence', 'Chimerstry'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Wendy Wade",
+                  "id":"201466",
+                  "link":"https://www.drivethrucards.com/product/392288",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Xipe Totec",
+                  "id":"201482",
+                  "link":"https://www.drivethrucards.com/product/392289",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -5838,7 +7330,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297329",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Animalism', 'Celerity', 'Dominate', 'Obfuscate', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
                 },
 
@@ -5848,8 +7340,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297337",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Animalism', 'Celerity', 'Dominate', 'Obfuscate', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2019-11-24",
+                },
+
+                {
+                  "name":"Yuri Kerezenski",
+                  "id":"201494",
+                  "link":"https://www.drivethrucards.com/product/392290",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -5858,7 +7360,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297351",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Auspex', 'Celerity', 'Obfuscate', 'Quietus'],
+                  "disciplines":[''],
                   "release_date":"2020-01-04",
                 },
 
@@ -5868,7 +7370,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/297365",
                   "type":['Vampire'],
                   "clan":['Assamite'],
-                  "disciplines":['Celerity', 'Obfuscate', 'Quietus', 'Thaumaturgy'],
+                  "disciplines":[''],
                   "release_date":"2020-01-02",
                 },
 
@@ -5878,7 +7380,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339306",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Obfuscate', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5888,8 +7390,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/368344",
                   "type":['Vampire'],
                   "clan":['Ravnos'],
-                  "disciplines":['Animalism'],
+                  "disciplines":[''],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"America Johnson",
+                  "id":"201512",
+                  "link":"https://www.drivethrucards.com/product/392240",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -5898,8 +7410,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339187",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Celerity', 'Dominate', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Lady Vadislava",
+                  "id":"201516",
+                  "link":"https://www.drivethrucards.com/product/392263",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -5908,7 +7430,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339239",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Celerity', 'Dominate', 'Obfuscate', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
 
@@ -5918,8 +7440,18 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339272",
                   "type":['Vampire'],
                   "clan":['Lasombra'],
-                  "disciplines":['Auspex', 'Dominate', 'Fortitude', 'Obtenebration', 'Potence'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Rurik Rakoczy",
+                  "id":"201519",
+                  "link":"https://www.drivethrucards.com/product/392276",
+                  "type":['Vampire'],
+                  "clan":['Tzimisce'],
+                  "disciplines":[''],
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -5928,7 +7460,7 @@ var cards = [
                   "link":"https://www.drivethrucards.com/product/339259",
                   "type":['Vampire'],
                   "clan":['Follower of Set'],
-                  "disciplines":['Celerity', 'Dominate', 'Obfuscate', 'Potence', 'Presence', 'Serpentis'],
+                  "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
             ];

@@ -5,6 +5,8 @@ from html.parser import HTMLParser
 from multiprocessing import Pool
 
 import requests
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
 
 DISCIPLINES = ["abombwe", "animalism", "auspex", "celerity", "chimerstry", "daimoinon", "dementation", "dominate",
                "fortitude", "melpominee", "mytherceria", "necromancy", "obeah", "obfuscate", "obtenebration", "potence",
@@ -15,7 +17,7 @@ BLOODLIBRARY_ENDPOINT = "https://api.bloodlibrary.info/api/search/?name={0}"
 BLOODLIBRARY_CRYPT = "https://api.bloodlibrary.info/api/crypt/{0}"
 BLOODLIBRARY_LIBRARY = "https://api.bloodlibrary.info/api/library/{0}"
 
-CONCURRENCY_LEVEL = 24
+CONCURRENCY_LEVEL = 4
 
 HTML_TABLE = {k: '&{};'.format(v) for k, v in html.entities.codepoint2name.items()}
 
@@ -24,47 +26,51 @@ class DriveThruCards:
     WEB_URL = "https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles?sort=4a&pfrom=0.35&pto=0.35&page={0}"
 
     def __init__(self):
-        pass
+        self.__session = requests.Session()
+        retry = Retry(connect=3, backoff_factor=0.5)
+        adapter = HTTPAdapter(max_retries=retry)
+        self.__session.mount('http://', adapter)
+        self.__session.mount('https://', adapter)
 
     def get_cards(self):
         raw_cards = self.__get_cards_from_web()
-        cards = DriveThruCards.__parse_raw_cards(raw_cards)
+        cards = self.__parse_raw_cards(raw_cards)
         return sorted(cards, key=lambda item: item['id'])
 
     def __get_cards_from_web(self):
         raw_cards = []
-        for page in range(1, 13):
+        for page in range(1, 16):
+            print(f"\tFetching page {page}")
             html = self.__get_html(DriveThruCards.WEB_URL.format(page))
             parser = DriveThruParser()
             parser.feed(html)
             raw_cards.extend(parser.cards)
+        print("Fetching process finished.")
         return raw_cards
 
     def __get_html(self, url):
         rs = requests.get(url, headers={'User-Agent': "Mozilla/5.0"})
         return rs.text
 
-    @staticmethod
-    def get_card_data(card_name):
-        rs = requests.get(BLOODLIBRARY_ENDPOINT.format(card_name))
+    def get_card_data(self, card_name):
+        rs = self.__session.get(BLOODLIBRARY_ENDPOINT.format(card_name))
         basic_data = rs.json()[0]
         card_id = basic_data['id']
         if card_id[0] == '1':
-            full_data = requests.get(BLOODLIBRARY_LIBRARY.format(card_id)).json()
+            full_data = self.__session.get(BLOODLIBRARY_LIBRARY.format(card_id)).json()
             full_data['disciplines'] = re.split('/| & ', full_data['discipline']) if full_data['discipline'] else [""]
         else:
-            full_data = requests.get(BLOODLIBRARY_CRYPT.format(card_id)).json()
+            full_data = self.__session.get(BLOODLIBRARY_CRYPT.format(card_id)).json()
             full_data['disciplines'] = [d.capitalize() for d in DISCIPLINES if full_data[d] > 0]
             if len(full_data['disciplines']) == 0:
                 full_data['disciplines'] = [""]
 
         return full_data
 
-    @staticmethod
-    def parse_raw_card(raw_card):
+    def parse_raw_card(self, raw_card):
         raw_name = raw_card['name'].split("-", 1)[1].rsplit("-", 1)[0]
         link = raw_card['link'].rsplit('?')[0].rsplit('/', 1)[0]
-        card_data = DriveThruCards.get_card_data(raw_name)
+        card_data = self.get_card_data(raw_name)
 
         return {
             'name': card_data['name'],
@@ -76,10 +82,9 @@ class DriveThruCards:
             'release_date': raw_card['release_date'],
         }
 
-    @staticmethod
-    def __parse_raw_cards(raw_cards):
+    def __parse_raw_cards(self, raw_cards):
         pool = Pool(CONCURRENCY_LEVEL)
-        results = pool.map(DriveThruCards.parse_raw_card, raw_cards)
+        results = pool.map(self.parse_raw_card, raw_cards)
         pool.close()
         pool.join()
 
@@ -185,6 +190,7 @@ class DataFile:
 
 if __name__ == '__main__':
     dtc = DriveThruCards()
+    print(f"Fetching cards...")
     cards = dtc.get_cards()
 
     print(f"Found {len(cards)} cards")
