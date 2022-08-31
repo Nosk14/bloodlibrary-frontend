@@ -17,12 +17,12 @@
 
         <div class="form-inline">
             <label for="line_color" class="col-form-label-sm">Cut line color: </label>
-            <input class="color-picker" type="color" id="line_color" onchange="setCutLineColor(value)" value="#FFFFFF"/>
+            <input class="color-picker" type="color" id="line_color" onchange="setCutLineColor(value)" value="#FFFFFF"><input/>
         </div>
         <div class="form-inline card-input">
             <label for="lackey" class="col-form-label-sm">Import Lackey deck</label>
             <input type="file" accept=".txt" onchange="loadCardsFromFile(value)" class="form-control-file"
-                   id=lackey"/>
+                   id=lackey"><input/>
         </div>
 
         <button id="generate" type="button" onclick="generatePDF()" class="btn btn-primary btn-lg btn-block">Generate

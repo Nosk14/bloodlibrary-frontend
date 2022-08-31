@@ -1,5 +1,5 @@
 var proxyList = [];
-var cutLineColor = localStorage.getItem("cutLineColor") ?? "#AABBCC"
+var cutLineColor = localStorage.getItem("cutLineColor") ?? "#FFFFFF"
 
 function generatePDF(){
 	if ( proxyList.length == 0) {
