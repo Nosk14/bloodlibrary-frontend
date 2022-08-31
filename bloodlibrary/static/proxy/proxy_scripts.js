@@ -1,13 +1,18 @@
 var proxyList = [];
+var cutLineColor = localStorage.getItem("cutLineColor") ?? "#AABBCC"
 
 function generatePDF(){
 	if ( proxyList.length == 0) {
 		return;
 	}
 	disableButton()
+	rqBody = {
+	    'lineColor': cutLineColor,
+	    'cards': proxyList
+	}
 	fetch('https://api.bloodlibrary.info/proxy/generate', {
 		method: 'POST',
-		body: JSON.stringify(proxyList)
+		body: JSON.stringify(rqBody)
 	})
     .then(async res => ({
         filename: 'vtes_proxies.pdf',
@@ -132,5 +137,10 @@ function updateCardImage(new_image, card_id, set_id){
     $('#image-'+card_id)[0].src = new_image
     i = proxyList.findIndex((obj => obj.id == card_id));
     proxyList[i].set = set_id;
+}
+
+function setCutLineColor(color) {
+    localStorage.setItem("cutLineColor", color)
+    cutLineColor = color
 }
 
