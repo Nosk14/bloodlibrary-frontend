@@ -56,7 +56,7 @@ function addCard(card_name, card_id, sets) {
 		return;
 	}
 
-	var card_image = '<div class="auspex"><img class="auspex-icon" src="https://vtesdecks.com/assets/img/icondisauspex.gif"></img><img id="image-'+card_id+'" class="card-img" src="'+sets[0].image+'" alt=""/></div>';
+	var card_image = '<div class="auspex"><img class="auspex-icon" src="https://vtesdecks.com/assets/img/icons/icondisauspex.gif"></img><img id="image-'+card_id+'" class="card-img" src="'+sets[0].image+'" alt=""/></div>';
 	var name = card_name;
 	var amount = '<input id="amount-'+card_id+'" class="form-control mr-sm-2" type="number" max="50" min="1" value="1" onchange="updateAmount(this.value, '+card_id+')"></input>';
 	var delete_button = '<button type="button" class="btn btn-danger" onclick="removeCard('+card_id+')">X</button>';
