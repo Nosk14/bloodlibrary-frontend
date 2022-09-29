@@ -43,7 +43,7 @@ function addFilters() {
         getIconTag("/static/img/iconnodisc.gif", "No Discipline", "No Discipline", 'cardDisciplines', '')
     );
     for (discipline of cardDisciplines.slice(1)) {
-        let iconSrc = `https://vtesdecks.com/img/icons/icondis${discipline.toLowerCase()}.gif`
+        let iconSrc = `https://vtesdecks.com/assets/img/icons/icondis${discipline.toLowerCase()}.gif`
         $('#discipline-filter').append(
             getIconTag(iconSrc, discipline, discipline, 'cardDisciplines', discipline)
         );
