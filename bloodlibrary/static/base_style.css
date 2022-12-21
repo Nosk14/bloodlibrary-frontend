@@ -103,3 +103,10 @@ ul.navbar-nav {
 .favorite-icon {
     display: inline;
 }
+
+.user-info {
+    position: absolute;
+    text-align: right;
+    top: 1%;
+    right: 1%;
+}
