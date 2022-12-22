@@ -110,3 +110,7 @@ ul.navbar-nav {
     top: 1%;
     right: 1%;
 }
+
+.avatar {
+    border-radius: 50%;
+}
