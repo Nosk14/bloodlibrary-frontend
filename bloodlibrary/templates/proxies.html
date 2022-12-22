@@ -49,32 +49,40 @@
 <br><br><br><br><br>
 
 <script>
-			$('.basicAutoSelect').autoComplete(
-			{
-				minLength: 2,
-				resolver: 'custom',
-				events: {
-					search: function (query, callback) {
-						$.get("https://api.bloodlibrary.info/api/search/?name="+query)
-						.done(function (results) {
-							callback(
-								results.slice(0,10).map(
-								    function (card, i, arr) {
-								        filtered_sets = card.publish_sets.filter(zet  => zet.image).sort(function (a,b) {return a.set_id - b.set_id}).reverse();
-								        return {'value': card.id, 'text': card.alias, 'image': filtered_sets[0].image, 'sets':filtered_sets}
-								})
-							);
-						});
-					}
-				}
-			});
-			$('.basicAutoSelect').autoComplete('show');
-			$('.basicAutoSelect').on('autocomplete.select', function(event, item) {
-				addCard(item.text, item.value, item.sets);
-				$('.basicAutoSelect').autoComplete('clear');
-			});
+	const headers = new Headers();
+	let token = localStorage.getItem("auth_token")
+	if(token){
+	    headers.append('Authorization', token)
+	}
 
-$("#line_color").val(cutLineColor)
+    $('.basicAutoSelect').autoComplete(
+    {
+        minLength: 2,
+        resolver: 'custom',
+        events: {
+            search: function (query, callback) {
+                fetch("https://api.bloodlibrary.info/api/search/?name="+query, {
+                        method: 'GET',
+                        headers: headers})
+                .then((rs) => rs.json())
+                .then(function (data) {
+                    callback(
+                        data.slice(0,10).map(
+                            function (card, i, arr) {
+                                filtered_sets = card.publish_sets.filter(zet  => zet.image).sort(function (a,b) {return a.set_id - b.set_id}).reverse();
+                                return {'value': card.id, 'text': card.alias, 'image': filtered_sets[0].image, 'sets':filtered_sets}
+                        })
+                    );
+                });
+            }
+        }
+    });
+    $('.basicAutoSelect').autoComplete('show');
+    $('.basicAutoSelect').on('autocomplete.select', function(event, item) {
+        addCard(item.text, item.value, item.sets);
+        $('.basicAutoSelect').autoComplete('clear');
+    });
 
+    $("#line_color").val(cutLineColor)
 </script>
 {% endblock %}

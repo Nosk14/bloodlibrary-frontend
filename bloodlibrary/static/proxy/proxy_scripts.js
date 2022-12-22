@@ -10,9 +10,16 @@ function generatePDF(){
 	    'lineColor': cutLineColor,
 	    'cards': proxyList
 	}
+
+	const headers = new Headers();
+	let token = localStorage.getItem("auth_token")
+	if(token){
+	    headers.append('Authorization', token)
+	}
 	fetch('https://api.bloodlibrary.info/proxy/generate', {
 		method: 'POST',
-		body: JSON.stringify(rqBody)
+		body: JSON.stringify(rqBody),
+		headers: headers
 	})
     .then(async res => ({
         filename: 'vtes_proxies.pdf',
