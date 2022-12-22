@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <script>
+        localStorage.setItem("auth_token", "{{ token }}" )
+        localStorage.setItem("display_name", "{{ name }}" )
+        localStorage.setItem("avatar", "{{ avatar }}" )
+        localStorage.setItem("last_login", new Date() )
+        window.location.href = '/';
+    </script>
+{% endblock %}

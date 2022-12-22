@@ -3,9 +3,11 @@ from flask import Flask, render_template, request, send_from_directory
 from flask_mobility import Mobility
 from features.kickstarter import data as ks_data
 from features.cards import all_sets_data
+from auth import authenticate_user, LoginForm
 import os
 
 app = Flask(__name__)
+app.secret_key = os.getenv('SECRET', 'secret_value')
 Mobility(app)
 
 if __name__ != '__main__':
@@ -41,6 +43,25 @@ def print_on_demand():
 @app.route("/cards", methods=['GET'])
 def all_cards():
     return render_template('cards.html', zets=all_sets_data, is_mobile=request.MOBILE)
+
+
+@app.route("/login", methods=['GET', 'POST'])
+def login():
+    form = LoginForm()
+    if request.method == 'GET':
+        return render_template('login.html', form=form, is_mobile=request.MOBILE)
+
+    elif request.method == 'POST':
+        if form.validate_on_submit():
+            user_data = authenticate_user(form.name.data, form.password.data)
+            if user_data:
+                return render_template('local_store.html',
+                                       token=user_data['token'],
+                                       name=user_data['displayName'],
+                                       avatar=user_data['profileImage'],
+                                       )
+            else:
+                return render_template('login.html', form=form, errors=["Login failed"], is_mobile=request.MOBILE)
 
 
 if __name__ == '__main__':

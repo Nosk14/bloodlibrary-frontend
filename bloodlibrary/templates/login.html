@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block navPage %}proxies{% endblock %}
+{% block title %} - Proxy Generator{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='login/login_style.css') }}"/>
+    <script src="{{ url_for('static', filename='login/login_scripts.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="form">
+        <form id="login-form" action="/login" method="post">
+            {{ form.hidden_tag() }}
+          <div class="form-group">
+            <label for="user">User</label>
+              {{ form.name(class="form-control") }}
+          </div>
+          <div class="form-group">
+            <label for=password">Password</label>
+            {{ form.password(class="form-control") }}
+          </div>
+          {% if errors is defined and errors %}
+            <div class="errors">
+            {% for error in errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+            </div>
+          {% endif %}
+                        <br>
+          <button id="login-button" type="submit" class="btn btn-primary">Log In</button>
+        </form>
+
+    </div>
+{% endblock %}
