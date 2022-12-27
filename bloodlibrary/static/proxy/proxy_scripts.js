@@ -89,14 +89,15 @@ function removeCard(card_id) {
 }
 
 function loadCardsFromFile(e){
-	if(e.files.length < 1) {
-		return;
-	}
-	var file = e.files[0];
-	if(file.type != "text/plain") {
-		return;
-	}
-	
+    let files = document.getElementById('lackey').files;
+    if(files.length < 1) {
+        return;
+    }
+    var file = files[0];
+    if(file.type != "text/plain") {
+        return;
+    }
+
 	var reader = new FileReader();
 	reader.onload = function(progressEvent) {
 		var lines = this.result.split('\n');
@@ -129,10 +130,29 @@ async function handleLine(line) {
 		var numberOfCopies = parseInt(parts[0].trim());
 		var expectedCardName = parts[1].trim();
 		
-		var cardData = await $.get('https://api.bloodlibrary.info/api/search', {name: expectedCardName}, {crossDomain: true} );
+		const headers = new Headers();
+        let token = localStorage.getItem("auth_token")
+        if(token){
+            headers.append('Authorization', token)
+        }
+        let cardData = await fetch("https://api.bloodlibrary.info/api/search/?name="+expectedCardName, {
+                        method: 'GET',
+                        headers: headers})
+                .then((rs) => rs.json())
 		
-		if(cardData){
-		    filtered_sets = cardData[0].publish_sets.filter(zet  => zet.image).sort(function (a,b) {return a.set_id - b.set_id}).reverse();
+		if(cardData.length !== 0){
+		    if (cardData[0].publish_sets.length !== 0){
+		        filtered_sets = cardData[0].publish_sets.filter(zet  => zet.image).sort(function (a,b) {return a.set_id - b.set_id}).reverse();
+		    }else{
+		        filtered_sets = [
+                                        {
+                                            image: 'https://statics.bloodlibrary.info/img/cardbacklibrary.jpg',
+                                            set_id: '000000',
+                                            set_name: "Urza's Saga",
+                                            set_abbreviation: 'USG',
+                                        }
+                                    ]
+		    }
 			return {id: cardData[0].id, name: cardData[0].name, amount: numberOfCopies, sets: filtered_sets};
 		}else{
 			console.log("No data found for: " + expectedCardName);
