@@ -23,7 +23,7 @@ HTML_TABLE = {k: '&{};'.format(v) for k, v in html.entities.codepoint2name.items
 
 
 class DriveThruCards:
-    WEB_URL = "https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles?sort=4a&pfrom=0.35&pto=0.35&page={0}"
+    WEB_URL = "https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles?sort=4a&pfrom=0.35&pto=0.38&page={0}"
 
     def __init__(self):
         self.__session = requests.Session()
@@ -39,7 +39,7 @@ class DriveThruCards:
 
     def __get_cards_from_web(self):
         raw_cards = []
-        for page in range(1, 16):
+        for page in range(1, 18):
             print(f"\tFetching page {page}")
             html = self.__get_html(DriveThruCards.WEB_URL.format(page))
             parser = DriveThruParser()

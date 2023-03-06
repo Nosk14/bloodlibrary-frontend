@@ -15,6 +15,10 @@ var icons = {
 
     'Harbinger of Skulls': "https://static.krcg.org/clan/harbingersofskulls.svg",
     'Follower of Set': "https://static.krcg.org/clan/followersofset.svg",
+    'Daughter of Cacophony': "https://static.krcg.org/clan/daughtersofcacophony.svg",
+
+    'Striga': "https://static.krcg.org/svg/disc/inf/str.svg",
+    'Maleficia': "https://static.krcg.org/svg/disc/inf/mal.svg",
 };
 
 var affiliate_param = '?affiliate_id=2900918';
@@ -44,6 +48,9 @@ function addFilters() {
     );
     for (discipline of cardDisciplines.slice(1)) {
         let iconSrc = `https://vtesdecks.com/assets/img/icons/icondis${discipline.toLowerCase()}.gif`
+        if(discipline in icons){
+            iconSrc = icons[discipline]
+        }
         $('#discipline-filter').append(
             getIconTag(iconSrc, discipline, discipline, 'cardDisciplines', discipline)
         );

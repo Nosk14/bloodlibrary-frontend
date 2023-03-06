@@ -1,46 +1,52 @@
 var cardTypes = ["Vampire", "Master", "Action", "Ally", "Retainer", "Equipment", "Political Action", "Action Modifier", "Reaction", "Combat", "Event"];
 var cardClans = [	"",
+	"Baali",
+	"Salubri",
+	"Samedi",
+	"Gangrel",
+	"Caitiff",
+	"Giovanni",
+	"Kiasyd",
+	"Lasombra",
+	"Assamite",
+	"Tzimisce",
+	"Ravnos",
 	"Toreador antitribu",
+	"Daughter of Cacophony",
 	"Follower of Set",
 	"Tremere",
-	"Giovanni",
-	"Tzimisce",
-	"Lasombra",
-	"Samedi",
 	"Harbinger of Skulls",
-	"Gangrel",
-	"Assamite",
-	"Ravnos",
-	"Salubri",
-	"Kiasyd",
+	"Malkavian",
 	"Pander",
 ];
 var cardDisciplines = [	"",
-	"Celerity",
-	"Protean",
-	"Presence",
-	"Chimerstry",
-	"Quietus",
 	"Melpominee",
-	"Valeren",
-	"Thaumaturgy",
-	"Vicissitude",
-	"Serpentis",
-	"Obeah",
-	"Temporis",
-	"Obtenebration",
-	"Auspex",
-	"Dominate",
-	"Necromancy",
 	"Daimoinon",
-	"Dementation",
+	"Serpentis",
+	"Dominate",
 	"Mytherceria",
-	"Potence",
-	"Obfuscate",
-	"Thanatosis",
-	"Animalism",
+	"Thaumaturgy",
+	"Temporis",
 	"Fortitude",
+	"Obeah",
+	"Striga",
+	"Chimerstry",
+	"Protean",
+	"Dementation",
+	"Valeren",
+	"Vicissitude",
+	"Maleficia",
+	"Presence",
+	"Thanatosis",
+	"Obtenebration",
+	"Potence",
+	"Auspex",
+	"Animalism",
+	"Obfuscate",
+	"Celerity",
 	"Visceratika",
+	"Quietus",
+	"Necromancy",
 ];
 var cards = [
 
@@ -71,7 +77,7 @@ var cards = [
                   "type":['Master'],
                   "clan":['Giovanni'],
                   "disciplines":[''],
-                  "release_date":"2020-11-22",
+                  "release_date":"2022-11-14",
                 },
 
                 {
@@ -207,11 +213,11 @@ var cards = [
                 {
                   "name":"Asanbonsam Ghoul",
                   "id":"100103",
-                  "link":"https://www.drivethrucards.com/product/339977",
+                  "link":"https://www.drivethrucards.com/product/392136",
                   "type":['Ally'],
                   "clan":['Tzimisce'],
                   "disciplines":[''],
-                  "release_date":"2021-01-22",
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -255,6 +261,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Bastille Opera House",
+                  "id":"100140",
+                  "link":"https://www.drivethrucards.com/product/426501",
+                  "type":['Master'],
+                  "clan":[''],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Bauble",
                   "id":"100142",
                   "link":"https://www.drivethrucards.com/product/392204",
@@ -262,6 +278,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Vicissitude'],
                   "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Benefit Performance",
+                  "id":"100151",
+                  "link":"https://www.drivethrucards.com/product/419094",
+                  "type":['Political Action'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -415,6 +441,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Bloodstorm of Chorazin",
+                  "id":"100224",
+                  "link":"https://www.drivethrucards.com/product/419044",
+                  "type":['Reaction'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Body Arsenal",
                   "id":"100228",
                   "link":"https://www.drivethrucards.com/product/392207",
@@ -492,6 +528,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Call the Great Beast",
+                  "id":"100280",
+                  "link":"https://www.drivethrucards.com/product/419045",
+                  "type":['Action'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -585,6 +631,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Choir",
+                  "id":"100345",
+                  "link":"https://www.drivethrucards.com/product/419096",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Melpominee'],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Clandestine Contract",
                   "id":"100355",
                   "link":"https://www.drivethrucards.com/product/297296",
@@ -635,6 +691,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Command Performance",
+                  "id":"100383",
+                  "link":"https://www.drivethrucards.com/product/419097",
+                  "type":['Master'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Compel the Spirit",
                   "id":"100388",
                   "link":"https://www.drivethrucards.com/product/339334",
@@ -642,6 +708,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Concert Tour",
+                  "id":"100393",
+                  "link":"https://www.drivethrucards.com/product/419098",
+                  "type":['Action'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -675,6 +751,26 @@ var cards = [
                 },
 
                 {
+                  "name":"Condemnation: Doomed",
+                  "id":"100398",
+                  "link":"https://www.drivethrucards.com/product/419048",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Daimoinon', 'Obfuscate'],
+                  "release_date":"2023-03-05",
+                },
+
+                {
+                  "name":"Condemnation: Languid",
+                  "id":"100399",
+                  "link":"https://www.drivethrucards.com/product/419049",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Daimoinon', 'Presence'],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Condemnation: Mute",
                   "id":"100400",
                   "link":"https://www.drivethrucards.com/product/368363",
@@ -685,6 +781,26 @@ var cards = [
                 },
 
                 {
+                  "name":"Conductor",
+                  "id":"100402",
+                  "link":"https://www.drivethrucards.com/product/419099",
+                  "type":['Master'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
+                  "name":"Conflagration",
+                  "id":"100403",
+                  "link":"https://www.drivethrucards.com/product/419051",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Daimoinon', 'Potence'],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Consignment to Duat",
                   "id":"100415",
                   "link":"https://www.drivethrucards.com/product/339337",
@@ -692,6 +808,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Contagion",
+                  "id":"100418",
+                  "link":"https://www.drivethrucards.com/product/419052",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Daimoinon'],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -785,6 +911,16 @@ var cards = [
                 },
 
                 {
+                  "name":"D'habi Revenant",
+                  "id":"100484",
+                  "link":"https://www.drivethrucards.com/product/419053",
+                  "type":['Retainer'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Daemonic Possession",
                   "id":"100486",
                   "link":"https://www.drivethrucards.com/product/339343",
@@ -845,6 +981,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Death of the Drum",
+                  "id":"100508",
+                  "link":"https://www.drivethrucards.com/product/419100",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Melpominee', 'Celerity'],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Deed the Heart's Desire",
                   "id":"100513",
                   "link":"https://www.drivethrucards.com/product/297318",
@@ -882,6 +1028,16 @@ var cards = [
                   "clan":['Assamite'],
                   "disciplines":[''],
                   "release_date":"2019-11-24",
+                },
+
+                {
+                  "name":"Diabolic Lure",
+                  "id":"100542",
+                  "link":"https://www.drivethrucards.com/product/419054",
+                  "type":['Reaction'],
+                  "clan":[''],
+                  "disciplines":['Daimoinon', 'Auspex'],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -995,6 +1151,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Echo of Harmonies",
+                  "id":"100608",
+                  "link":"https://www.drivethrucards.com/product/419101",
+                  "type":['Action Modifier'],
+                  "clan":[''],
+                  "disciplines":['Melpominee', 'Presence'],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Ecstasy",
                   "id":"100610",
                   "link":"https://www.drivethrucards.com/product/339356",
@@ -1042,6 +1208,16 @@ var cards = [
                   "clan":['Lasombra'],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Ensemble",
+                  "id":"100649",
+                  "link":"https://www.drivethrucards.com/product/419102",
+                  "type":['Action Modifier'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -1175,6 +1351,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Fanfare for Elysium",
+                  "id":"100700",
+                  "link":"https://www.drivethrucards.com/product/419103",
+                  "type":['Political Action'],
+                  "clan":[''],
+                  "disciplines":['Melpominee'],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Fantasy World",
                   "id":"100701",
                   "link":"https://www.drivethrucards.com/product/368227",
@@ -1212,6 +1398,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Chimerstry'],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Fear of the Void Below",
+                  "id":"100711",
+                  "link":"https://www.drivethrucards.com/product/419055",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Daimoinon', 'Obfuscate'],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -1347,11 +1543,11 @@ var cards = [
                 {
                   "name":"Gear Up",
                   "id":"100813",
-                  "link":"https://www.drivethrucards.com/product/339373",
+                  "link":"https://www.drivethrucards.com/product/392215",
                   "type":['Action'],
                   "clan":[''],
                   "disciplines":['Necromancy', 'Presence', 'Vicissitude'],
-                  "release_date":"2020-11-22",
+                  "release_date":"2022-04-01",
                 },
 
                 {
@@ -1455,6 +1651,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Greater Curse",
+                  "id":"100854",
+                  "link":"https://www.drivethrucards.com/product/419057",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Maleficia', 'Daimoinon'],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Guardian Ghoul",
                   "id":"100867",
                   "link":"https://www.drivethrucards.com/product/392138",
@@ -1462,6 +1668,16 @@ var cards = [
                   "clan":['Tzimisce'],
                   "disciplines":[''],
                   "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Hanging Fermata",
+                  "id":"100883",
+                  "link":"https://www.drivethrucards.com/product/419104",
+                  "type":['Master'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -1482,6 +1698,16 @@ var cards = [
                   "clan":['Assamite'],
                   "disciplines":[''],
                   "release_date":"2019-11-24",
+                },
+
+                {
+                  "name":"Harmony",
+                  "id":"100888",
+                  "link":"https://www.drivethrucards.com/product/419105",
+                  "type":['Action'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -1565,6 +1791,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Hexe",
+                  "id":"100915",
+                  "link":"https://www.drivethrucards.com/product/419059",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Striga', 'Daimoinon'],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Hierophant",
                   "id":"100923",
                   "link":"https://www.drivethrucards.com/product/339385",
@@ -1592,6 +1828,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Chimerstry'],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"I am Legion",
+                  "id":"100947",
+                  "link":"https://www.drivethrucards.com/product/419060",
+                  "type":['Action Modifier'],
+                  "clan":[''],
+                  "disciplines":['Daimoinon', 'Obfuscate'],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -1652,6 +1898,26 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Auspex', 'Necromancy'],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Infamous Insurgent",
+                  "id":"100975",
+                  "link":"https://www.drivethrucards.com/product/419062",
+                  "type":['Master'],
+                  "clan":[''],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
+                  "name":"Infernal Servitor",
+                  "id":"100981",
+                  "link":"https://www.drivethrucards.com/product/419063",
+                  "type":['Ally'],
+                  "clan":[''],
+                  "disciplines":['Daimoinon'],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -1745,6 +2011,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Kaymakli Fragment",
+                  "id":"101035",
+                  "link":"https://www.drivethrucards.com/product/419064",
+                  "type":['Equipment'],
+                  "clan":[''],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Keystone Kine",
                   "id":"101041",
                   "link":"https://www.drivethrucards.com/product/339391",
@@ -1825,6 +2101,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Knotted Cord",
+                  "id":"101064",
+                  "link":"https://www.drivethrucards.com/product/419065",
+                  "type":['Action Modifier', 'Reaction'],
+                  "clan":[''],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Kraken's Kiss",
                   "id":"101066",
                   "link":"https://www.drivethrucards.com/product/392219",
@@ -1895,6 +2181,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Lily Prelude",
+                  "id":"101109",
+                  "link":"https://www.drivethrucards.com/product/419106",
+                  "type":['Political Action'],
+                  "clan":[''],
+                  "disciplines":['Melpominee'],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Liquefy the Mortal Coil",
                   "id":"101111",
                   "link":"https://www.drivethrucards.com/product/392221",
@@ -1962,6 +2258,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Serpentis'],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Madrigal",
+                  "id":"101141",
+                  "link":"https://www.drivethrucards.com/product/419107",
+                  "type":['Action Modifier', 'Reaction'],
+                  "clan":[''],
+                  "disciplines":['Melpominee', 'Presence'],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -2055,6 +2361,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Member of the Entourage",
+                  "id":"101197",
+                  "link":"https://www.drivethrucards.com/product/419108",
+                  "type":['Ally'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Mental Maze",
                   "id":"101201",
                   "link":"https://www.drivethrucards.com/product/339401",
@@ -2102,6 +2418,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Thaumaturgy'],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Missing Voice, The",
+                  "id":"101226",
+                  "link":"https://www.drivethrucards.com/product/419109",
+                  "type":['Action Modifier'],
+                  "clan":[''],
+                  "disciplines":['Melpominee', 'Celerity'],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -2295,6 +2621,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Paris Opera House",
+                  "id":"101352",
+                  "link":"https://www.drivethrucards.com/product/419110",
+                  "type":['Master'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Park Hunting Ground",
                   "id":"101354",
                   "link":"https://www.drivethrucards.com/product/368276",
@@ -2322,6 +2658,16 @@ var cards = [
                   "clan":['Giovanni'],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Path of Evil Revelations",
+                  "id":"101361",
+                  "link":"https://www.drivethrucards.com/product/419066",
+                  "type":['Master'],
+                  "clan":[''],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -2412,6 +2758,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Chimerstry'],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Persistent Echo",
+                  "id":"101392",
+                  "link":"https://www.drivethrucards.com/product/419111",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Melpominee', 'Auspex'],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -2632,6 +2988,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Chimerstry'],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Psychomachia",
+                  "id":"101511",
+                  "link":"https://www.drivethrucards.com/product/419067",
+                  "type":['Action Modifier'],
+                  "clan":[''],
+                  "disciplines":['Daimoinon', 'Presence'],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -2885,6 +3251,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Rise of the Fallen",
+                  "id":"101638",
+                  "link":"https://www.drivethrucards.com/product/419068",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Root of Vitality",
                   "id":"101652",
                   "link":"https://www.drivethrucards.com/product/392229",
@@ -2892,6 +3268,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Vicissitude'],
                   "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Ruins of Charizel",
+                  "id":"101659",
+                  "link":"https://www.drivethrucards.com/product/419069",
+                  "type":['Master'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -2962,6 +3348,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Quietus'],
                   "release_date":"2020-03-31",
+                },
+
+                {
+                  "name":"Sense the Sin",
+                  "id":"101718",
+                  "link":"https://www.drivethrucards.com/product/419070",
+                  "type":['Action Modifier', 'Reaction'],
+                  "clan":[''],
+                  "disciplines":['Daimoinon', 'Auspex'],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -3125,6 +3521,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Shatter the Gate",
+                  "id":"101757",
+                  "link":"https://www.drivethrucards.com/product/419071",
+                  "type":['Action'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Shattering",
                   "id":"101759",
                   "link":"https://www.drivethrucards.com/product/368251",
@@ -3132,6 +3538,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Chimerstry', 'Dementation', 'Protean'],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Shattering Crescendo",
+                  "id":"101761",
+                  "link":"https://www.drivethrucards.com/product/419113",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Melpominee', 'Protean'],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -3222,6 +3638,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Siren's Lure",
+                  "id":"101786",
+                  "link":"https://www.drivethrucards.com/product/419114",
+                  "type":['Action Modifier'],
+                  "clan":[''],
+                  "disciplines":['Melpominee', 'Celerity'],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -3525,6 +3951,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Tend the Flock",
+                  "id":"101956",
+                  "link":"https://www.drivethrucards.com/product/419072",
+                  "type":['Master'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Tenebrous Form",
                   "id":"101957",
                   "link":"https://www.drivethrucards.com/product/339487",
@@ -3532,6 +3968,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Textbook Damnation, The",
+                  "id":"101962",
+                  "link":"https://www.drivethrucards.com/product/419073",
+                  "type":['Equipment'],
+                  "clan":[''],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -3565,6 +4011,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Toreador's Bane",
+                  "id":"101991",
+                  "link":"https://www.drivethrucards.com/product/419115",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Melpominee', 'Presence'],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Torment the Soul",
                   "id":"101992",
                   "link":"https://www.drivethrucards.com/product/339490",
@@ -3572,6 +4028,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Necromancy'],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Tourette's Voice",
+                  "id":"102000",
+                  "link":"https://www.drivethrucards.com/product/419116",
+                  "type":['Reaction'],
+                  "clan":[''],
+                  "disciplines":['Melpominee', 'Auspex'],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -3642,6 +4108,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Auspex', 'Necromancy'],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"True Faith",
+                  "id":"102040",
+                  "link":"https://www.drivethrucards.com/product/419074",
+                  "type":['Master'],
+                  "clan":[''],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -3745,6 +4221,26 @@ var cards = [
                 },
 
                 {
+                  "name":"Undying Thirst",
+                  "id":"102069",
+                  "link":"https://www.drivethrucards.com/product/419075",
+                  "type":['Reaction'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
+                  "name":"Unleash Hell's Fury",
+                  "id":"102076",
+                  "link":"https://www.drivethrucards.com/product/419076",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Daimoinon'],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Vascular Explosion",
                   "id":"102091",
                   "link":"https://www.drivethrucards.com/product/297309",
@@ -3762,6 +4258,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Chimerstry'],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Veneficti",
+                  "id":"102103",
+                  "link":"https://www.drivethrucards.com/product/419077",
+                  "type":['Ally'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -3802,6 +4308,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":[''],
                   "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Virtuosa",
+                  "id":"102124",
+                  "link":"https://www.drivethrucards.com/product/419117",
+                  "type":['Action Modifier'],
+                  "clan":[''],
+                  "disciplines":['Melpominee', 'Presence'],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -4045,6 +4561,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Aimee Laroux",
+                  "id":"200026",
+                  "link":"https://www.drivethrucards.com/product/419078",
+                  "type":['Vampire'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Aisha",
                   "id":"200029",
                   "link":"https://www.drivethrucards.com/product/339156",
@@ -4205,6 +4731,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Anarch Convert",
+                  "id":"200076",
+                  "link":"https://www.drivethrucards.com/product/406111",
+                  "type":['Vampire'],
+                  "clan":['Caitiff'],
+                  "disciplines":[''],
+                  "release_date":"2022-09-27",
+                },
+
+                {
                   "name":"Andrea Giovanni",
                   "id":"200082",
                   "link":"https://www.drivethrucards.com/product/339164",
@@ -4242,6 +4778,16 @@ var cards = [
                   "clan":['Pander'],
                   "disciplines":[''],
                   "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Angela Preston",
+                  "id":"200091",
+                  "link":"https://www.drivethrucards.com/product/419079",
+                  "type":['Vampire'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -4295,6 +4841,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Annazir",
+                  "id":"200104",
+                  "link":"https://www.drivethrucards.com/product/419026",
+                  "type":['Vampire'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Antara",
                   "id":"200108",
                   "link":"https://www.drivethrucards.com/product/297352",
@@ -4302,6 +4858,16 @@ var cards = [
                   "clan":['Assamite'],
                   "disciplines":[''],
                   "release_date":"2020-01-02",
+                },
+
+                {
+                  "name":"Antoinette Dubois",
+                  "id":"200111",
+                  "link":"https://www.drivethrucards.com/product/419080",
+                  "type":['Vampire'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -4355,6 +4921,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Arishat",
+                  "id":"200136",
+                  "link":"https://www.drivethrucards.com/product/419027",
+                  "type":['Vampire'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Arnulf Jormungandrsson",
                   "id":"200140",
                   "link":"https://www.drivethrucards.com/product/339171",
@@ -4382,6 +4958,16 @@ var cards = [
                   "clan":['Lasombra'],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Azaneal",
+                  "id":"200154",
+                  "link":"https://www.drivethrucards.com/product/419028",
+                  "type":['Vampire'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -4442,6 +5028,16 @@ var cards = [
                   "clan":['Lasombra'],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Barbaro Lucchese",
+                  "id":"200166",
+                  "link":"https://www.drivethrucards.com/product/419029",
+                  "type":['Vampire'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -4625,6 +5221,16 @@ var cards = [
                 },
 
                 {
+                  "name":"C&eacute;leste, The Voice of a Secret",
+                  "id":"200258",
+                  "link":"https://www.drivethrucards.com/product/419081",
+                  "type":['Vampire'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Celine Chevalier",
                   "id":"200260",
                   "link":"https://www.drivethrucards.com/product/339186",
@@ -4735,6 +5341,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Cybele",
+                  "id":"200305",
+                  "link":"https://www.drivethrucards.com/product/419030",
+                  "type":['Vampire'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Cyscek",
                   "id":"200307",
                   "link":"https://www.drivethrucards.com/product/392246",
@@ -4792,6 +5408,16 @@ var cards = [
                   "clan":['Follower of Set'],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Delilah Monroe",
+                  "id":"200331",
+                  "link":"https://www.drivethrucards.com/product/419082",
+                  "type":['Vampire'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -4955,6 +5581,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Elihu",
+                  "id":"200409",
+                  "link":"https://www.drivethrucards.com/product/419031",
+                  "type":['Vampire'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Elizabeth Westcott",
                   "id":"200415",
                   "link":"https://www.drivethrucards.com/product/392256",
@@ -5022,6 +5658,16 @@ var cards = [
                   "clan":['Assamite'],
                   "disciplines":[''],
                   "release_date":"2019-11-24",
+                },
+
+                {
+                  "name":"Evil Jensen",
+                  "id":"200447",
+                  "link":"https://www.drivethrucards.com/product/419083",
+                  "type":['Vampire'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -5115,6 +5761,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Ga&euml;l Pilet",
+                  "id":"200491",
+                  "link":"https://www.drivethrucards.com/product/419084",
+                  "type":['Vampire'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Ganesh",
                   "id":"200492",
                   "link":"https://www.drivethrucards.com/product/368307",
@@ -5192,6 +5848,16 @@ var cards = [
                   "clan":['Pander'],
                   "disciplines":[''],
                   "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Giotto Verducci",
+                  "id":"200520",
+                  "link":"https://www.drivethrucards.com/product/419032",
+                  "type":['Vampire'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -5315,6 +5981,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Harlan Graves",
+                  "id":"200570",
+                  "link":"https://www.drivethrucards.com/product/419085",
+                  "type":['Vampire'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Hazimel",
                   "id":"200578",
                   "link":"https://www.drivethrucards.com/product/368311",
@@ -5355,6 +6031,26 @@ var cards = [
                 },
 
                 {
+                  "name":"High Priest Angra Mainyu",
+                  "id":"200597",
+                  "link":"https://www.drivethrucards.com/product/419033",
+                  "type":['Vampire'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
+                  "name":"Hillanvale",
+                  "id":"200598",
+                  "link":"https://www.drivethrucards.com/product/419086",
+                  "type":['Vampire'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Horatio",
                   "id":"200603",
                   "link":"https://www.drivethrucards.com/product/392258",
@@ -5365,6 +6061,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Horde, The",
+                  "id":"200605",
+                  "link":"https://www.drivethrucards.com/product/419034",
+                  "type":['Vampire'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Huang, Blood Cultist",
                   "id":"200609",
                   "link":"https://www.drivethrucards.com/product/392176",
@@ -5372,6 +6078,16 @@ var cards = [
                   "clan":['Pander'],
                   "disciplines":[''],
                   "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Huitzilopochtli",
+                  "id":"200611",
+                  "link":"https://www.drivethrucards.com/product/419035",
+                  "type":['Vampire'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -5492,6 +6208,16 @@ var cards = [
                   "clan":['Tzimisce'],
                   "disciplines":[''],
                   "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Janet Langer",
+                  "id":"200672",
+                  "link":"https://www.drivethrucards.com/product/419087",
+                  "type":['Vampire'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -6085,6 +6811,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Mary the Black",
+                  "id":"200948",
+                  "link":"https://www.drivethrucards.com/product/419036",
+                  "type":['Vampire'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Mata Hari",
                   "id":"200955",
                   "link":"https://www.drivethrucards.com/product/368323",
@@ -6122,6 +6858,16 @@ var cards = [
                   "clan":['Salubri'],
                   "disciplines":[''],
                   "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Maureen, Dark Priestess",
+                  "id":"200964",
+                  "link":"https://www.drivethrucards.com/product/419037",
+                  "type":['Vampire'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -6225,6 +6971,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Muse",
+                  "id":"201025",
+                  "link":"https://www.drivethrucards.com/product/419088",
+                  "type":['Vampire'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Nahir",
                   "id":"201030",
                   "link":"https://www.drivethrucards.com/product/339256",
@@ -6312,6 +7068,26 @@ var cards = [
                   "clan":['Follower of Set'],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Nergal",
+                  "id":"201048",
+                  "link":"https://www.drivethrucards.com/product/419039",
+                  "type":['Vampire'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
+                  "name":"Nergal",
+                  "id":"201049",
+                  "link":"https://www.drivethrucards.com/product/419038",
+                  "type":['Vampire'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -6482,6 +7258,26 @@ var cards = [
                   "clan":['Follower of Set'],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Petaniqua",
+                  "id":"201112",
+                  "link":"https://www.drivethrucards.com/product/426500",
+                  "type":['Vampire'],
+                  "clan":['Malkavian'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
+                  "name":"Petaniqua",
+                  "id":"201113",
+                  "link":"https://www.drivethrucards.com/product/419040",
+                  "type":['Vampire'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -6675,6 +7471,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Rosemarie",
+                  "id":"201206",
+                  "link":"https://www.drivethrucards.com/product/419089",
+                  "type":['Vampire'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Royce",
                   "id":"201208",
                   "link":"https://www.drivethrucards.com/product/392188",
@@ -6742,6 +7548,16 @@ var cards = [
                   "clan":['Follower of Set'],
                   "disciplines":[''],
                   "release_date":"2021-02-01",
+                },
+
+                {
+                  "name":"Sargon",
+                  "id":"201240",
+                  "link":"https://www.drivethrucards.com/product/419041",
+                  "type":['Vampire'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -6825,6 +7641,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Sayshila",
+                  "id":"201250",
+                  "link":"https://www.drivethrucards.com/product/419090",
+                  "type":['Vampire'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Schuyler",
                   "id":"201252",
                   "link":"https://www.drivethrucards.com/product/392189",
@@ -6832,6 +7658,16 @@ var cards = [
                   "clan":['Pander'],
                   "disciplines":[''],
                   "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Scout Youngwood",
+                  "id":"201253",
+                  "link":"https://www.drivethrucards.com/product/419091",
+                  "type":['Vampire'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
@@ -7185,6 +8021,16 @@ var cards = [
                 },
 
                 {
+                  "name":"unnamed, The",
+                  "id":"201411",
+                  "link":"https://www.drivethrucards.com/product/419042",
+                  "type":['Vampire'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Ur-Shulgi, The Shepherd",
                   "id":"201413",
                   "link":"https://www.drivethrucards.com/product/297372",
@@ -7315,6 +8161,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Xeper, Sultan of Lepers",
+                  "id":"201480",
+                  "link":"https://www.drivethrucards.com/product/419043",
+                  "type":['Vampire'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
+                },
+
+                {
                   "name":"Xipe Totec",
                   "id":"201482",
                   "link":"https://www.drivethrucards.com/product/392289",
@@ -7342,6 +8198,16 @@ var cards = [
                   "clan":['Assamite'],
                   "disciplines":[''],
                   "release_date":"2019-11-24",
+                },
+
+                {
+                  "name":"Yseult",
+                  "id":"201492",
+                  "link":"https://www.drivethrucards.com/product/419092",
+                  "type":['Vampire'],
+                  "clan":['Daughter of Cacophony'],
+                  "disciplines":[''],
+                  "release_date":"2023-03-05",
                 },
 
                 {
