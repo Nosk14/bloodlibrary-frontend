@@ -46,6 +46,8 @@ function addFilters() {
     $('#discipline-filter').append(
         getIconTag("/static/img/iconnodisc.gif", "No Discipline", "No Discipline", 'cardDisciplines', '')
     );
+
+    cardDisciplines.sort();
     for (discipline of cardDisciplines.slice(1)) {
         let iconSrc = `https://vtesdecks.com/assets/img/icons/icondis${discipline.toLowerCase()}.gif`
         if(discipline in icons){
@@ -59,6 +61,8 @@ function addFilters() {
     $('#clan-filter').append(
         getIconTag("/static/img/iconnoclan.gif", "No clan", "No clan", 'cardClans', '')
     );
+
+    cardClans.sort();
     for (clan of cardClans.slice(1)) {
         if (clan in icons) {
             var icon_link = icons[clan];

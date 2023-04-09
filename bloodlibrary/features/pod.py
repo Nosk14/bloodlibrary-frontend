@@ -83,6 +83,7 @@ class DriveThruCards:
         }
 
     def __parse_raw_cards(self, raw_cards):
+        print("Getting cards info.")
         pool = Pool(CONCURRENCY_LEVEL)
         results = pool.map(self.parse_raw_card, raw_cards)
         pool.close()
@@ -131,7 +132,8 @@ class DriveThruParser(HTMLParser):
 class DataFile:
 
     def __init__(self, cards):
-        self.cards = cards
+        # self.cards = cards
+        self.cards = list({c['id']: c for c in cards}.values()) # remove duplicated cards
 
     def __get_clans(self):
         available_clans = set()

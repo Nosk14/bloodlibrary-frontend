@@ -1,52 +1,50 @@
 var cardTypes = ["Vampire", "Master", "Action", "Ally", "Retainer", "Equipment", "Political Action", "Action Modifier", "Reaction", "Combat", "Event"];
 var cardClans = [	"",
-	"Baali",
+	"Toreador antitribu",
+	"Assamite",
+	"Pander",
+	"Tzimisce",
+	"Follower of Set",
 	"Salubri",
+	"Baali",
+	"Kiasyd",
+	"Ravnos",
+	"Giovanni",
+	"Lasombra",
+	"Caitiff",
+	"Daughter of Cacophony",
+	"Malkavian",
+	"Harbinger of Skulls",
 	"Samedi",
 	"Gangrel",
-	"Caitiff",
-	"Giovanni",
-	"Kiasyd",
-	"Lasombra",
-	"Assamite",
-	"Tzimisce",
-	"Ravnos",
-	"Toreador antitribu",
-	"Daughter of Cacophony",
-	"Follower of Set",
 	"Tremere",
-	"Harbinger of Skulls",
-	"Malkavian",
-	"Pander",
 ];
 var cardDisciplines = [	"",
-	"Melpominee",
-	"Daimoinon",
-	"Serpentis",
-	"Dominate",
-	"Mytherceria",
-	"Thaumaturgy",
-	"Temporis",
 	"Fortitude",
-	"Obeah",
-	"Striga",
-	"Chimerstry",
-	"Protean",
+	"Thaumaturgy",
 	"Dementation",
-	"Valeren",
-	"Vicissitude",
-	"Maleficia",
-	"Presence",
-	"Thanatosis",
-	"Obtenebration",
-	"Potence",
-	"Auspex",
-	"Animalism",
-	"Obfuscate",
-	"Celerity",
 	"Visceratika",
-	"Quietus",
+	"Dominate",
+	"Obfuscate",
+	"Daimoinon",
+	"Potence",
 	"Necromancy",
+	"Animalism",
+	"Chimerstry",
+	"Quietus",
+	"Temporis",
+	"Thanatosis",
+	"Celerity",
+	"Presence",
+	"Vicissitude",
+	"Serpentis",
+	"Melpominee",
+	"Valeren",
+	"Auspex",
+	"Mytherceria",
+	"Obeah",
+	"Protean",
+	"Obtenebration",
 ];
 var cards = [
 
@@ -211,13 +209,23 @@ var cards = [
                 },
 
                 {
+                  "name":"Art's Traumatic Essence",
+                  "id":"100100",
+                  "link":"https://www.drivethrucards.com/product/419093",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Melpominee', 'Auspex'],
+                  "release_date":"2023-02-05",
+                },
+
+                {
                   "name":"Asanbonsam Ghoul",
                   "id":"100103",
-                  "link":"https://www.drivethrucards.com/product/392136",
+                  "link":"https://www.drivethrucards.com/product/339977",
                   "type":['Ally'],
                   "clan":['Tzimisce'],
                   "disciplines":[''],
-                  "release_date":"2022-04-01",
+                  "release_date":"2021-01-22",
                 },
 
                 {
@@ -267,7 +275,7 @@ var cards = [
                   "type":['Master'],
                   "clan":[''],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -287,7 +295,7 @@ var cards = [
                   "type":['Political Action'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -338,6 +346,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Blessed Audience",
+                  "id":"100179",
+                  "link":"https://www.drivethrucards.com/product/419095",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Melpominee', 'Auspex'],
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -447,7 +465,7 @@ var cards = [
                   "type":['Reaction'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -537,7 +555,7 @@ var cards = [
                   "type":['Action'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -637,7 +655,7 @@ var cards = [
                   "type":['Action'],
                   "clan":[''],
                   "disciplines":['Melpominee'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -697,7 +715,7 @@ var cards = [
                   "type":['Master'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -717,7 +735,7 @@ var cards = [
                   "type":['Action'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -757,7 +775,7 @@ var cards = [
                   "type":['Action'],
                   "clan":[''],
                   "disciplines":['Daimoinon', 'Obfuscate'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -767,7 +785,7 @@ var cards = [
                   "type":['Action'],
                   "clan":[''],
                   "disciplines":['Daimoinon', 'Presence'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -787,7 +805,7 @@ var cards = [
                   "type":['Master'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -797,7 +815,7 @@ var cards = [
                   "type":['Combat'],
                   "clan":[''],
                   "disciplines":['Daimoinon', 'Potence'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -817,7 +835,7 @@ var cards = [
                   "type":['Action'],
                   "clan":[''],
                   "disciplines":['Daimoinon'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -917,7 +935,7 @@ var cards = [
                   "type":['Retainer'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -987,7 +1005,7 @@ var cards = [
                   "type":['Combat'],
                   "clan":[''],
                   "disciplines":['Melpominee', 'Celerity'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -1037,7 +1055,7 @@ var cards = [
                   "type":['Reaction'],
                   "clan":[''],
                   "disciplines":['Daimoinon', 'Auspex'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -1157,7 +1175,7 @@ var cards = [
                   "type":['Action Modifier'],
                   "clan":[''],
                   "disciplines":['Melpominee', 'Presence'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -1217,7 +1235,7 @@ var cards = [
                   "type":['Action Modifier'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -1357,7 +1375,7 @@ var cards = [
                   "type":['Political Action'],
                   "clan":[''],
                   "disciplines":['Melpominee'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -1407,7 +1425,7 @@ var cards = [
                   "type":['Combat'],
                   "clan":[''],
                   "disciplines":['Daimoinon', 'Obfuscate'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -1448,6 +1466,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":[''],
                   "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Flames of the Netherworld",
+                  "id":"100741",
+                  "link":"https://www.drivethrucards.com/product/419056",
+                  "type":['Combat'],
+                  "clan":[''],
+                  "disciplines":['Daimoinon', 'Thaumaturgy'],
+                  "release_date":"2023-03-19",
                 },
 
                 {
@@ -1543,11 +1571,11 @@ var cards = [
                 {
                   "name":"Gear Up",
                   "id":"100813",
-                  "link":"https://www.drivethrucards.com/product/392215",
+                  "link":"https://www.drivethrucards.com/product/339373",
                   "type":['Action'],
                   "clan":[''],
                   "disciplines":['Necromancy', 'Presence', 'Vicissitude'],
-                  "release_date":"2022-04-01",
+                  "release_date":"2020-11-22",
                 },
 
                 {
@@ -1651,16 +1679,6 @@ var cards = [
                 },
 
                 {
-                  "name":"Greater Curse",
-                  "id":"100854",
-                  "link":"https://www.drivethrucards.com/product/419057",
-                  "type":['Action'],
-                  "clan":[''],
-                  "disciplines":['Maleficia', 'Daimoinon'],
-                  "release_date":"2023-03-05",
-                },
-
-                {
                   "name":"Guardian Ghoul",
                   "id":"100867",
                   "link":"https://www.drivethrucards.com/product/392138",
@@ -1677,7 +1695,7 @@ var cards = [
                   "type":['Master'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -1707,7 +1725,7 @@ var cards = [
                   "type":['Action'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -1791,13 +1809,13 @@ var cards = [
                 },
 
                 {
-                  "name":"Hexe",
-                  "id":"100915",
-                  "link":"https://www.drivethrucards.com/product/419059",
-                  "type":['Combat'],
-                  "clan":[''],
-                  "disciplines":['Striga', 'Daimoinon'],
-                  "release_date":"2023-03-05",
+                  "name":"Herald of Topheth",
+                  "id":"100912",
+                  "link":"https://www.drivethrucards.com/product/419058",
+                  "type":['Ally'],
+                  "clan":['Baali'],
+                  "disciplines":[''],
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -1837,7 +1855,7 @@ var cards = [
                   "type":['Action Modifier'],
                   "clan":[''],
                   "disciplines":['Daimoinon', 'Obfuscate'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -1907,7 +1925,7 @@ var cards = [
                   "type":['Master'],
                   "clan":[''],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -1917,7 +1935,7 @@ var cards = [
                   "type":['Ally'],
                   "clan":[''],
                   "disciplines":['Daimoinon'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -2017,7 +2035,7 @@ var cards = [
                   "type":['Equipment'],
                   "clan":[''],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -2107,7 +2125,7 @@ var cards = [
                   "type":['Action Modifier', 'Reaction'],
                   "clan":[''],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -2187,7 +2205,7 @@ var cards = [
                   "type":['Political Action'],
                   "clan":[''],
                   "disciplines":['Melpominee'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -2267,7 +2285,7 @@ var cards = [
                   "type":['Action Modifier', 'Reaction'],
                   "clan":[''],
                   "disciplines":['Melpominee', 'Presence'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -2367,7 +2385,7 @@ var cards = [
                   "type":['Ally'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -2427,7 +2445,7 @@ var cards = [
                   "type":['Action Modifier'],
                   "clan":[''],
                   "disciplines":['Melpominee', 'Celerity'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -2627,7 +2645,7 @@ var cards = [
                   "type":['Master'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -2667,7 +2685,7 @@ var cards = [
                   "type":['Master'],
                   "clan":[''],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -2767,7 +2785,7 @@ var cards = [
                   "type":['Action'],
                   "clan":[''],
                   "disciplines":['Melpominee', 'Auspex'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -2997,7 +3015,7 @@ var cards = [
                   "type":['Action Modifier'],
                   "clan":[''],
                   "disciplines":['Daimoinon', 'Presence'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -3257,7 +3275,7 @@ var cards = [
                   "type":['Action'],
                   "clan":[''],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -3277,7 +3295,7 @@ var cards = [
                   "type":['Master'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -3357,7 +3375,7 @@ var cards = [
                   "type":['Action Modifier', 'Reaction'],
                   "clan":[''],
                   "disciplines":['Daimoinon', 'Auspex'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -3527,7 +3545,7 @@ var cards = [
                   "type":['Action'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -3547,7 +3565,7 @@ var cards = [
                   "type":['Action'],
                   "clan":[''],
                   "disciplines":['Melpominee', 'Protean'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -3957,7 +3975,7 @@ var cards = [
                   "type":['Master'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -3977,7 +3995,7 @@ var cards = [
                   "type":['Equipment'],
                   "clan":[''],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -4017,7 +4035,7 @@ var cards = [
                   "type":['Combat'],
                   "clan":[''],
                   "disciplines":['Melpominee', 'Presence'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -4037,7 +4055,7 @@ var cards = [
                   "type":['Reaction'],
                   "clan":[''],
                   "disciplines":['Melpominee', 'Auspex'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -4117,7 +4135,7 @@ var cards = [
                   "type":['Master'],
                   "clan":[''],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -4227,7 +4245,7 @@ var cards = [
                   "type":['Reaction'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -4267,7 +4285,7 @@ var cards = [
                   "type":['Ally'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -4317,7 +4335,7 @@ var cards = [
                   "type":['Action Modifier'],
                   "clan":[''],
                   "disciplines":['Melpominee', 'Presence'],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -4567,7 +4585,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -4787,7 +4805,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -4847,7 +4865,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -4867,7 +4885,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -4927,7 +4945,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -4967,7 +4985,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -5037,7 +5055,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -5227,7 +5245,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -5347,7 +5365,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -5417,7 +5435,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -5587,7 +5605,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -5767,7 +5785,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -5857,7 +5875,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -5987,7 +6005,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -6037,7 +6055,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -6047,7 +6065,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -6067,7 +6085,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -6087,7 +6105,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -6217,7 +6235,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -6817,7 +6835,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -6867,7 +6885,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -6977,7 +6995,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -7077,7 +7095,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -7087,7 +7105,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -7267,7 +7285,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Malkavian'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -7277,7 +7295,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -7477,7 +7495,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -7557,7 +7575,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -7647,7 +7665,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -7667,7 +7685,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -8027,7 +8045,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -8167,7 +8185,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Baali'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -8207,7 +8225,7 @@ var cards = [
                   "type":['Vampire'],
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
-                  "release_date":"2023-03-05",
+                  "release_date":"2023-02-05",
                 },
 
                 {
@@ -8328,5 +8346,15 @@ var cards = [
                   "clan":['Follower of Set'],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Greater Curse",
+                  "id":"100854",
+                  "link":"https://www.drivethrucards.com/product/419057",
+                  "type":['Action'],
+                  "clan":[''],
+                  "disciplines":['Maleficia', 'Daimoinon'],
+                  "release_date":"2023-03-05",
                 },
             ];
