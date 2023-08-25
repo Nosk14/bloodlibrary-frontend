@@ -1,50 +1,52 @@
 var cardTypes = ["Vampire", "Master", "Action", "Ally", "Retainer", "Equipment", "Political Action", "Action Modifier", "Reaction", "Combat", "Event"];
 var cardClans = [	"",
-	"Toreador antitribu",
-	"Assamite",
-	"Pander",
-	"Tzimisce",
-	"Follower of Set",
-	"Salubri",
-	"Baali",
-	"Kiasyd",
-	"Ravnos",
-	"Giovanni",
-	"Lasombra",
-	"Caitiff",
-	"Daughter of Cacophony",
-	"Malkavian",
-	"Harbinger of Skulls",
-	"Samedi",
 	"Gangrel",
+	"Pander",
+	"Baali",
+	"Giovanni",
+	"Assamite",
+	"Kiasyd",
+	"Harbinger of Skulls",
+	"Daughter of Cacophony",
+	"Malkavian antitribu",
+	"Tzimisce",
+	"Ravnos",
+	"Malkavian",
+	"Lasombra",
+	"Tremere antitribu",
+	"Samedi",
 	"Tremere",
+	"Follower of Set",
+	"Toreador antitribu",
+	"Salubri",
+	"Caitiff",
 ];
 var cardDisciplines = [	"",
-	"Fortitude",
-	"Thaumaturgy",
-	"Dementation",
-	"Visceratika",
-	"Dominate",
-	"Obfuscate",
-	"Daimoinon",
-	"Potence",
-	"Necromancy",
-	"Animalism",
-	"Chimerstry",
-	"Quietus",
-	"Temporis",
-	"Thanatosis",
-	"Celerity",
 	"Presence",
-	"Vicissitude",
-	"Serpentis",
-	"Melpominee",
+	"Celerity",
 	"Valeren",
-	"Auspex",
+	"Serpentis",
 	"Mytherceria",
-	"Obeah",
+	"Vicissitude",
+	"Fortitude",
+	"Auspex",
+	"Chimerstry",
+	"Temporis",
+	"Dementation",
+	"Quietus",
+	"Obfuscate",
+	"Thanatosis",
+	"Visceratika",
+	"Thaumaturgy",
+	"Potence",
+	"Dominate",
 	"Protean",
+	"Daimoinon",
 	"Obtenebration",
+	"Necromancy",
+	"Melpominee",
+	"Obeah",
+	"Animalism",
 ];
 var cards = [
 
@@ -889,6 +891,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Create Gargoyle",
+                  "id":"100440",
+                  "link":"https://www.drivethrucards.com/product/446928",
+                  "type":['Action'],
+                  "clan":['Tremere', 'Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"CrimethInc.",
                   "id":"100446",
                   "link":"https://www.drivethrucards.com/product/339340",
@@ -906,6 +918,16 @@ var cards = [
                   "clan":['Follower of Set'],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Crusade: Barcelona",
+                  "id":"100454",
+                  "link":"https://www.drivethrucards.com/product/446929",
+                  "type":['Political Action'],
+                  "clan":[''],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -986,6 +1008,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Obtenebration'],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Dauntain Black Magician",
+                  "id":"100500",
+                  "link":"https://www.drivethrucards.com/product/446930",
+                  "type":['Ally'],
+                  "clan":['Malkavian antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -1819,6 +1851,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Hexaped",
+                  "id":"100914",
+                  "link":"https://www.drivethrucards.com/product/446942",
+                  "type":['Ally'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Hierophant",
                   "id":"100923",
                   "link":"https://www.drivethrucards.com/product/339385",
@@ -1926,6 +1968,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":[''],
                   "release_date":"2023-02-05",
+                },
+
+                {
+                  "name":"Infernal Pact",
+                  "id":"100979",
+                  "link":"https://www.drivethrucards.com/product/446944",
+                  "type":['Master'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -2496,6 +2548,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Nephandus",
+                  "id":"101272",
+                  "link":"https://www.drivethrucards.com/product/446958",
+                  "type":['Ally'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -3109,6 +3171,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Recure of the Homeland",
+                  "id":"101571",
+                  "link":"https://www.drivethrucards.com/product/446962",
+                  "type":['Action'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Red Herring",
                   "id":"101573",
                   "link":"https://www.drivethrucards.com/product/368246",
@@ -3286,6 +3358,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Vicissitude'],
                   "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Ruins of Ceoris",
+                  "id":"101658",
+                  "link":"https://www.drivethrucards.com/product/446965",
+                  "type":['Equipment'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -3779,6 +3861,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Spirit Summoning Chamber",
+                  "id":"101849",
+                  "link":"https://www.drivethrucards.com/product/446968",
+                  "type":['Master'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Spiritual Intervention",
                   "id":"101852",
                   "link":"https://www.drivethrucards.com/product/339476",
@@ -3836,6 +3928,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Quietus'],
                   "release_date":"2020-01-04",
+                },
+
+                {
+                  "name":"Succubus",
+                  "id":"101892",
+                  "link":"https://www.drivethrucards.com/product/446969",
+                  "type":['Ally'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -4249,6 +4351,16 @@ var cards = [
                 },
 
                 {
+                  "name":"University Hunting Ground",
+                  "id":"102075",
+                  "link":"https://www.drivethrucards.com/product/446972",
+                  "type":['Master'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Unleash Hell's Fury",
                   "id":"102076",
                   "link":"https://www.drivethrucards.com/product/419076",
@@ -4276,6 +4388,16 @@ var cards = [
                   "clan":[''],
                   "disciplines":['Chimerstry'],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Veneficorum Artum Sanguis",
+                  "id":"102102",
+                  "link":"https://www.drivethrucards.com/product/446976",
+                  "type":['Equipment'],
+                  "clan":[''],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -4609,6 +4731,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Alejandro Aguirre",
+                  "id":"200044",
+                  "link":"https://www.drivethrucards.com/product/446982",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Alexis Sorokin",
                   "id":"200050",
                   "link":"https://www.drivethrucards.com/product/368293",
@@ -4909,6 +5041,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Antonio d'Erlette",
+                  "id":"200116",
+                  "link":"https://www.drivethrucards.com/product/446922",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Antonio Delgado",
                   "id":"200117",
                   "link":"https://www.drivethrucards.com/product/339169",
@@ -4959,6 +5101,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Ash Harrison",
+                  "id":"200146",
+                  "link":"https://www.drivethrucards.com/product/446923",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Augustus Giovanni",
                   "id":"200149",
                   "link":"https://www.drivethrucards.com/product/339172",
@@ -4976,6 +5128,16 @@ var cards = [
                   "clan":['Lasombra'],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Ayelea, The Manipulator",
+                  "id":"200152",
+                  "link":"https://www.drivethrucards.com/product/446924",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -5149,6 +5311,26 @@ var cards = [
                 },
 
                 {
+                  "name":"Brooke",
+                  "id":"200221",
+                  "link":"https://www.drivethrucards.com/product/446925",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
+                  "name":"Bryan Van Duesen",
+                  "id":"200225",
+                  "link":"https://www.drivethrucards.com/product/446926",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Bupe Kuila",
                   "id":"200228",
                   "link":"https://www.drivethrucards.com/product/339180",
@@ -5206,6 +5388,16 @@ var cards = [
                   "clan":['Giovanni'],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Carmen",
+                  "id":"200246",
+                  "link":"https://www.drivethrucards.com/product/446927",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -5599,6 +5791,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Elena Mendoza Vasquez",
+                  "id":"200408",
+                  "link":"https://www.drivethrucards.com/product/446931",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Elihu",
                   "id":"200409",
                   "link":"https://www.drivethrucards.com/product/419031",
@@ -5619,6 +5821,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Ember Wright",
+                  "id":"200418",
+                  "link":"https://www.drivethrucards.com/product/446932",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Enzo Giovanni, Pentex Board of Directors",
                   "id":"200425",
                   "link":"https://www.drivethrucards.com/product/339201",
@@ -5626,6 +5838,16 @@ var cards = [
                   "clan":['Giovanni'],
                   "disciplines":[''],
                   "release_date":"2021-02-01",
+                },
+
+                {
+                  "name":"Eric Kressida",
+                  "id":"200429",
+                  "link":"https://www.drivethrucards.com/product/446933",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -5646,6 +5868,26 @@ var cards = [
                   "clan":['Lasombra'],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Esoara",
+                  "id":"200437",
+                  "link":"https://www.drivethrucards.com/product/446934",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
+                  "name":"Ethan Locke",
+                  "id":"200438",
+                  "link":"https://www.drivethrucards.com/product/446935",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -5769,6 +6011,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Frondator",
+                  "id":"200485",
+                  "link":"https://www.drivethrucards.com/product/446936",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Gabrin",
                   "id":"200490",
                   "link":"https://www.drivethrucards.com/product/368306",
@@ -5806,6 +6058,16 @@ var cards = [
                   "clan":['Giovanni'],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Gerald FitzGerald",
+                  "id":"200507",
+                  "link":"https://www.drivethrucards.com/product/446937",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -5899,6 +6161,26 @@ var cards = [
                 },
 
                 {
+                  "name":"Goratrix",
+                  "id":"200528",
+                  "link":"https://www.drivethrucards.com/product/446938",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-08-25",
+                },
+
+                {
+                  "name":"Goratrix",
+                  "id":"200529",
+                  "link":"https://www.drivethrucards.com/product/446939",
+                  "type":['Vampire'],
+                  "clan":['Tremere'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Gratiano",
                   "id":"200534",
                   "link":"https://www.drivethrucards.com/product/339214",
@@ -5989,6 +6271,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Hannigan",
+                  "id":"200567",
+                  "link":"https://www.drivethrucards.com/product/446940",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Harika Guljan",
                   "id":"200569",
                   "link":"https://www.drivethrucards.com/product/297325",
@@ -6016,6 +6308,16 @@ var cards = [
                   "clan":['Ravnos'],
                   "disciplines":[''],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Heinrick Schlempt",
+                  "id":"200583",
+                  "link":"https://www.drivethrucards.com/product/446941",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -6119,6 +6421,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Ian Forestal",
+                  "id":"200616",
+                  "link":"https://www.drivethrucards.com/product/446943",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Ignacio, The Black Priest",
                   "id":"200622",
                   "link":"https://www.drivethrucards.com/product/339223",
@@ -6189,6 +6501,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Jacob, The Glitch",
+                  "id":"200661",
+                  "link":"https://www.drivethrucards.com/product/446945",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Jaggedy Andy",
                   "id":"200665",
                   "link":"https://www.drivethrucards.com/product/392177",
@@ -6236,6 +6558,16 @@ var cards = [
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
                   "release_date":"2023-02-05",
+                },
+
+                {
+                  "name":"Janine",
+                  "id":"200674",
+                  "link":"https://www.drivethrucards.com/product/446946",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -6296,6 +6628,16 @@ var cards = [
                   "clan":['Ravnos'],
                   "disciplines":[''],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Johannes Worringen",
+                  "id":"200714",
+                  "link":"https://www.drivethrucards.com/product/446947",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -6409,6 +6751,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Keith Moody",
+                  "id":"200767",
+                  "link":"https://www.drivethrucards.com/product/446948",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Kemintiri",
                   "id":"200769",
                   "link":"https://www.drivethrucards.com/product/339229",
@@ -6469,6 +6821,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Kij Dansky",
+                  "id":"200782",
+                  "link":"https://www.drivethrucards.com/product/446949",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Kiradin",
                   "id":"200784",
                   "link":"https://www.drivethrucards.com/product/368317",
@@ -6486,6 +6848,26 @@ var cards = [
                   "clan":['Ravnos'],
                   "disciplines":[''],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Kurt Strauss",
+                  "id":"200796",
+                  "link":"https://www.drivethrucards.com/product/446950",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
+                  "name":"Ladislas Toth, The Torch",
+                  "id":"200803",
+                  "link":"https://www.drivethrucards.com/product/446951",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -6569,6 +6951,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Lectora",
+                  "id":"200827",
+                  "link":"https://www.drivethrucards.com/product/446952",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Leila Monroe",
                   "id":"200829",
                   "link":"https://www.drivethrucards.com/product/339236",
@@ -6586,6 +6978,16 @@ var cards = [
                   "clan":['Pander'],
                   "disciplines":[''],
                   "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Lernean",
+                  "id":"200833",
+                  "link":"https://www.drivethrucards.com/product/446953",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -6689,6 +7091,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Lucubratio",
+                  "id":"200877",
+                  "link":"https://www.drivethrucards.com/product/446954",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Lucy Markowitz",
                   "id":"200878",
                   "link":"https://www.drivethrucards.com/product/339245",
@@ -6716,6 +7128,16 @@ var cards = [
                   "clan":['Giovanni'],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Malgorzata",
+                  "id":"200905",
+                  "link":"https://www.drivethrucards.com/product/446955",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-08-25",
                 },
 
                 {
@@ -6786,6 +7208,16 @@ var cards = [
                   "clan":['Giovanni'],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Marino Reymundo V&aacute;squez",
+                  "id":"200931",
+                  "link":"https://www.drivethrucards.com/product/446956",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -6979,6 +7411,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Mosfair",
+                  "id":"201013",
+                  "link":"https://www.drivethrucards.com/product/446957",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Mr. Noir",
                   "id":"201016",
                   "link":"https://www.drivethrucards.com/product/392195",
@@ -7109,6 +7551,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Nickolai, The Survivor",
+                  "id":"201056",
+                  "link":"https://www.drivethrucards.com/product/446959",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Nizzam al-Latif",
                   "id":"201062",
                   "link":"https://www.drivethrucards.com/product/297349",
@@ -7179,6 +7631,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Orlando Oriundus",
+                  "id":"201084",
+                  "link":"https://www.drivethrucards.com/product/446960",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Otieno",
                   "id":"201086",
                   "link":"https://www.drivethrucards.com/product/339266",
@@ -7236,6 +7698,16 @@ var cards = [
                   "clan":['Giovanni'],
                   "disciplines":[''],
                   "release_date":"2021-02-01",
+                },
+
+                {
+                  "name":"Paul Cordwood",
+                  "id":"201100",
+                  "link":"https://www.drivethrucards.com/product/446961",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -7439,6 +7911,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Reverend Blackwood",
+                  "id":"201182",
+                  "link":"https://www.drivethrucards.com/product/446963",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Reverend Djoser Jones",
                   "id":"201183",
                   "link":"https://www.drivethrucards.com/product/339282",
@@ -7466,6 +7948,16 @@ var cards = [
                   "clan":['Assamite'],
                   "disciplines":[''],
                   "release_date":"2020-03-31",
+                },
+
+                {
+                  "name":"Richard Tauber, Ayelea's Puppet",
+                  "id":"201186",
+                  "link":"https://www.drivethrucards.com/product/446964",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -7526,6 +8018,16 @@ var cards = [
                   "clan":['Follower of Set'],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
+                },
+
+                {
+                  "name":"Saiz",
+                  "id":"201222",
+                  "link":"https://www.drivethrucards.com/product/446966",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -7686,6 +8188,16 @@ var cards = [
                   "clan":['Daughter of Cacophony'],
                   "disciplines":[''],
                   "release_date":"2023-02-05",
+                },
+
+                {
+                  "name":"Selena",
+                  "id":"201261",
+                  "link":"https://www.drivethrucards.com/product/446967",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -7969,6 +8481,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Terrell Harding",
+                  "id":"201356",
+                  "link":"https://www.drivethrucards.com/product/446970",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Terrence",
                   "id":"201357",
                   "link":"https://www.drivethrucards.com/product/392283",
@@ -7986,6 +8508,16 @@ var cards = [
                   "clan":['Tzimisce'],
                   "disciplines":[''],
                   "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Thelonius",
+                  "id":"201360",
+                  "link":"https://www.drivethrucards.com/product/446971",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -8059,6 +8591,16 @@ var cards = [
                 },
 
                 {
+                  "name":"Uta Kovacs",
+                  "id":"201418",
+                  "link":"https://www.drivethrucards.com/product/446973",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
                   "name":"Vaclav Petalengro",
                   "id":"201420",
                   "link":"https://www.drivethrucards.com/product/368339",
@@ -8066,6 +8608,26 @@ var cards = [
                   "clan":['Ravnos'],
                   "disciplines":[''],
                   "release_date":"2021-08-20",
+                },
+
+                {
+                  "name":"Valerius Maior, Hell's Fool",
+                  "id":"201421",
+                  "link":"https://www.drivethrucards.com/product/446974",
+                  "type":['Vampire'],
+                  "clan":['Tremere'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
+                },
+
+                {
+                  "name":"Valerius Maior, Hell's Fool",
+                  "id":"201422",
+                  "link":"https://www.drivethrucards.com/product/446975",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -8196,6 +8758,16 @@ var cards = [
                   "clan":['Tzimisce'],
                   "disciplines":[''],
                   "release_date":"2022-04-01",
+                },
+
+                {
+                  "name":"Yasmin the Black",
+                  "id":"201483",
+                  "link":"https://www.drivethrucards.com/product/446977",
+                  "type":['Vampire'],
+                  "clan":['Tremere antitribu'],
+                  "disciplines":[''],
+                  "release_date":"2023-07-25",
                 },
 
                 {
@@ -8346,15 +8918,5 @@ var cards = [
                   "clan":['Follower of Set'],
                   "disciplines":[''],
                   "release_date":"2020-11-22",
-                },
-
-                {
-                  "name":"Greater Curse",
-                  "id":"100854",
-                  "link":"https://www.drivethrucards.com/product/419057",
-                  "type":['Action'],
-                  "clan":[''],
-                  "disciplines":['Maleficia', 'Daimoinon'],
-                  "release_date":"2023-03-05",
                 },
             ];

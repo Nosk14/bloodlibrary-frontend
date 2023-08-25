@@ -39,7 +39,7 @@ class DriveThruCards:
 
     def __get_cards_from_web(self):
         raw_cards = []
-        for page in range(1, 18):
+        for page in range(1, 24):
             print(f"\tFetching page {page}")
             html = self.__get_html(DriveThruCards.WEB_URL.format(page))
             parser = DriveThruParser()
