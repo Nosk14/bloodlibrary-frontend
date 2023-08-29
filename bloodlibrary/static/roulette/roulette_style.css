@@ -1,0 +1,24 @@
+.country-selector {
+    display: flex;
+    padding-bottom: 1.5em;
+    margin-left: 75%;
+}
+
+.country-selector span {
+    padding-right: 1em;
+}
+
+#spin-button {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#deck-info {
+    padding-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.deck-info-buttons {
+    padding-top: 1em;
+}

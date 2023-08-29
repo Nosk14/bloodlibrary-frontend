@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block navPage %}roulette{% endblock %}
+{% block title %} - Roulette{% endblock %}
+{% block head %}
+    <script src="{{ url_for('static', filename='roulette/roulette_scripts.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='roulette/roulette_style.css') }}"/>
+{% endblock %}
+
+{% block content %}
+<div class="country-selector">
+    <span>
+        Decks from:
+    </span>
+    <select id="country" class="form-select" aria-label="Default select example">
+      <option value="" selected>any country</option>
+      <option value="BR">Brazil</option>
+      <option value="CZ">Czechia</option>
+      <option value="DE">Germany</option>
+      <option value="ES">Spain</option>
+      <option value="FI">Finland</option>
+      <option value="FR">France</option>
+      <option value="IT">Italy</option>
+      <option value="PL">Poland</option>
+      <option value="US">Unated States</option>
+    </select>
+</div>
+
+<button id="spin-button" class="btn btn-primary" type="button" onclick="spinButtonClicked()">
+  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display: none;"></span>
+  Spin the roulette!
+</button>
+
+<div id="deck-info">
+    <h2>DECK NAME (year)</h2>
+    <div class="deck-info-buttons text-center">
+        <button id="view-decklist" type="button" class="btn btn-primary">View decklist</button>
+        <button id="download-decklist" type="button" class="btn btn-primary">Download for Lackey</button>
+    </div>
+
+</div>
+{% endblock %}

@@ -1,9 +1,10 @@
 import logging
-from flask import Flask, render_template, request, send_from_directory
+from flask import Flask, render_template, request, send_from_directory, Response
 from flask_mobility import Mobility
 from features.kickstarter import data as ks_data
 from features.cards import all_sets_data
 from auth import authenticate_user, LoginForm
+from requests import get
 import os
 
 app = Flask(__name__)
@@ -38,6 +39,22 @@ def kickstarter():
 @app.route("/pod", methods=['GET'])
 def print_on_demand():
     return render_template('pod.html', is_mobile=request.MOBILE)
+
+
+@app.route("/roulette", methods=['GET'])
+def roulette():
+    return render_template('roulette.html', is_mobile=request.MOBILE)
+
+
+@app.route("/deck/export", methods=['GET'])
+def deck_export():
+    deck_id = request.args.get('id')
+    rs = get('https://api.vtesdecks.com/1.0/decks/'+deck_id+'/export?type=LACKEY')
+    if rs.status_code == 200:
+        return Response(
+            rs.text,
+            mimetype='text/plain',
+            headers={'Content-disposition': f'attachment; filename=deck_{deck_id}.txt'})
 
 
 @app.route("/cards", methods=['GET'])
