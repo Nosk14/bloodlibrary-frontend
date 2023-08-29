@@ -1,5 +1,6 @@
 function spinButtonClicked(){
     disableSpinButton();
+    $("#deck-info").hide()
     getRandomDeck()
     .then(res => {enableSpinButton()});
 }
@@ -30,6 +31,7 @@ function getRandomDeck(){
 }
 
 function updateDeckInfo(title, year, vtesdecks_id) {
+    $("#deck-info").show()
     $("#deck-info > h2").text(title + " ("+year+")");
     $("#view-decklist").on("click", function(){ window.open('https://vtesdecks.com/deck/' + vtesdecks_id) });
     $("#download-decklist").on("click", function(){ window.open(window.location.origin + '/deck/export?id=' + vtesdecks_id) });
