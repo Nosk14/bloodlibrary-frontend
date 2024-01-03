@@ -8919,4 +8919,23 @@ var cards = [
                   "disciplines":[''],
                   "release_date":"2020-11-22",
                 },
+
+                {
+                  "name":"Ashur Tablets",
+                  "id":"100106",
+                  "link":"https://www.drivethrucards.com/product/462469",
+                  "type":['Master'],
+                  "clan":[],
+                  "disciplines":[''],
+                  "release_date":"2023-12-02",
+                },
+                {
+                  "name":"Emerald Legionnaire",
+                  "id":"100634",
+                  "link":"https://www.drivethrucards.com/product/462470",
+                  "type":['Ally'],
+                  "clan":['Harbinger of Skulls'],
+                  "disciplines":[''],
+                  "release_date":"2023-12-31",
+                },
             ];
