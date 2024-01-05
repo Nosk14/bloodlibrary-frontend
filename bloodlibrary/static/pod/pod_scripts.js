@@ -49,7 +49,11 @@ function addFilters() {
 
     cardDisciplines.sort();
     for (discipline of cardDisciplines.slice(1)) {
-        let iconSrc = `https://vtesdecks.com/assets/img/icons/icondis${discipline.toLowerCase()}.gif`
+        let iconName = discipline.toLowerCase()
+        if (discipline == "Thaumaturgy"){
+            iconName = "bloodsorcery"
+        }
+        let iconSrc = `https://vtesdecks.com/assets/img/icons/disciplines/${iconName}.svg`
         if(discipline in icons){
             iconSrc = icons[discipline]
         }
