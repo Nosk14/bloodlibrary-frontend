@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, send_from_directory, Response
 from flask_mobility import Mobility
 from features.kickstarter import data as ks_data
 from features.cards import all_sets_data
-from features.pod import js_data
+from features.pod import build_js_data
 from auth import authenticate_user, LoginForm
 from requests import get
 import os
@@ -11,6 +11,7 @@ import os
 app = Flask(__name__)
 app.secret_key = os.getenv('SECRET', 'secret_value')
 Mobility(app)
+pod_js_data = build_js_data()
 
 if __name__ != '__main__':
     gunicorn_logger = logging.getLogger('gunicorn.error')
@@ -39,7 +40,7 @@ def kickstarter():
 
 @app.route("/pod", methods=['GET'])
 def print_on_demand():
-    return render_template('pod.html', is_mobile=request.MOBILE, js_data=js_data)
+    return render_template('pod.html', is_mobile=request.MOBILE, js_data=pod_js_data)
 
 
 @app.route("/roulette", methods=['GET'])

@@ -11,8 +11,8 @@ DISCIPLINES = ["abombwe", "animalism", "auspex", "celerity", "chimerstry", "daim
                "thaumaturgy", "valeren", "vicissitude", "visceratika", "chimerstry"]
 
 BLOODLIBRARY_POD = "https://api.bloodlibrary.info/pod/cards"
-BLOODLIBRARY_CRYPT = "https://api.bloodlibrary.info/api/crypt/{0}"
-BLOODLIBRARY_LIBRARY = "https://api.bloodlibrary.info/api/library/{0}"
+BLOODLIBRARY_CRYPT = "https://api.bloodlibrary.info/api/crypt"
+BLOODLIBRARY_LIBRARY = "https://api.bloodlibrary.info/api/library"
 
 
 HTML_TABLE = {k: '&{};'.format(v) for k, v in html.entities.codepoint2name.items()}
@@ -26,6 +26,13 @@ class PODReader:
         adapter = HTTPAdapter(max_retries=retry)
         self.__session.mount('http://', adapter)
         self.__session.mount('https://', adapter)
+        self.cards_cache = {}
+
+    def initialize_card_caches(self):
+        crypt_cards = self.__session.get(BLOODLIBRARY_CRYPT).json()
+        library_cards = self.__session.get(BLOODLIBRARY_LIBRARY).json()
+        cards = crypt_cards + library_cards
+        self.cards_cache = {card['id']: card for card in cards}
 
     def get_cards(self):
         cards_in_pod = self.__session.get(BLOODLIBRARY_POD).json()
@@ -62,74 +69,16 @@ class PODReader:
         }
 
     def __get_card_data(self, card_id):
+        full_data = self.cards_cache[card_id]
         if card_id[0] == '1':
-            full_data = self.__session.get(BLOODLIBRARY_LIBRARY.format(card_id)).json()
             full_data['disciplines'] = re.split('/| & ', full_data['discipline']) if full_data['discipline'] else [""]
         else:
-            full_data = self.__session.get(BLOODLIBRARY_CRYPT.format(card_id)).json()
             full_data['disciplines'] = [d.capitalize() for d in DISCIPLINES if full_data[d] > 0]
             if len(full_data['disciplines']) == 0:
                 full_data['disciplines'] = [""]
 
         return full_data
 
-
-class DataFile:
-
-    def __init__(self, cards):
-        self.cards = cards
-
-    def __get_clans(self):
-        available_clans = set()
-        for card in self.cards:
-            available_clans.update(card['clan'])
-
-        ret = 'var cardClans = ['
-        for clan in available_clans:
-            ret += f'\t"{clan}",\n'
-        ret += "];\n"
-
-        return ret
-
-    def __get_disciplines(self):
-        available_disciplines = set()
-        for card in self.cards:
-            available_disciplines.update(card['disciplines'])
-
-        ret = 'var cardDisciplines = ['
-        for disc in available_disciplines:
-            ret += f'\t"{disc}",\n'
-        ret += "];\n"
-
-        return ret
-
-    def __get_cards(self):
-        ret = "var cards = [\n"
-        for card in self.cards:
-            card_name = card['name'].translate(HTML_TABLE) #.replace('"', '\\"')
-            ret += f"""
-                {{
-                  "name":"{card_name}",
-                  "id":"{card['id']}",
-                  "link":"{card['link']}",
-                  "type":{card['type']},
-                  "clan":{card['clan']},
-                  "disciplines":{card['disciplines']},
-                  "release_date":"{card['release_date']}",
-                }},
-            """
-
-        ret += "];\n"
-        return ret
-
-    def __process_data(self):
-        return 'var cardTypes = ["Vampire", "Master", "Action", "Ally", "Retainer", "Equipment", "Political Action", "Action Modifier", "Reaction", "Combat", "Event"];\n' \
-               + self.__get_clans() \
-               + self.__get_disciplines() \
-               + self.__get_cards()
-
-    def generate(self):
-        return self.__process_data()
 
 class JSData:
 
@@ -166,8 +115,7 @@ class JSData:
 
 
 def build_js_data():
-    _cards = PODReader().get_cards()
-    return JSData(_cards).generate()
-
-
-js_data = build_js_data()
+    reader = PODReader()
+    reader.initialize_card_caches()
+    cards = reader.get_cards()
+    return JSData(cards).generate()
