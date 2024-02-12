@@ -5,4 +5,4 @@ COPY requirements.txt .
 RUN pip3 install -r requirements.txt
 COPY bloodlibrary /usr/local/app/
 WORKDIR /usr/local/app/
-CMD gunicorn -w 2 -b 0.0.0.0:5000 --log-level DEBUG app:app
+CMD gunicorn -w 2 -b 0.0.0.0:5000 --log-level DEBUG --timeout 360 app:app

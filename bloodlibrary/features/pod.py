@@ -57,7 +57,6 @@ class PODReader:
         return {
             'name': card_data['name'],
             'id': card_data['id'],
-            'link': card_pod_data['shops'][0]['link'],
             'links': {
                 'dtc': dtc_link,
                 'gamepod': gamepod_link
