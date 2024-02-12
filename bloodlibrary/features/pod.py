@@ -1,8 +1,5 @@
-import logging
 import re
 import html
-from html.parser import HTMLParser
-from multiprocessing import Pool
 
 import requests
 from requests.adapters import HTTPAdapter
@@ -13,17 +10,15 @@ DISCIPLINES = ["abombwe", "animalism", "auspex", "celerity", "chimerstry", "daim
                "presence", "protean", "quietus", "sanguinus", "serpentis", "spiritus", "temporis", "thanatosis",
                "thaumaturgy", "valeren", "vicissitude", "visceratika", "chimerstry"]
 
-BLOODLIBRARY_ENDPOINT = "https://api.bloodlibrary.info/api/search/?name={0}"
+BLOODLIBRARY_POD = "https://api.bloodlibrary.info/pod/cards"
 BLOODLIBRARY_CRYPT = "https://api.bloodlibrary.info/api/crypt/{0}"
 BLOODLIBRARY_LIBRARY = "https://api.bloodlibrary.info/api/library/{0}"
 
-CONCURRENCY_LEVEL = 4
 
 HTML_TABLE = {k: '&{};'.format(v) for k, v in html.entities.codepoint2name.items()}
 
 
-class DriveThruCards:
-    WEB_URL = "https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles?sort=4a&pfrom=0.35&pto=0.38&page={0}"
+class PODReader:
 
     def __init__(self):
         self.__session = requests.Session()
@@ -33,29 +28,40 @@ class DriveThruCards:
         self.__session.mount('https://', adapter)
 
     def get_cards(self):
-        raw_cards = self.__get_cards_from_web()
-        cards = self.__parse_raw_cards(raw_cards)
+        cards_in_pod = self.__session.get(BLOODLIBRARY_POD).json()
+        cards = self.__parse_raw_cards(cards_in_pod)
+
         return sorted(cards, key=lambda item: item['id'])
 
-    def __get_cards_from_web(self):
-        raw_cards = []
-        for page in range(1, 24):
-            print(f"\tFetching page {page}")
-            html = self.__get_html(DriveThruCards.WEB_URL.format(page))
-            parser = DriveThruParser()
-            parser.feed(html)
-            raw_cards.extend(parser.cards)
-        print("Fetching process finished.")
-        return raw_cards
+    def __parse_raw_cards(self, raw_cards):
+        return [self.__parse_raw_card(x) for x in raw_cards]
 
-    def __get_html(self, url):
-        rs = requests.get(url, headers={'User-Agent': "Mozilla/5.0"})
-        return rs.text
+    def __parse_raw_card(self, card_pod_data):
+        card_data = self.__get_card_data(card_pod_data['id'])
+        dtc_link = ""
+        gamepod_link = ""
 
-    def get_card_data(self, card_name):
-        rs = self.__session.get(BLOODLIBRARY_ENDPOINT.format(card_name))
-        basic_data = rs.json()[0]
-        card_id = basic_data['id']
+        for shop_data in card_pod_data['shops']:
+            if shop_data['shop'] == "DTC":
+                dtc_link = shop_data['link']
+            elif shop_data['shop'] == "Gamepod":
+                gamepod_link = shop_data['link']
+
+        return {
+            'name': card_data['name'],
+            'id': card_data['id'],
+            'link': card_pod_data['shops'][0]['link'],
+            'links': {
+                'dtc': dtc_link,
+                'gamepod': gamepod_link
+            },
+            'type': card_data['card_type'].split("/"),
+            'clan': card_data['clan'].split("/"),
+            'disciplines': card_data['disciplines'],
+            'release_date': card_pod_data['shops'][0]['release_date'],
+        }
+
+    def __get_card_data(self, card_id):
         if card_id[0] == '1':
             full_data = self.__session.get(BLOODLIBRARY_LIBRARY.format(card_id)).json()
             full_data['disciplines'] = re.split('/| & ', full_data['discipline']) if full_data['discipline'] else [""]
@@ -67,73 +73,11 @@ class DriveThruCards:
 
         return full_data
 
-    def parse_raw_card(self, raw_card):
-        raw_name = raw_card['name'].split("-", 1)[1].rsplit("-", 1)[0]
-        link = raw_card['link'].rsplit('?')[0].rsplit('/', 1)[0]
-        card_data = self.get_card_data(raw_name)
-
-        return {
-            'name': card_data['name'],
-            'id': card_data['id'],
-            'link': link,
-            'type': card_data['card_type'].split("/"),
-            'clan': card_data['clan'].split("/"),
-            'disciplines': card_data['disciplines'],
-            'release_date': raw_card['release_date'],
-        }
-
-    def __parse_raw_cards(self, raw_cards):
-        print("Getting cards info.")
-        pool = Pool(CONCURRENCY_LEVEL)
-        results = pool.map(self.parse_raw_card, raw_cards)
-        pool.close()
-        pool.join()
-
-        return results  # return [self.__parse_raw_card(c) for c in raw_cards]
-
-
-class DriveThruParser(HTMLParser):
-
-    def __init__(self):
-        super().__init__()
-        self.cards = []
-        self.__is_parsing_card = False
-        self.__card_link = None
-        self.__card_name = None
-        self.__release_date = None
-
-    def error(self, message):
-        logging.error(message)
-
-    def handle_starttag(self, tag, attrs):
-        if tag == 'tr' and ('class', 'dtrpgListing-row') in attrs:
-            self.__is_parsing_card = True
-        elif self.__is_parsing_card and tag == 'td' and ('class', 'main') in attrs:
-            pass
-        elif self.__is_parsing_card:
-            if tag == 'a' and self.__card_link is None:
-                self.__card_link = list(filter(lambda att: att[0] == 'href', attrs))[0][1]
-            elif tag == 'img' and self.__card_name is None:
-                self.__card_name = list(filter(lambda att: att[0] == 'alt', attrs))[0][1]
-
-    def handle_endtag(self, tag):
-        if tag == 'tr' and self.__is_parsing_card:
-            self.__is_parsing_card = False
-            self.cards.append({'name': self.__card_name, 'link': self.__card_link, 'release_date': self.__release_date})
-            self.__card_name = None
-            self.__card_link = None
-            self.__release_date = None
-
-    def handle_data(self, data):
-        if self.__is_parsing_card and data.startswith("Date Added:"):
-            self.__release_date = data.split(':')[1].strip()
-
 
 class DataFile:
 
     def __init__(self, cards):
-        # self.cards = cards
-        self.cards = list({c['id']: c for c in cards}.values()) # remove duplicated cards
+        self.cards = cards
 
     def __get_clans(self):
         available_clans = set()
@@ -184,17 +128,46 @@ class DataFile:
                + self.__get_disciplines() \
                + self.__get_cards()
 
-    def generate(self, path):
-        string_data = self.__process_data()
-        with open(path, 'w') as f:
-            f.write(string_data)
+    def generate(self):
+        return self.__process_data()
+
+class JSData:
+
+    def __init__(self, cards):
+        self.cards = cards
+
+    def __get_clans(self):
+        available_clans = set()
+        for card in self.cards:
+            available_clans.update(card['clan'])
+
+        return available_clans
+
+    def __get_disciplines(self):
+        available_disciplines = set()
+        for card in self.cards:
+            available_disciplines.update(card['disciplines'])
+        return available_disciplines
+
+    def __get_cards(self):
+        return self.cards
+
+    def __process_data(self):
+        data = {
+            'types': ["Vampire", "Master", "Action", "Ally", "Retainer", "Equipment", "Political Action", "Action Modifier", "Reaction", "Combat", "Event"],
+            'clans': list(self.__get_clans()),
+            'disciplines': list(self.__get_disciplines()),
+            'cards': list(self.__get_cards()),
+        }
+        return data
+
+    def generate(self):
+        return self.__process_data()
 
 
-if __name__ == '__main__':
-    dtc = DriveThruCards()
-    print(f"Fetching cards...")
-    cards = dtc.get_cards()
+def build_js_data():
+    _cards = PODReader().get_cards()
+    return JSData(_cards).generate()
 
-    print(f"Found {len(cards)} cards")
-    DataFile(cards).generate("prova.js")
-    print("Done!")
+
+js_data = build_js_data()

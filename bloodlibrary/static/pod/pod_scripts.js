@@ -106,18 +106,23 @@ function toggleCriteria(self, criteriaList, element){
 
 function addCards(cardList) {
     for (c of cards) {
-        $('#card-list').append(
-            `<div id="${c.id}" class="vtes-card" data-release='${c.release_date}' data-name="${c.name}" data-cardtype='${c.type[0]}' data-favorite='2000-01-01'>
-                    <table><tbody>
-                        <tr><td>
-                            <a href="${c.link}${affiliate_param}" target="_blank"><img class="pod-image" src="https://statics.bloodlibrary.info/img/sets/pod/${c.id}.jpg"/></a>
-                        </td></tr>
-                        <tr><td class="vtes-card-name red-text">
-                            <a class="favorite-icon" onclick="toggleFavorite(this,${c.id})" >${localStorage.getItem(c.id) === null ? empty_star_icon : full_star_icon}</a> <a href="${c.link}${affiliate_param}" target="_blank">${c.name}</a>
-                        </td></tr>
-                    </tbody></table>
-            </div>`
-        );
+        let card_html = `<div id="${c.id}" class="vtes-card card pod-image" data-release='${c.release_date}' data-name="${c.name}" data-cardtype='${c.type[0]}' data-favorite='2000-01-01'>
+                  <img class="card-img-top" src="https://statics.bloodlibrary.info/img/sets/pod/${c.id}.jpg" alt="${c.name}">
+                  <div class="card-body vtes-card-name padding-05">
+                    <h6 class="card-title">${c.name}</h6>
+                    <a class="favorite-icon btn btn-outline-dark btn-sm margin-card-buttons" onclick="toggleFavorite(this,${c.id})" >${localStorage.getItem(c.id) === null ? empty_star_icon : full_star_icon}</a>
+                    `
+
+        if(c['links']['dtc']){
+            card_html = card_html + `<a href="${c['links']['dtc']}${affiliate_param}" target="_blank" class="btn btn-outline-dark btn-sm margin-card-buttons">DriveThruCards</a>`
+        }
+
+        if(c['links']['gamepod']){
+            card_html = card_html + `<a href="${c['links']['gamepod']}" target="_blank" class="btn btn-outline-dark btn-sm margin-card-buttons">Gamepod</a>`
+        }
+
+        card_html = card_html + `</div></div>`
+        $('#card-list').append(card_html);
     }
 }
 

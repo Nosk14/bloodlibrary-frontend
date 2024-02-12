@@ -3,7 +3,7 @@ p {
 }
 
 .pod-image {
-	width: 250px;
+	width: 16rem;
 	height: auto
 }
 
@@ -30,6 +30,10 @@ p {
 
 .card {
     color: #b8120f !important;
+}
+
+.padding-05 {
+    padding: 0.5rem !important;
 }
 
 .inline-check {
@@ -70,4 +74,8 @@ p {
 .no-cards {
     margin-left: 3em;
     margin-right: 3em;
+}
+
+.margin-card-buttons {
+    margin-left: 1px;
 }

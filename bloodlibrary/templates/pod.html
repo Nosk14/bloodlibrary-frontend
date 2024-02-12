@@ -2,7 +2,12 @@
 {% block navPage %}pod{% endblock %}
 {% block title %} - Print on Demand{% endblock %}
 {% block head %}
-        <script src="{{ url_for('static', filename='pod/data.js') }}"></script>
+        <script>
+            var cardTypes = {{ js_data['types']|tojson }}
+            var cardClans = {{ js_data['clans']|tojson }}
+            var cardDisciplines = {{ js_data['disciplines']|tojson }}
+            var cards = {{ js_data['cards']|tojson }}
+        </script>
         <script src="{{ url_for('static', filename='pod/pod_scripts.js') }}"></script>
         <link rel="stylesheet" href="{{ url_for('static', filename='pod/pod_style.css') }}"/>
 
