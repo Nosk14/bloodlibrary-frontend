@@ -208,12 +208,16 @@ function toggleFavorite(self, card_id){
 
 }
 
-function openAllFavoriteCards(){
+function openAllFavoriteCards(store){
     for (c of cards) {
         if (localStorage.getItem(c.id) !== null){
-            let result = window.open(c.link+affiliate_param, '_blank');
+            let link = c['links'][store];
+            if (store == "dtc") {
+                link = link + affiliate_param
+            }
+            let result = window.open(c['links'][store], '_blank');
             if (result === null){
-                $('#open-tabs').append('<div class="alert alert-warning alert-dismissible fade show" role="alert"><strong>Oops!</strong>Your browser blocked some of the opening tabs. Check your settings to fix it. <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
+                $('#open-tabs-'+store).append('<div class="alert alert-warning alert-dismissible fade show" role="alert"><strong>Oops!</strong>Your browser blocked some of the opening tabs. Check your settings to fix it. <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
                 break;
             }
         }
