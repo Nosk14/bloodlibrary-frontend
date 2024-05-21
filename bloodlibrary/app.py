@@ -1,5 +1,5 @@
 import logging
-from flask import Flask, render_template, request, send_from_directory, Response
+from flask import Flask, render_template, request, send_from_directory, Response, g
 from flask_mobility import Mobility
 from features.kickstarter import data as ks_data
 from features.cards import all_sets_data
@@ -30,22 +30,22 @@ def favicon():
 
 @app.route("/", methods=['GET'])
 def proxies():
-    return render_template('proxies.html', is_mobile=request.MOBILE)
+    return render_template('proxies.html', is_mobile=g.is_mobile)
 
 
 @app.route("/kickstarter", methods=['GET'])
 def kickstarter():
-    return render_template('kickstarter.html', zets=ks_data, is_mobile=request.MOBILE)
+    return render_template('kickstarter.html', zets=ks_data, is_mobile=g.is_mobile)
 
 
 @app.route("/pod", methods=['GET'])
 def print_on_demand():
-    return render_template('pod.html', is_mobile=request.MOBILE, js_data=pod_js_data)
+    return render_template('pod.html', is_mobile=g.is_mobile, js_data=pod_js_data)
 
 
 @app.route("/roulette", methods=['GET'])
 def roulette():
-    return render_template('roulette.html', is_mobile=request.MOBILE)
+    return render_template('roulette.html', is_mobile=g.is_mobile)
 
 
 @app.route("/deck/export", methods=['GET'])
@@ -61,14 +61,14 @@ def deck_export():
 
 @app.route("/cards", methods=['GET'])
 def all_cards():
-    return render_template('cards.html', zets=all_sets_data, is_mobile=request.MOBILE)
+    return render_template('cards.html', zets=all_sets_data, is_mobile=g.is_mobile)
 
 
 @app.route("/login", methods=['GET', 'POST'])
 def login():
     form = LoginForm()
     if request.method == 'GET':
-        return render_template('login.html', form=form, is_mobile=request.MOBILE)
+        return render_template('login.html', form=form, is_mobile=g.is_mobile)
 
     elif request.method == 'POST':
         if form.validate_on_submit():
@@ -80,7 +80,7 @@ def login():
                                        avatar=user_data['profileImage'],
                                        )
             else:
-                return render_template('login.html', form=form, errors=["Login failed"], is_mobile=request.MOBILE)
+                return render_template('login.html', form=form, errors=["Login failed"], is_mobile=g.is_mobile)
 
 
 if __name__ == '__main__':
