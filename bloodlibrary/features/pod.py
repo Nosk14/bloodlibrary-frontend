@@ -1,5 +1,5 @@
-import re
 import html
+import re
 
 import requests
 from requests.adapters import HTTPAdapter
@@ -8,12 +8,20 @@ from requests.packages.urllib3.util.retry import Retry
 DISCIPLINES = ["abombwe", "animalism", "auspex", "celerity", "chimerstry", "daimoinon", "dementation", "dominate",
                "fortitude", "melpominee", "mytherceria", "necromancy", "obeah", "obfuscate", "obtenebration", "potence",
                "presence", "protean", "quietus", "sanguinus", "serpentis", "spiritus", "temporis", "thanatosis",
-               "thaumaturgy", "valeren", "vicissitude", "visceratika", "chimerstry"]
+               "thaumaturgy", "valeren", "vicissitude", "visceratika", "striga", "maleficia", "oblivion"]
+
+DISCIPLINE_ABBREVIATIONS = {'abo': 'abombwe', 'ani': 'animalism', 'aus': 'auspex', 'cel': 'celerity',
+                            'chi': 'chimerstry', 'dai': 'daimoinon', 'dem': 'dementation', 'dom': 'dominate',
+                            'for': 'fortitude', 'mel': 'melpominee', 'myt': 'mytherceria', 'nec': 'necromancy',
+                            'obe': 'obeah', 'obf': 'obfuscate', 'obt': 'obtenebration', 'pot': 'potence',
+                            'pre': 'presence', 'pro': 'protean', 'qui': 'quietus', 'san': 'sanguinus',
+                            'ser': 'serpentis', 'spi': 'spiritus', 'tem': 'temporis', 'thn': 'thanatosis',
+                            'tha': 'thaumaturgy', 'val': 'valeren', 'vic': 'vicissitude', 'vis': 'visceratika',
+                            'str': 'striga', 'mal': 'maleficia', 'obl': 'oblibion'}
 
 BLOODLIBRARY_POD = "https://api.bloodlibrary.info/pod/cards"
 BLOODLIBRARY_CRYPT = "https://api.bloodlibrary.info/api/crypt"
 BLOODLIBRARY_LIBRARY = "https://api.bloodlibrary.info/api/library"
-
 
 HTML_TABLE = {k: '&{};'.format(v) for k, v in html.entities.codepoint2name.items()}
 
@@ -72,7 +80,10 @@ class PODReader:
         if card_id[0] == '1':
             full_data['disciplines'] = re.split('/| & ', full_data['discipline']) if full_data['discipline'] else [""]
         else:
-            full_data['disciplines'] = [d.capitalize() for d in DISCIPLINES if full_data[d] > 0]
+            disc = full_data['disciplines'].split()
+            full_data['disciplines'] = [
+                DISCIPLINE_ABBREVIATIONS[d.lower()].capitalize() for d in disc if d.lower() in DISCIPLINE_ABBREVIATIONS
+            ]
             if len(full_data['disciplines']) == 0:
                 full_data['disciplines'] = [""]
 
@@ -102,7 +113,8 @@ class JSData:
 
     def __process_data(self):
         data = {
-            'types': ["Vampire", "Master", "Action", "Ally", "Retainer", "Equipment", "Political Action", "Action Modifier", "Reaction", "Combat", "Event"],
+            'types': ["Vampire", "Master", "Action", "Ally", "Retainer", "Equipment", "Political Action",
+                      "Action Modifier", "Reaction", "Combat", "Event"],
             'clans': list(self.__get_clans()),
             'disciplines': list(self.__get_disciplines()),
             'cards': list(self.__get_cards()),
